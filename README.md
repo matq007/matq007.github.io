@@ -5,12 +5,16 @@
 TO DO:
 - [x] Setup basic template
 - [x] Write/copy blog post
+- [ ] Add custom 404 page
+- [ ] Convert images to svg
+- [ ] Create favicon
 - [ ] Custom view for categories
 - [ ] Custom view for tags
 - [ ] Setup archive
 - [ ] Setup pagination
 - [ ] Travis CI
 - [ ] Google analytics
+- [ ] [New timeline?](https://bootsnipp.com/snippets/a3BjR)
 
 ### Build using
 
