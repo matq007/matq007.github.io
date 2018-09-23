@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="card shadow">
+        <div class="card-body">
+            <h3 class="card-title">{{ page.title }}</h3>
+            <h6 class="card-subtitle mb-2 text-muted">Created: {{ page.date | date: "%d/%m/%Y" }}</h6>
+            {% for tag in page.tags %}
+                <span class="badge badge-info">{{ tag }}</span>
+            {% endfor %}
+        </div>
+</div>
+
+<div class="card shadow">
+    <div class="card-body">
+        {{ content }}
+        <a href="{{ site.url }}/blog/" class="btn btn-primary">< Back</a>
+    </div>
+</div>

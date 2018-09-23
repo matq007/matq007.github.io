@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  
+  <body>
+      <div class="container-fluid h-100 wrapper">
+        <div class="row d-flex h-100">
+            <aside class="col-md-2 shadow rounded d-flex flex-column flex-g">
+                <div class="col flex-grow">
+                    <img src="{{ site.url }}/assets/img/me.jpg" class="rounded-circle logo img-fluid mx-auto d-block" width="220" height="220">
+                    <h1 class="display-3">{{ site.data.author.name }}</h1>
+                    <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                              <a class="nav-link" href="{{ site.data.author.github }}"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.data.author.linkedin }}"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.data.author.twitter }}"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                </div>
+                <div class="nav flex-column nav-pills menu" aria-orientation="vertical">
+                        <a class="nav-link {% if page.url == '/' %} active {% endif %}" href="{{ site.url }}">Home</a>
+                        <a class="nav-link {% if page.url == '/about.html' %} active {% endif %}" href="{{ site.url }}/about">About</a>
+                        <a class="nav-link {% if page.url == '/blog.html' %} active {% endif %}" href="{{ site.url }}/blog">Blog</a>
+                </div>
+            </aside>
+            <section class="col-md-10 content offset-md-2">
+                <div class="container-fluid">
+                        {{ content }}
+                </div>
+            </section>    
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+13:23
