@@ -1,5 +1,7 @@
 # Welcome to my personal website hosted by GitHub
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 TO DO:
 - [x] Setup basic template
 - [x] Write/copy blog post
