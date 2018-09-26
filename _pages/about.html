@@ -1,0 +1,89 @@
+---
+layout: default
+title: About me
+permalink: /about
+---
+
+<div class="card shadow">
+    <div class="card-body">
+        <h1 class="card-title">{{ page.title }}</h1>
+    </div>
+</div>
+<div class="card-columns">
+        <!-- WORK EXPERIENCE -->
+        <div class="card shadow">
+            <div class="card-body">
+                <h3>Work experience</h3>
+                <ul class="timeline">
+                    {% for employment in site.data.author.employment %}
+                        <li>
+                            <strong>{{ employment.position }}</strong><a class="float-right">{{ employment.duration }}</a><br>
+                            <p>
+                                <span style="font-style: italic;">{{ employment.company }}</span><br>
+                                {{ employment.desc }}
+                            </p>
+                        </li>
+                    {% endfor %}
+                    </ul>
+            </div>
+        </div>
+        <!-- Honors & Awards -->
+        <div class="card shadow">
+                <div class="card-body">
+                    <h3>Awards & Honors</h3>
+                    <br>
+                    {% for award in site.data.author.awards %}
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="{{ site.url }}/assets/img/{{ award.img }}" class="" width="50" height="50">
+                        </div>
+                        <div class="col-md-10 award-info">
+                            <p>
+                                <strong>{{ award.name }}</strong>
+                                <span class="float-right">{{ award.date }}</span>
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        <!-- EDUCATION -->
+        <div class="card shadow">
+                <div class="card-body">
+                    <h3>Education</h3>
+                    <br>
+                    {% for education in site.data.author.education %}
+                    <div class="row uni">
+                        <div class="col-md-1">
+                            <img src="{{ site.url }}/assets/img/{{ education.img }}" class="" width="50" height="50">
+                        </div>
+                        <div class="col-md-11 uni-info">
+                            <p>
+                                <strong>{{ education.name }}</strong><span class="float-right">{{ education.duration }}</span><br>
+                                {{ education.desc }}
+                            </p>
+                            
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        <!-- PROJECTS -->
+        <div class="card shadow">
+                <div class="card-body">
+                    <h3>Projects</h3>
+                    <ul class="timeline">
+                        {% for project in site.data.author.projects %}
+                            <li>
+                                <strong>{{ project.name }}</strong><a class="float-right">{{ project.date }}</a><br>
+                                <p>{{ project.desc }}</p>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                </div>
+            </div>
+
+      
+      </div>
+
+
