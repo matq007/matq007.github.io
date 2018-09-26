@@ -7,7 +7,7 @@ layout: default
             <h3 class="card-title">{{ page.title }}</h3>
             <h6 class="card-subtitle mb-2 text-muted">Created: {{ page.date | date: "%d/%m/%Y" }}</h6>
             {% for tag in page.tags %}
-                <span class="badge badge-info">{{ tag }}</span>
+                <a href="{{ site.url }}/tags#{{ tag }}"><span class="badge badge-info">{{ tag }}</span></a>
             {% endfor %}
         </div>
 </div>

@@ -9,7 +9,7 @@ TO DO:
 - [ ] Convert images to svg
 - [ ] Create favicon
 - [ ] Custom view for categories
-- [ ] Custom view for tags
+- [x] Custom view for tags
 - [ ] Setup archive
 - [ ] Setup pagination
 - [ ] Travis CI
