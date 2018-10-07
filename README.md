@@ -6,7 +6,7 @@ TO DO:
 - [x] Setup basic template
 - [x] Write/copy blog post
 - [ ] Add custom 404 page
-- [ ] Convert images to svg
+- [x] Convert images to svg
 - [ ] Create favicon
 - [ ] Custom view for categories
 - [x] Custom view for tags
