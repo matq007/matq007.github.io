@@ -35,7 +35,7 @@ permalink: /about
                     {% for award in site.data.author.awards %}
                     <div class="row">
                         <div class="col-md-1">
-                            <img src="{{ site.url }}/assets/img/{{ award.img }}" class="" width="50" height="50">
+                            <img src="{{ site.url }}/assets/img/{{ award.img }}" alt="{{ award.name }}" title="{{ award.name }}" width="50" height="50">
                         </div>
                         <div class="col-md-10 award-info">
                             <p>
@@ -55,7 +55,7 @@ permalink: /about
                     {% for education in site.data.author.education %}
                     <div class="row uni">
                         <div class="col-md-1">
-                            <img src="{{ site.url }}/assets/img/{{ education.img }}" class="" width="50" height="50">
+                            <img src="{{ site.url }}/assets/img/{{ education.img }}" alt="{{ education.name }}" title="{{ education.name }}" width="50" height="50">
                         </div>
                         <div class="col-md-11 uni-info">
                             <p>

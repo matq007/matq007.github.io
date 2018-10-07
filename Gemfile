@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+    gem 'html-proofer'
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'
     gem 'jekyll-archives'
