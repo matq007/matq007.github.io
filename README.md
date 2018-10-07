@@ -7,7 +7,7 @@ TO DO:
 - [x] Write/copy blog post
 - [ ] Add custom 404 page
 - [x] Convert images to svg
-- [ ] Create favicon
+- [x] Create favicon
 - [ ] Custom view for categories
 - [x] Custom view for tags
 - [ ] Setup archive
