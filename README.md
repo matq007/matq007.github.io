@@ -1,6 +1,7 @@
 # Welcome to my personal website hosted by GitHub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.png)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/matq007/matq007.github.io.svg?branch=master)](https://travis-ci.org/matq007/matq007.github.io)
 
 TO DO:
 - [x] Setup basic template
@@ -12,7 +13,7 @@ TO DO:
 - [x] Custom view for tags
 - [ ] Setup archive
 - [ ] Setup pagination
-- [ ] Travis CI
+- [x] Travis CI
 - [ ] Google analytics
 - [ ] [New timeline?](https://bootsnipp.com/snippets/a3BjR)
 
