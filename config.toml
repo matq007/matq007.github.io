@@ -1,3 +1,5 @@
+# Website setup
+
 baseURL = "/"
 languageCode = "en-us"
 title = "Martin Proks (@mproksik)"
