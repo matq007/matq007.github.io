@@ -6,18 +6,12 @@
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+                <li class="nav-item {{ if eq $currentPage.URL .URL }} active {{ end }}">
+                    <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+            {{ end }}
         </ul>
         <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
