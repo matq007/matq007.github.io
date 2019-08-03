@@ -5,13 +5,9 @@
     <meta name="author" content="Martin Proks @mproksik">
     <title>{{ .Title }}</title>
     <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
-    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
-    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-grid.min.css">
-    <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}/css/all.css">
-    
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400&display=swap">
+    {{ $css := "css/main.css" | absURL }}
+    <link type="text/css" rel="stylesheet" href="{{ $css }}">
 </head>

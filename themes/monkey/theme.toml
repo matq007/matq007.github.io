@@ -3,19 +3,14 @@
 
 name = "Monkey"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/matq007/matq007.github.io/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://matq007.github.io/"
 tags = []
 features = []
-min_version = "0.41"
+min_version = "0.1"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Martin Proks"
+  homepage = "https://github.com/matq007"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

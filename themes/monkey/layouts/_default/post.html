@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<div class="columns">
+    <div class="column is-full">
+        <section class="section">
+            <div class="container">
+                <h1 class="title">{{ .Title }}</h1>
+                {{ partial "post-header.html" . }}
+            </div>
+            <hr>
+            <div class="content is-small">
+                {{ .Content }}
+            </div>
+        </section>
+    </div>
+    <div class="column is-4">
+        <section class="section toc">
+            <div class="container content is-small">
+                <h1>TOC:</h1>
+                <hr>
+                {{ .TableOfContents }}
+            </div>
+        </section>
+    </div>
+</div>
+{{ end }}

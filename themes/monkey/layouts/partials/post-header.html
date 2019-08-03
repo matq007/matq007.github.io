@@ -1,0 +1,13 @@
+<p class="published-and-tags">
+  <i class="fas fa-calendar-alt"></i> Published at {{ .PublishDate.Format "02/01/2006" }}
+{{ with .Params.tags }}
+  <br>
+  <i class="fas fa-tags"></i> Tags:
+  {{ range . }}
+  {{ $href := print (absURL "tags/") (urlize .) }}
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">#{{ . }}</a>
+  </span>
+  {{ end }}
+  </p>
+{{ end }}

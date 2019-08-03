@@ -1,1 +1,12 @@
-The fuck?
+{{ define "main" }}
+
+<div class="columns is-mobile intro is-multiline">
+    <div class="column is-full">
+        <h1 class="title is-1">ERROR #404</h1>
+    </div>
+    <div class="column is-full">
+        <h2 class="subtitle is-3">Seriously?<br/>Carl! they broke the page again!</h2>
+        <a href='{{ "/" | relURL }}' class="button is-large is-fullwidth is-info">Get out of here!</a>
+    </div>
+</div>
+{{ end }}

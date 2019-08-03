@@ -1,15 +1,19 @@
 {{ define "main" }}
-    <main aria-role="main">
-        <div class="col">
-            <img class="text-center rounded-circle logo" src="img/default-img.jpg" width="200" height="200" alt="Paulo Freire">
-            <h1 class="display-2">Martin Proks</h1>
-            <hr>
-            <p>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-gitlab"></i></a>
-            </p>
-        </div>
-    </main>
+
+<div class="columns is-mobile intro is-multiline">
+    <div class="column is-half is-offset-one-quarter">
+        <figure class="image container is-256x256">
+            <img class="" src="img/me.png" alt="Martin Proks">
+        </figure>
+        <h1 class="subtitle is-1">{{ .Site.Author.name }}</h1>
+    </div>
+    <hr>
+    <div class="column is-half is-offset-one-quarter">
+        <p>
+            <a href="https://github.com/matq007"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/martinproks"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/mproksik"><i class="fab fa-twitter"></i></a>
+        </p>
+    </div>
+</div>
 {{ end }}
