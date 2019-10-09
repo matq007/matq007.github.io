@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Martin Proks @mproksik">
+    <title>Installing monocle3</title>
+    <link rel="icon" href="https://matq007.github.io">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400&display=swap">
+    
+    <link type="text/css" rel="stylesheet" href="https://matq007.github.io/css/main.css">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-148477750-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="site">
+  <div class="container">
+    
+    <nav class="navbar is-transparent">
+    <div class="navbar-end">
+        
+        
+        <a class="navbar-item " href="/">Home</a>
+        
+        <a class="navbar-item " href="/blog/">Blog</a>
+        
+        <a class="navbar-item " href="/about/">About</a>
+        
+        <a class="navbar-item " href="/projects/">Projects</a>
+        
+    </div>
+</nav>
+    
+    
+
+<div class="columns">
+    <div class="column is-full">
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Installing monocle3</h1>
+                <p class="published-and-tags">
+  <i class="fas fa-calendar-alt"></i> Published at 22/09/2019
+
+  <br>
+  <i class="fas fa-tags"></i> Tags:
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/bioinformatics">#bioinformatics</a>
+  </span>
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/r">#R</a>
+  </span>
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/monocle3">#monocle3</a>
+  </span>
+  
+  </p>
+
+            </div>
+            <hr>
+            <div class="content is-small">
+                
+
+<p>In this short post I will demonstrate how to install package <code>monocle3</code> in R on
+your macOS. If you are using default compilers provided by Apple, you might have
+encounter some errors like</p>
+
+<pre><code class="language-R">clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [leidenbase.so] Error 1 ERROR: compilation failed for package ‘leidenbase’
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-R">ERROR: compilation failed for package ‘leidenbase’ ...
+</code></pre>
+
+<h2 id="solution">Solution</h2>
+
+<p>To solve this issue you first have to update your current <code>gcc</code> compiler as well
+as installing <code>llvm</code>. The problem is that macOS does not come with <code>gFortran</code>
+package which is required by sub-package <code>leidenbase</code>. In this case I recommend
+installing/upgrading the packages using <a href="http://brew.sh">brew</a> illustrated below.</p>
+
+<pre><code class="language-bash">brew install gcc llvm
+# copy and paste the code in your shell to enable llvm
+</code></pre>
+
+<p>Secondly, now we have to tell <code>R</code> to use these packages by updating <code>~/.R/Makevars</code>
+path. If you do not have <code>.R</code> folder in your home directory, you can create it
+by running <code>mkdir ~\.R</code>.</p>
+
+<p>Before changing the variables you have to verify which <code>gcc</code> version have you
+installed. You can do so by running <code>gcc-&lt;TAB&gt;</code>. The example below shows how
+to setup the variables for <code>gcc-9</code>.</p>
+
+<pre><code class="language-bash">vim ~/.R/Makevars
+# Copy and paste the code below.
+VER=-9
+CC=gcc$(VER)
+CXX=g++$(VER)
+CFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+CXXFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+FLIBS=-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/
+
+# Restart R
+</code></pre>
+
+<p>Good job, now restart <code>R</code> and run the <code>monocle3</code> installation again.</p>
+
+<pre><code class="language-R">BiocManager::install(c('BiocGenerics', 'DelayedArray', 'DelayedMatrixStats',
+                       'limma', 'S4Vectors', 'SingleCellExperiment',
+                       'SummarizedExperiment'))
+devtools::install_github('cole-trapnell-lab/leidenbase')
+devtools::install_github('cole-trapnell-lab/monocle3')
+</code></pre>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/43597632/understanding-the-contents-of-the-makevars-file-in-r-macros-variables-r-ma">Stackoverflow</a></li>
+<li><a href="https://cole-trapnell-lab.github.io/monocle3/docs/installation/">Monocle3 documentation</a></li>
+</ul>
+
+            </div>
+        </section>
+    </div>
+    <div class="column is-4">
+        <section class="section toc">
+            <div class="container content is-small">
+                <h1>TOC:</h1>
+                <hr>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+        </section>
+    </div>
+</div>
+
+  </div>
+  
+  <footer>
+    <div class="container">
+        <p>
+            &copy; 2019 Martin Proks developed using <a href="https://gohugo.io/">Hugo</a> and
+            custom monkey theme.
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

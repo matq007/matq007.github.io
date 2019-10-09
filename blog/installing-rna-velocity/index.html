@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Martin Proks @mproksik">
+    <title>Installing RNA velocity on macOS</title>
+    <link rel="icon" href="https://matq007.github.io">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400&display=swap">
+    
+    <link type="text/css" rel="stylesheet" href="https://matq007.github.io/css/main.css">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-148477750-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="site">
+  <div class="container">
+    
+    <nav class="navbar is-transparent">
+    <div class="navbar-end">
+        
+        
+        <a class="navbar-item " href="/">Home</a>
+        
+        <a class="navbar-item " href="/blog/">Blog</a>
+        
+        <a class="navbar-item " href="/about/">About</a>
+        
+        <a class="navbar-item " href="/projects/">Projects</a>
+        
+    </div>
+</nav>
+    
+    
+
+<div class="columns">
+    <div class="column is-full">
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Installing RNA velocity on macOS</h1>
+                <p class="published-and-tags">
+  <i class="fas fa-calendar-alt"></i> Published at 09/10/2019
+
+  <br>
+  <i class="fas fa-tags"></i> Tags:
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/bioinformatics">#bioinformatics</a>
+  </span>
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/r">#R</a>
+  </span>
+  
+  
+  <span class="tag">
+      <a class="btn btn-sm btn-outline-dark tag-btn" href="https://matq007.github.io/tags/rna-velocity">#rna-velocity</a>
+  </span>
+  
+  </p>
+
+            </div>
+            <hr>
+            <div class="content is-small">
+                <p>Package repo: <a href="https://github.com/velocyto-team/velocyto.R">https://github.com/velocyto-team/velocyto.R</a></p>
+
+<p>At first install necessary library dependencies.</p>
+
+<pre><code class="language-bash">brew install gcc libomp boost
+</code></pre>
+
+<p>Update your <code>~/.R/Makevars</code>. It should look similar to the one below.</p>
+
+<pre><code class="language-bash">VER=-9
+CC=gcc$(VER)
+CXX=g++$(VER)
+CFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+CXXFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
+FLIBS=-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/
+
+# This is for open mp
+SHLIB_OPENMP_CFLAGS=-Xpreprocessor -fopenmp
+SHLIB_OPENMP_CXXFLAGS=-Xpreprocessor -fopenmp
+</code></pre>
+
+<p>Additional required R packages.</p>
+
+<pre><code class="language-R">BiocManager::install(c(&quot;pcaMethods&quot;, &quot;igraph&quot;, &quot;h5&quot;))
+install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;velocyto-team/velocyto.R&quot;)
+</code></pre>
+
+            </div>
+        </section>
+    </div>
+    <div class="column is-4">
+        <section class="section toc">
+            <div class="container content is-small">
+                <h1>TOC:</h1>
+                <hr>
+                
+            </div>
+        </section>
+    </div>
+</div>
+
+  </div>
+  
+  <footer>
+    <div class="container">
+        <p>
+            &copy; 2019 Martin Proks developed using <a href="https://gohugo.io/">Hugo</a> and
+            custom monkey theme.
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

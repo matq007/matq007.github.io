@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rna-velocity on Martin Proks (@mproksik)</title>
+    <link>https://matq007.github.io/tags/rna-velocity/</link>
+    <description>Recent content in rna-velocity on Martin Proks (@mproksik)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matq007.github.io/tags/rna-velocity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing RNA velocity on macOS</title>
+      <link>https://matq007.github.io/blog/installing-rna-velocity/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matq007.github.io/blog/installing-rna-velocity/</guid>
+      <description>Package repo: https://github.com/velocyto-team/velocyto.R
+At first install necessary library dependencies.
+brew install gcc libomp boost  Update your ~/.R/Makevars. It should look similar to the one below.
+VER=-9 CC=gcc$(VER) CXX=g++$(VER) CFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion CXXFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion FLIBS=-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/ # This is for open mp SHLIB_OPENMP_CFLAGS=-Xpreprocessor -fopenmp SHLIB_OPENMP_CXXFLAGS=-Xpreprocessor -fopenmp  Additional required R packages.
+BiocManager::install(c(&amp;quot;pcaMethods&amp;quot;, &amp;quot;igraph&amp;quot;, &amp;quot;h5&amp;quot;)) install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;velocyto-team/velocyto.R&amp;quot;)  </description>
+    </item>
+    
+  </channel>
+</rss>
