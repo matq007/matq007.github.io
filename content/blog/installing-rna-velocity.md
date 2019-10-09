@@ -11,7 +11,7 @@ Package repo: https://github.com/velocyto-team/velocyto.R
 At first install necessary library dependencies.
 
 ```bash
-brew install gcc libmp boost
+brew install gcc libomp boost
 ```
 
 Update your `~/.R/Makevars`. It should look similar to the one below.
