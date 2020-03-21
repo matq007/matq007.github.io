@@ -1,15 +1,26 @@
 {{ define "main" }}
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">{{ .Title }}</h1>
-    </div>
-    <hr>
-    <div class="content is-small">
-      {{ range .Pages.ByPublishDate.Reverse }}
-        <li><a class="font-125" href="{{ .RelPermalink }}">[{{.Page.PublishDate.Format "02/01/2006"}}] {{ .Title }}</a></li>
-      {{ end }}
-    </div>
-  </section>
+<div class="container col-md-6 post">
+  <div class="col-md-12">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <h1><a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <p><span class="text-muted">{{ .PublishDate.Format "02/01/2006" }}</span></p>
+      {{.Summary | safeHTML | truncate 200}} 
+      <br>
+        <div class="float-left">
+          {{ with .Params.tags }}
+            {{ range . }}
+              {{ $href := print (absURL "tags/") (urlize .) }}
+                <a href="{{ $href }}" class="badge badge-primary">#{{ . }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+      <div class="float-right">{{ if .Truncated }} <a class="btn btn-light btn-sm" href="{{ .RelPermalink }}">Read More</a> {{end}}</div><br>
+      <br>
+      <hr>
+    {{ end }}
+    
+  </div>
+</div>
 
 {{ end }}

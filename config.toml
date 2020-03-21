@@ -6,16 +6,11 @@ title = "Martin Proks (@mproksik)"
 theme = "monkey"
 googleAnalytics = "UA-148477750-1"
 
-[Author]  
+[author]  
   name = "Martin Proks" 
   bio = "Bioinformatician"
 
 [menu]
-    [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
     [[menu.main]]
     name = "Blog"
     url = "/blog/"

@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 {{ partial "head.html" . }}
 
 <body class="site">
-  <div class="container">
-    <!-- Navbar -->
-    {{ partial "navbar.html" . }}
-    <!--  Main content -->
+  <!-- Navbar -->
+  {{ partial "navbar.html" . }}
+  <!--  Main content -->
+  <main role="main">
     {{ block "main" . }} {{ end }}
-  </div>
+  </main> 
   <!-- Footer -->
   {{ partial "footer.html" . }}
 </body>

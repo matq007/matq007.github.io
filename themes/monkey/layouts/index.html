@@ -1,19 +1,42 @@
 {{ define "main" }}
 
-<div class="columns is-mobile intro is-multiline">
-    <div class="column is-half is-offset-one-quarter">
-        <figure class="image container is-256x256">
-            <img class="" src="img/me.png" alt="Martin Proks">
-        </figure>
-        <h1 class="subtitle is-1">{{ .Site.Author.name }}</h1>
-    </div>
-    <hr>
-    <div class="column is-half is-offset-one-quarter">
-        <p>
-            <a href="https://github.com/matq007"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/martinproks"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/mproksik"><i class="fab fa-twitter"></i></a>
-        </p>
+<div class="container col-md-6 intro">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Why hello there!</h1>
+            <p>
+                I am a <span class="highlight-intro">Bioinformatics PhD student</span> <a
+                    href="https://danstem.ku.dk/">@DanStem</a>, University of Copenhagen in Denmark.
+                My primary focus is <span class="highlight-intro">Stem Cell and Developmental Biology</span>.
+            </p>
+            <p>You can follow me on
+                <span class="highlight-intro">Github</span> <a href="https://github.com/matq007"><i class="fab fa-github"></i></a>,
+                <span class="highlight-intro">LinkedIn</span> <a href="https://linkedin.com/in/martinproks"><i class="fab fa-linkedin"></i></a> or
+                <span class="highlight-intro">Twitter</span> <a href="https://twitter.com/mproksik"><i class="fab fa-twitter"></i></a>.
+            </p>
+
+            {{ $tags_length := len .Site.Taxonomies.tags }}
+            {{ $.Scratch.Set "tags_counter" 0 }}
+            {{ range $key, $_ := .Site.Taxonomies.tags }}
+                {{ $.Scratch.Set "tags_counter" (add ($.Scratch.Get "tags_counter") 1) }}
+                <a href="tags/{{ $key | urlize  }}">#{{ $key }}</a>{{ if lt ($.Scratch.Get "tags_counter") $tags_length }},{{ end }}
+            {{ end }}
+
+            <hr>
+            <h3>Latest articles</h3>
+            <ul>
+                {{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
+                <li>
+                    <span class="text-muted">{{.Page.PublishDate.Format "02/01/2006"}}</span>
+                    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-md-4" style="margin-top: 2em;">
+            <img class="img-fluid" src="img/me.svg" alt="Martin Proks">
+        </div>
     </div>
 </div>
+
 {{ end }}

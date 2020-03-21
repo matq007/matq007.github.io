@@ -1,26 +1,18 @@
 {{ define "main" }}
 
-<div class="columns">
-    <div class="column is-full">
-        <section class="section">
-            <div class="container">
-                <h1 class="title">{{ .Title }}</h1>
-                {{ partial "post-header.html" . }}
-            </div>
-            <hr>
-            <div class="content is-small">
-                {{ .Content }}
-            </div>
-        </section>
-    </div>
-    <div class="column is-4">
-        <section class="section toc">
-            <div class="container content is-small">
-                <h1>TOC:</h1>
-                <hr>
+<div class="container col-md-6 post">
+    <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-10">
+            <h1>{{ .Title }}</h1>
+            {{ partial "post-header.html" . }}
+            {{ .Content }}
+        </div>
+        <div class="col-md-2">
+            <div class="col-md-12 toc">
+                <h3>TOC:</h3>
                 {{ .TableOfContents }}
             </div>
-        </section>
+        </div>
     </div>
 </div>
 {{ end }}
