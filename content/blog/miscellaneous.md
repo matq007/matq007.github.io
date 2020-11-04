@@ -6,9 +6,7 @@ tags: [phd, knowledge, best-practice]
 layout: "post"
 ---
 
-## Reference manager
-
-### Zotero setup
+## Reference manager (Zotero)
 
 * Install Zotero + Zotero Connector
 * Plugins
