@@ -2,26 +2,10 @@
 
 <div class="container col-md-6 post">
     <div class="row flex-column-reverse flex-md-row">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <h1>{{ .Title }}</h1>
             {{ partial "post-header.html" . }}
             {{ .Content }}
-
-        <script src="https://utteranc.es/client.js"
-            repo="matq007/matq007.github.io"
-            issue-term="pathname"
-            label="comments"
-            theme="photon-dark"
-            crossorigin="anonymous"
-            async>
-    </script>
-
-        </div>
-        <div class="col-md-2">
-            <div class="col-md-12 toc">
-                <h3>TOC:</h3>
-                {{ .TableOfContents }}
-            </div>
         </div>
     </div>
 </div>
