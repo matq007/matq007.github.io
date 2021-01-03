@@ -25,7 +25,7 @@
             <hr>
             <h3>Latest articles</h3>
             <ul>
-                {{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
+                {{- range ( where .Site.RegularPages "Section" "blog" | first 3 ) }}
                 <li>
                     <span class="text-muted">{{.Page.PublishDate.Format "02/01/2006"}}</span>
                     <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>

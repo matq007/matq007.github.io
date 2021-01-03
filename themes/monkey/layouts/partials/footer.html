@@ -1,3 +1,37 @@
+<script>
+    var body = document.body;
+    var switcher = document.getElementsByClassName('js-toggle')[0];
+
+    //Click on dark mode icon. Add dark mode classes and wrappers. Store user preference through sessions
+    switcher.addEventListener("click", function() {
+        this.classList.toggle('js-toggle--checked');
+        this.classList.add('js-toggle--focus');
+        //If dark mode is selected
+        if (this.classList.contains('js-toggle--checked')) {
+            let elementArray = body.getElementsByTagName("*");
+            for (let i = 0; i < elementArray.length; ++i) {
+                elementArray[i].classList.remove("light-mode");
+            }
+            setTimeout(function() {
+                localStorage.removeItem('lightMode');
+            }, 100);
+        } else {
+            let elementArray = body.getElementsByTagName("*");
+            for (let i = 0; i < elementArray.length; ++i) {
+                elementArray[i].classList.add("light-mode");
+            }
+            localStorage.setItem('lightMode', 'true');
+        }
+    })
+
+    //Check Storage. Keep user preference on page reload
+    if (localStorage.getItem('lightMode')) {
+        //body.classList.add('light-mode');
+        switcher.classList.add('js-toggle--checked');
+        body.classList.add('light-mode');
+    }
+</script>
+
 <footer class="footer">
     <div class="container">
         <p>&copy; {{ dateFormat "2006" now }} Martin Proks developed using <a href="https://gohugo.io/">Hugo</a> and custom monkey theme.</p>
