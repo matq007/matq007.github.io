@@ -2,7 +2,7 @@
 layout: post
 title: "Miscellaneous"
 date: 2020-11-04
-tags: [phd, knowledge, best-practice]
+tags: [phd, knowledge, best-practices]
 layout: "post"
 ---
 
