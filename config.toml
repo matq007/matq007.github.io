@@ -5,6 +5,7 @@ languageCode = "en-us"
 title = "Martin Proks (@mproksik)"
 theme = "monkey"
 googleAnalytics = "UA-148477750-1"
+disqusShortname = "http-matq007-github-io"
 
 [author]  
   name = "Martin Proks" 
