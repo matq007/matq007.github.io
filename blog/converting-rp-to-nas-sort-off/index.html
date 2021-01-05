@@ -1,2 +1,75 @@
-<div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
-var d=document,s=d.createElement('script');s.async=true;s.src='//'+"http-matq007-github-io"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=description content><meta name=author content="Martin Proks @mproksik"><title>Converting RP to NAS, sort off</title><link rel=icon href=https://matq007.github.io><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel=stylesheet><link type=text/css rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css><link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css integrity=sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh crossorigin=anonymous><link type=text/css rel=stylesheet href=https://matq007.github.io/css/main.css><script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous></script><script src=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js integrity=sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 crossorigin=anonymous></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-148477750-1','auto');ga('send','pageview');}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-22B85G6Q44"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-22B85G6Q44');</script></head><body><body class=site><header><nav class="navbar navbar-expand-md navbar-dark"><div class="container col-md-7"><a class=navbar-brand href=/>Martin <span class=navbar-surname>PROKS</span></a><div class="navbar-collapse collapse w-100 order-3" id=navbarToggler><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/blog/>Blog</a></li><li class=nav-item><a class=nav-link href=/about/>About</a></li><li class=nav-item><a class=nav-link href=/projects/>Projects</a></li><li class=nav-item><div class="nav-link js-toggle-wrapper"><div class=js-toggle><div class=js-toggle-track><div class=js-toggle-track-check><i class="fas fa-moon" style=color:gold></i></div><div class=js-toggle-track-x><i class="fas fa-sun" style=color:gold></i></div></div><div class=js-toggle-thumb></div><input class=js-toggle-screenreader-only type=checkbox aria-label="Switch between Dark and Light mode"></div></div></li></ul></div><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarToggler aria-controls=navbarToggler aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button></div></nav></header><main role=main><div class="container col-md-6 post"><div class="row flex-column-reverse flex-md-row"><div class=col-md-12><h1>Converting RP to NAS, sort off</h1><p class=published-and-tags><p class=text-muted><span class=text-muted>published at 17/08/2017</span><br><a href=https://matq007.github.io/tags/raspberry-pi class="badge badge-primary">#raspberry-pi</a>
+<a href=https://matq007.github.io/tags/samba class="badge badge-primary">#samba</a>
+<a href=https://matq007.github.io/tags/ufw class="badge badge-primary">#ufw</a>
+<a href=https://matq007.github.io/tags/ssh class="badge badge-primary">#ssh</a></p><nav id=TableOfContents><ul><li><a href=#round-1>Round 1</a></li><li><a href=#round-2>Round 2</a></li><li><a href=#conclusion--summary>Conclusion & Summary</a></li><li><a href=#sources>Sources</a></li></ul></nav><hr><p>Approximately two years ago I've been playing around with an idea of purchasing a NAS (Network attached storage). As a student looking at the prices, I've decided to make my own budget one. How hard can it right?
+I saw some Youtube videos where people were building NAS using Raspberry Pi (RP). So I've started digging for some Pi machine. I ended up choosing between Banana Pi (BP) and RP 2. The advantage of BP was that it had SATA connector right on the board, which would give me better read/write throughput. Ok, let's try it out.</p><h2 id=round-1>Round 1</h2><p>I found a BP Pro on site alza.cz and later on found out that it was actually a BP M1+. Never mind, the hardware configuration was the same. I've downloaded and installed Raspbian OS. The installation is pretty straight forward and can be found on the page or youtube.
+Ok, the installation was successful. Now let's try to connect my external drive. For storage, I've used a 2.5&rdquo; disk from my old notebook. Normally, if you want to connect a drive like this, you have to have an external adapter to power it up. With BP you don't need any power adapter, the power is provided by the board when you connect the drive (Cha ching!). After connecting the disk, it's time to mount it.
+Unfortunately, no new device was detected. I guess I really need an external power adapter. Tried the adapter, still nothing. Ok, now this is getting frustrating. Maybe the disk is not working properly, let's connect it to my work station. The disk was detected immediately. I've spent the whole day trying to connect the drive to the BP, but with no luck.
+No worries, I can still buy RP 2 and try that instead. I've returned the BP and ordered RP 2. After one week it arrived and I could continue with my experiment.</p><h2 id=round-2>Round 2</h2><p>The process was the same as before. Connect all the cables to RP and install the latest Rasbian OS. However this time, there was no SATA connector. That's why I ordered a case for 2.5&rdquo; hard drive with USB 3.0. Yes, I know RP 2 has only USB 2.0 but I can reuse this case later in future for something else. But wait, you said that external drives have to have an external power supply. How are you going to power the drive if it's already in a case? The cool part about RP is that you can play with the configuration. In order to connect an external drive, you have to modify config.txt file and add this line max_usb=1. With this setting, RP will use more voltage for USB, thus making it possible connecting an external drive. Ready for a test run? Yes, it worked! Mission successful!
+Configuration
+Finally, we can move on to the next step. Installing Samba for sharing and ufw for creating firewall rules. Let's not forget to also setup SSH (I would like to disconnect the keyboard and monitor that are now connected to the RP).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Update your /etc/fstab to mount the drive on boot</span>
+<span style=color:#75715e># Installation and update</span>
+sudo apt-get update -y <span style=color:#f92672>&amp;&amp;</span> sudo apt-get upgrade
+sudo apt-get install samba ufw
+<span style=color:#75715e># Setting up Samba</span>
+<span style=color:#75715e># Create user on raspberry:</span>
+sudo useradd &lt;USERNAME&gt; - shell /bin/false
+<span style=color:#75715e># Set permissions:</span>
+sudo chown &lt;USERNAME&gt; &lt;PATH_TO_DRIVE&gt;
+<span style=color:#75715e># Create password for samba:</span>
+sudo smbpasswd -a &lt;USERNAME&gt;
+<span style=color:#75715e># Update configuration</span>
+vi /etc/samba/smb.conf
+<span style=color:#f92672>[</span>SHARE<span style=color:#f92672>]</span>
+path <span style=color:#f92672>=</span> /mnt/share/
+valid users <span style=color:#f92672>=</span> &lt;USERNAME&gt;
+read only <span style=color:#f92672>=</span> No
+create mask <span style=color:#f92672>=</span> <span style=color:#ae81ff>0777</span>
+directory mask <span style=color:#f92672>=</span> <span style=color:#ae81ff>0777</span>
+<span style=color:#75715e># Save and exit vim (!x or !wq)</span>
+<span style=color:#75715e># Verify the correctness of configuration</span>
+testparm
+<span style=color:#75715e># Start samba</span>
+sudo systemctl start samba
+<span style=color:#75715e># Check that status, you should see green Active</span>
+sudo systemctl status samba
+<span style=color:#75715e># Auto start samba</span>
+sudo systemctl enable samba
+<span style=color:#75715e># Setting up firewall rules</span>
+<span style=color:#75715e># I didn&#39;t have Samba listed in apps so I created my own</span> 
+vi /etc/ufw/applications.d/ufw-fileserver
+<span style=color:#f92672>[</span>samba<span style=color:#f92672>]</span>
+title<span style=color:#f92672>=</span>Samba
+description<span style=color:#f92672>=</span>Samba
+ports<span style=color:#f92672>=</span>137,138,139,445/tcp
+<span style=color:#75715e># After saving it&#39;s time to setup some firewall rules</span>
+<span style=color:#75715e># 1. I want to access ssh but I wan&#39;t to limit it</span>
+<span style=color:#75715e># 2. I want to access Samba only on my local network</span>
+sudo ufw limit ssh
+sudo ufw allow from XXX.XXX.X.0/16 to any app Samba
+sudo ufw enable
+<span style=color:#75715e># Check the status that it works</span>
+sudo ufw status
+</code></pre></div><p>Backup the most important data on USB stick
+I know, I know, this is insane and bold. You should definitely not do this at home! I didn't have another drive available, so I found some 4GB USB stick, which I used as my secondary drive, where I've backed up only the most important documents that my parents use.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Update /etc/fstab to mount the USB stick</span>
+<span style=color:#75715e># Create a backup script</span>
+vi ~/backup
+<span style=color:#75715e>#!/bin/bash</span>
+rsync -av --delete &lt;DRIVE_PATH&gt;/Important/ &lt;BACKUP_PATH&gt;/Important
+<span style=color:#75715e># Make the file executable and run it as a cron job</span> 
+<span style=color:#75715e># every day at 1.00am</span>
+chmod +x backup
+crontab -e
+<span style=color:#ae81ff>0</span> <span style=color:#ae81ff>1</span> * * * ~/backup
+</code></pre></div><p>I've setup one more backup on my desktop station. I am using Free FileSync application for backing up data. I'm using a real-time backup with mirroring option. I've setup one more rule to check my share folder and copy again only the most important files to the backup drive to my desktop station. This way if everything fails, I should still have some backup.
+How about some small scripts?
+I've played around with the first setup and created some small scripts like a welcome page, sending notifications to slack on login, etc. You can find some of them here and here.</p><h2 id=conclusion--summary>Conclusion & Summary</h2><p>The project started with an idea of using SATA connector for connecting the drive and sharing it locally. That quite didn't happen, so I ended up switching to USB 2.0 on RP which has lower read/write speeds. Nevertheless, the end result was fine and the system actually worked.
+Now hold on a minute, why would you go through so much trouble when you could have just connected the drive to your router and share it?
+I could have done it right after I discovered problems with the BP. But I was curious how it would work with RP. Of course, this is not really a NAS (well sort off is), but the fun and learning outcome was worth it. To be honest, I've been running this setup at home for over a year without any problem what so ever.
+This was a very interesting project with many ups and downs. I don't encourage you to build the same setup. I've just wanted to demonstrate what can be done by reusing an old hard drive and some free time. If you have any questions or found some errors, let me know in the comments below.</p><h2 id=sources>Sources</h2><ul><li><a href=https://debian-administration.org/article/530/SSH_with_authentication_key_instead_of_password>SSH</a></li><li><a href=https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21>samba</a></li><li><a href=https://help.ubuntu.com/community/UFW>ufw</a></li></ul></div></div><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"http-matq007-github-io"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></main><script>var body=document.body;var switcher=document.getElementsByClassName('js-toggle')[0];switcher.addEventListener("click",function(){this.classList.toggle('js-toggle--checked');this.classList.add('js-toggle--focus');if(this.classList.contains('js-toggle--checked')){let elementArray=body.getElementsByTagName("*");for(let i=0;i<elementArray.length;++i){elementArray[i].classList.remove("light-mode");}
+setTimeout(function(){localStorage.removeItem('lightMode');},100);}else{let elementArray=body.getElementsByTagName("*");for(let i=0;i<elementArray.length;++i){elementArray[i].classList.add("light-mode");}
+localStorage.setItem('lightMode','true');}})
+if(localStorage.getItem('lightMode')){switcher.classList.add('js-toggle--checked');body.classList.add('light-mode');}</script><footer class=footer><div class=container><p>&copy; 2021 Martin Proks developed using <a href=https://gohugo.io/>Hugo</a> and custom monkey theme.</p></div></footer></body></html>
