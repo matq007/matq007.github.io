@@ -33,3 +33,6 @@ disqusShortname = "http-matq007-github-io"
 [outputs]
   home = [ "HTML", "RSS" ]
   section = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+  unsafe= true
