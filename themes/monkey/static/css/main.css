@@ -54,7 +54,7 @@ ul {
   list-style-type: "»  ";
 }
 
-#TableOfContents li > :first-child {
+nav#TableOfContents li > :first-child {
   color: #ffffff;
 }
 
