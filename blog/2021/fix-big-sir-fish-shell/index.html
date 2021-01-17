@@ -3,7 +3,7 @@
 <a href=https://matq007.github.io/tags/brew class="badge badge-primary">#brew</a>
 <a href=https://matq007.github.io/tags/macos class="badge badge-primary">#macos</a></p><nav id=TableOfContents><ul><li><a href=#how-to-fix-without-updating>How to fix without updating?</a></li></ul></nav><hr><p><strong>UPDATE</strong>: Upgrading to fish >3 solves the issues now.</p><p>If you have decided to upgrade to the latest macOS Big Sur <code>10.14.6</code>,
 you might have experienced an issue with slow autocomplete in <code>fish-shell</code>.</p><p>Due to change to read-only permissions for <code>whatis</code> [<a href=https://github.com/fish-shell/fish-shell/issues/6270>1</a>] the man pages
-can't be updated for <code>/usr/share/man</code>. Therefore, the fish is switching to
+can&rsquo;t be updated for <code>/usr/share/man</code>. Therefore, the fish is switching to
 using <code>apropos</code> [<a href=https://apple.stackexchange.com/questions/374025/errors-from-whatis-command-unable-to-rebuild-database-with-makewhatis>2</a>].</p><h2 id=how-to-fix-without-updating>How to fix without updating?</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># create backup</span>
 cp /usr/local/share/fish/functions/__fish_describe_command.fish <span style=color:#ae81ff>\
 </span><span style=color:#ae81ff></span>   /usr/local/share/fish/functions/__fish_describe_command.fish.old
