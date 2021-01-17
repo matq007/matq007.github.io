@@ -107,6 +107,7 @@ nav#TableOfContents li > :first-child {
 
 .weekly i {
   color: #E06C75;
+  margin-right: 0.3rem;
 }
 
 .posts {
