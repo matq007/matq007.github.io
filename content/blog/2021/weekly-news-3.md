@@ -7,6 +7,7 @@ tags: [weekly]
 
 ## <i class="fas fa-bullhorn"></i> News
 
+* **Nature Computational Science** [issue #1](https://www.nature.com/natcomputsci/volumes/1/issues/1) is out 🎉
 * [Pirated Academic Database Sci-Hub Is Now on the ‘Uncensorable Web’](https://www.nasdaq.com/articles/pirated-academic-database-sci-hub-is-now-on-the-uncensorable-web-2021-01-11)
 
 ---
