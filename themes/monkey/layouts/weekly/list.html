@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="container col-md-6 posts">
+  <div class="col-md-12">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <h1><a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <div class="float-left">
+        <span class="text-muted">{{ .PublishDate.Format "02/01/2006" }}</span>
+        {{ with .Params.tags }}
+          {{ range . }}
+            {{ $href := print (absURL "tags/") (urlize .) }}
+              <a href="{{ $href }}" class="badge badge-primary">#{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+      {{.Summary | safeHTML | truncate 200}} 
+      <br>
+      <hr>
+    {{ end }}
+    
+  </div>
+</div>
+
+{{ end }}
