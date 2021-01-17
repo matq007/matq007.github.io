@@ -19,7 +19,7 @@ h1 {
   color: #f5f5f5;
 }
 
-h2:before {
+.post h2:before {
   content: "##";
   color: #E06C75;
   margin-right: 6px;
@@ -52,6 +52,10 @@ pre {
 
 ul { 
   list-style-type: "»  ";
+}
+
+#TableOfContents li > :first-child {
+  color: #ffffff;
 }
 
 /* Navbar section */
@@ -95,6 +99,10 @@ ul {
 
 .weekly {
   margin-top: 30px;
+}
+
+.weekly i {
+  color: #E06C75
 }
 
 .posts {
