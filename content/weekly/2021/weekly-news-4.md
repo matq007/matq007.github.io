@@ -70,31 +70,49 @@ _Splicing varies across brain regions, but the single-cell resolution of regiona
 
 ## <i class="far fa-keyboard"></i> Programming
 
-* [Improving Indian Language Transliterations in Google Maps](https://ai.googleblog.com/2021/01/improving-indian-language.html)
-* [Google Details Patched Bugs in Signal, FB Messenger, JioChat Apps](https://thehackernews.com/2021/01/google-discloses-flaws-in-signal-fb.html)
-* [Why you should never ever use NixOS](https://hands-on.cloud/why-you-should-never-ever-use-nixos/)
+### [Improving Indian Language Transliterations in Google Maps](https://ai.googleblog.com/2021/01/improving-indian-language.html)
+
+### [Google Details Patched Bugs in Signal, FB Messenger, JioChat Apps](https://thehackernews.com/2021/01/google-discloses-flaws-in-signal-fb.html)
+
+### [Why you should never ever use NixOS](https://hands-on.cloud/why-you-should-never-ever-use-nixos/)
+
+Some interesting points about NixOS nad its configuration.
 
 ---
 
 ## <i class="fas fa-toolbox"></i> Tools
 
-* [mackup: Keep your application settings in sync (OS X/Linux)](https://github.com/lra/mackup)
-* [covariants: Real-time updates and information about key SARS-CoV-2 variants, plus the scripts that generate this information.](https://github.com/hodcroftlab/covariants)
+### [mackup](https://github.com/lra/mackup)
+
+Keep your application settings in sync (OS X/Linux)
+
+### [covariants](https://github.com/hodcroftlab/covariants)
+
+Real-time updates and information about key SARS-CoV-2 variants, plus the scripts that generate this information.
 
 ---
 
 ## <i class="fas fa-graduation-cap"></i> Guides and Tutorials
 
-* [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM)
-* [From Novice to Expert: How to Write a Configuration file in Python](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3)
-* [Testing Python Applications with Pytest [Guide]](https://stribny.name/blog/pytest/)
+### [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM)
+
+Replace that ShinyApp with Streamlit.
+
+### [From Novice to Expert: How to Write a Configuration file in Python](https://towardsdatascience.com/from-novice-to-expert-how-to-write-a-configuration-file-in-python-273e171a8eb3)
+
+Multiple ways how to create configuration file for Python: `YAML/JSON`, `configparser`, `python-dotenv` or `dynaconf`.
+
+### [Testing Python Applications with Pytest [Guide]](https://stribny.name/blog/pytest/)
+
+Guide how to write tests in python with coverage reports.
 
 ---
 
 ## <i class="fas fa-rss"></i> Others
 
-* [Imposters hijack journal’s peer review process to publish substandard papers](https://www.chemistryworld.com/news/imposters-hijack-journals-peer-review-process-to-publish-substandard-papers/4013050.article)
-* [Award-winning mentors share their secrets](https://www.nature.com/articles/d41586-021-00081-4)
+### [Imposters hijack journal’s peer review process to publish substandard papers](https://www.chemistryworld.com/news/imposters-hijack-journals-peer-review-process-to-publish-substandard-papers/4013050.article)
+
+### [Award-winning mentors share their secrets](https://www.nature.com/articles/d41586-021-00081-4)
 
 ---
 
