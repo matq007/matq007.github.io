@@ -24,7 +24,7 @@ _Kobak et al., 2021 Nat Biotechnol_
 <a href="#" class="badge badge-primary">#scrna-seq</a>
 <a href="#" class="badge badge-primary">#dimension-reduction</a>
 
-## [Five reasons why researchers should learn to love the command line](https://www.nature.com/articles/d41586-021-00263-0)
+### [Five reasons why researchers should learn to love the command line](https://www.nature.com/articles/d41586-021-00263-0)
 
 _Jeffrey M. Perkel_
 
@@ -32,7 +32,7 @@ _Jeffrey M. Perkel_
 
 _The text interface is intimidating, but can save researchers from mundane computing tasks. Just be sure you know what you’re doing._
 
-## [Scientists call for fully open sharing of coronavirus genome data](https://www.nature.com/articles/d41586-021-00305-7)
+### [Scientists call for fully open sharing of coronavirus genome data](https://www.nature.com/articles/d41586-021-00305-7)
 
 _Richard Van Noorden_
 
@@ -40,7 +40,7 @@ _Richard Van Noorden_
 
 _Other researchers say that restrictions at the largest SARS-CoV-2 genome platform encourage fast sharing while protecting data providers’ rights._
 
-## [GeneWalk identifies relevant gene functions for a biological context using network representation learning](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02264-8)
+### [GeneWalk identifies relevant gene functions for a biological context using network representation learning](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02264-8)
 
 _Ietswaart et al., 2021 Genome Biol_
 
@@ -48,7 +48,7 @@ _Ietswaart et al., 2021 Genome Biol_
 
 _A bottleneck in high-throughput functional genomics experiments is identifying the most important genes and their relevant functions from a list of gene hits. Gene Ontology (GO) enrichment methods provide insight at the gene set level. Here, we introduce GeneWalk ([github.com/churchmanlab/genewalk](github.com/churchmanlab/genewalk)) that identifies individual genes and their relevant functions critical for the experimental setting under examination. After the automatic assembly of an experiment-specific gene regulatory network, GeneWalk uses representation learning to quantify the similarity between vector representations of each gene and its GO annotations, yielding annotation significance scores that reflect the experimental context. By performing gene- and condition-specific functional analysis, GeneWalk converts a list of genes into data-driven hypotheses._
 
-## [Adversarial generation of gene expression data](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab035/6104825)
+### [Adversarial generation of gene expression data](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab035/6104825)
 
 _Viñas et al., 2021 Bioinformatics_
 
