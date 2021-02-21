@@ -1,7 +1,7 @@
 ---
 layout: weekly
 title: "Weekly news #8"
-date: 2021-MM-DD
+date: 2021-02-21
 tags: [weekly]
 ---
 
