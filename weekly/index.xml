@@ -21,4 +21,8 @@ Abstract
 Programming Lorem impus
 Tools Lorem impus
 Guides and Tutorials Lorem impus
-Others Did you know?</description></item></channel></rss>
+Others Did you know?</description></item><item><title>Weekly news #8</title><link>https://matq007.github.io/weekly/2021/weekly-news-8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matq007.github.io/weekly/2021/weekly-news-8/</guid><description>News Mars Perseverance Photo Booth Huston, the Rover landed on Mars! Science/Bioinformatics Blame the Data Ten simple rules for getting started with command-line bioinformatics Brandies et al., PLoS Comput Biol 2021
+#command-line
+Robust decomposition of cell type mixtures in spatial transcriptomics Cable et al., Nat Biotechnol 2021
+#spatial-transcriptomics
+_A limitation of spatial transcriptomics technologies is that individual measurements may contain contributions from multiple cells, hindering the discovery of cell-type-specific spatial patterns of localization and expression.</description></item></channel></rss>
