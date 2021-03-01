@@ -107,6 +107,14 @@ Interesting take on mentioned languages to replace `C`.
 
 Impressive speed bumps in `Nextcloud 21`.
 
-### [What is a Discrete Fourier Transform? | Week 14 | MIT 18.S191 Fall 2020 | Grant Sanderson](https://www.youtube.com/watch?v=g8RkArhtCc4)
+## <i class="far fa-surprise"></i> Did you know?
 
 Explanation and implementation of Discrete Fourier Transformation in Julia.
+
+<iframe width="560"
+  height="315"
+  src="https://www.youtube.com/embed/g8RkArhtCc4"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
