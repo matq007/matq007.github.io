@@ -13,7 +13,7 @@ tags: [weekly]
 
 ## <i class="fas fa-dna"></i> Science/Bioinformatics
 
-### [Accurate feature selection improves single-cell RNA-seq cell clustering]()
+### [Accurate feature selection improves single-cell RNA-seq cell clustering](https://academic.oup.com/bib/advance-article-abstract/doi/10.1093/bib/bbab034/6145899?redirectedFrom=fulltext)
 
 _Su et al.,Briefings in Bioinformatics 2021_
 
@@ -42,9 +42,6 @@ _Carney at al., Nat Mach Intell 2021_
 <a href="#" class="badge badge-primary">#ai</a>
 
 _Computational models that capture the nonlinear processing of the inner ear have been prohibitively slow to use for most machine-hearing systems. A convolutional neural network model replicates hallmark features of cochlear signal processing, potentially enabling real-time applications._
-
-ReSeq simulates realistic Illumina high-throughput sequencing data
-https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7#Sec14
 
 ---
 
