@@ -48,14 +48,6 @@ https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7#Sec1
 
 ---
 
-## <i class="far fa-keyboard"></i> Programming
-
-### []()
-
-Lorem impus
-
----
-
 ## <i class="fas fa-toolbox"></i> Tools
 
 ### [jam-systems/jam](https://jam.systems/)
