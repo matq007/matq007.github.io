@@ -10,6 +10,7 @@ tags: [weekly]
 * [Brave buys a search engine, promises no tracking, no profiling – and may even offer a paid-for, no-ad version](https://www.theregister.com/2021/03/03/brave_buys_a_search_engine)
 * [R Conferences for 2021](https://rviews.rstudio.com/2021/03/03/2021-r-conferences/)
 * [Google Fonts](https://fonts.google.com/icons)
+* [Episode 1: Talking open source, bioinformatics and maple syrup with Phil Ewels of SciLifeLab](https://www.youtube.com/watch?v=Y619gTTSz3I)
 
 ---
 
