@@ -1,5 +1,6 @@
 ---
 layout: weekly
+draft: true
 title: "Weekly news #"
 date: 2021-MM-DD
 tags: [weekly]
