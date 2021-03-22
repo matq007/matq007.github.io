@@ -63,14 +63,6 @@ _Epigenetics studies inheritable and reversible modifications of DNA that allow 
 
 ---
 
-## <i class="far fa-keyboard"></i> Programming
-
-### []()
-
-Lorem impus
-
----
-
 ## <i class="fas fa-toolbox"></i> Tools
 
 ### [manutamminen/blaster](https://github.com/manutamminen/blaster)
