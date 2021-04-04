@@ -1,7 +1,7 @@
 ---
 layout: weekly
 title: "Bi-Weekly news #13 and #14"
-date: 2021-03-04
+date: 2021-04-04
 tags: [weekly]
 ---
 
