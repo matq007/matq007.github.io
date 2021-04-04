@@ -188,7 +188,7 @@ Cognitively-Oriented Approach to Improving Program Readability by _Aleksandr Sko
 
 ---
 
-## <i class="far fa-surprise"></i> Did you know?
+## <i class="fas fa-rss"></i> Others
 
 ### [OpenCell](https://opencell.czbiohub.org/)
 
