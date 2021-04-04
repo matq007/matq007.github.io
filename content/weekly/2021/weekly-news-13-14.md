@@ -8,7 +8,7 @@ tags: [weekly]
 ## <i class="fas fa-bullhorn"></i> News
 
 * [Richard Stallman is Back!](https://news.itsfoss.com/richard-stallman-is-back-at-fsf/)
-* [Gnome 40i sout with some major UI changes](https://forty.gnome.org/)
+* [Gnome 40 is out with some major UI changes](https://forty.gnome.org/)
 
 ---
 
