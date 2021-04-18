@@ -110,8 +110,9 @@ Use open source tools to protect your Linux environment from breaches.
 * [Rust is for Professionals](https://gregoryszorc.com/blog/2021/04/13/rust-is-for-professionals/)
 * [Unifying the CUDA Python Ecosystem](https://developer.nvidia.com/blog/unifying-the-cuda-python-ecosystem/)
 
-## <i class="fas fa-youtube"></i> Less is more: Why our brains struggle to subtract
+## <i class="fab fa-youtube"></i> Less is more: Why our brains struggle to subtract
 
+<br />
 <iframe width="560" height="315"
   src="https://www.youtube-nocookie.com/embed/1y32OpI2_LM"
   title="YouTube video player" frameborder="0"
