@@ -45,7 +45,7 @@ _Cortal et al., Nat Biotechnol (2021)_
 
 _Because of the stochasticity associated with high-throughput single-cell sequencing, current methods for exploring cell-type diversity rely on clustering-based computational approaches in which heterogeneity is characterized at cell subpopulation rather than at full single-cell resolution. Here we present Cell-ID, a clustering-free multivariate statistical method for the robust extraction of per-cell gene signatures from single-cell sequencing data. We applied Cell-ID to data from multiple human and mouse samples, including blood cells, pancreatic islets and airway, intestinal and olfactory epithelium, as well as to comprehensive mouse cell atlas datasets. We demonstrate that Cell-ID signatures are reproducible across different donors, tissues of origin, species and single-cell omics technologies, and can be used for automatic cell-type annotation and cell matching across datasets. Cell-ID improves biological interpretation at individual cell level, enabling discovery of previously uncharacterized rare cell types or cell states. Cell-ID is distributed as an open-source R software package._
 
-### [PCprophet: a framework for protein complex prediction and differential analysis using proteomic data]()
+### [PCprophet: a framework for protein complex prediction and differential analysis using proteomic data](https://www.nature.com/articles/s41592-021-01107-5)
 
 _Fossati et al., Nat Methods (2021)_
 
