@@ -1,6 +1,5 @@
 ---
 layout: weekly
-draft: true
 title: "Weekly news #18"
 date: 2021-05-01
 tags: [weekly]
