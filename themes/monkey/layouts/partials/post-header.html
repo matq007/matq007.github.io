@@ -1,13 +1,14 @@
-<p class="published-and-tags">
-  <p class="text-muted">
-    <span class="text-muted">published at {{ .PublishDate | time.Format .Site.Params.dateform }}</span>
-    {{ with .Params.tags }}
-    <br>
-    {{ range . }}
-    {{ $href := print (absURL "tags/") (urlize .) }}
-    <a href="{{ $href }}" class="badge badge-primary">#{{ . }}</a>
-    {{ end }}
-  </p>
+<hgroup>
+  <h1>{{ .Title }}</h1>
+  <h2>published at {{ .PublishDate | time.Format .Site.Params.dateform }}</h2>
+</hgroup>
+
+{{ with .Params.tags }}
+  {{ range . }}
+  {{ $href := print (absURL "tags/") (urlize .) }}
+  <a href="{{ $href }}" class="badge badge-primary">#{{ . }} </a>
   {{ end }}
-  {{/*  {{ .TableOfContents }}  */}}
-  <hr>
+{{ end }}
+
+<br>
+<hr>

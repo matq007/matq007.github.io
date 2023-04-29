@@ -34,6 +34,15 @@ p {
     font-size: 16px;
 }
 
+hgroup {
+    margin-bottom: 10px
+}
+
+hgroup h2 {
+    margin-top: 8px;
+    font-style: italic;
+}
+
 .footer {
     position: fixed;
     left: 0;
