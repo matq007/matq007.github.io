@@ -1,13 +1,12 @@
 {{ define "main" }}
 
-<div class="container col-md-6 intro">
-    <div class="row">
-        <div class="col-md-8">
+    <div class="row center-xs hello">
+        <div class="col-xs-8 center-xs start-md">
             <h1>Why hello there!</h1>
             <p>
-                I am a <span class="highlight-intro">Bioinformatics PhD student</span> <a
-                    href="https://danstem.ku.dk/">@DanStem</a>, University of Copenhagen in Denmark.
-                My primary focus is <span class="highlight-intro">Stem Cell and Developmental Biology</span>.
+                I am a <strong>Bioinformatics PhD student</strong> <a
+                    href="http://renew.ku.dk">@reNEW</a>, University of Copenhagen in Denmark. <br>
+                My primary focus is <strong>Computational stem cell research</strong>.
             </p>
             <p>You can follow me on
                 <span class="highlight-intro">Twitter</span> <a href="https://twitter.com/mproksik"><i class="fab fa-twitter"></i></a>,
@@ -16,31 +15,19 @@
                 <span class="highlight-intro">LinkedIn</span> <a href="https://linkedin.com/in/martinproks"><i class="fab fa-linkedin"></i></a> 
             </p>
             <hr>
-            <h3>Latest articles</h3>
+            <h2>Latest articles</h2>
             <ul>
-                {{- range ( where .Site.RegularPages "Section" "blog" | first 3 ) }}
+                {{- range ( where .Site.RegularPages "Section" "posts" | first 3 ) }}
                 <li>
-                    <span class="text-muted">{{.Page.PublishDate.Format "02/01/2006"}}</span>
-                    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </li>
-                {{ end }}
-            </ul>
-
-            <h3>Latest weekly</h3>
-            <ul>
-                {{- range ( where .Site.RegularPages "Section" "weekly" | first 3 ) }}
-                <li>
-                    <span class="text-muted">{{.Page.PublishDate.Format "02/01/2006"}}</span>
-                    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{ .PublishDate | time.Format .Site.Params.dateform }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </li>
                 {{ end }}
             </ul>
 
         </div>
-        <div class="col-md-4 logo">
-            <img class="img-fluid" src="img/me.svg" alt="Martin Proks">
+        <div class="col-xs-2">
+            <img src="img/me.svg" alt="Martin Proks">
         </div>
     </div>
-</div>
 
 {{ end }}

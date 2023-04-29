@@ -1,23 +1,19 @@
 {{ define "main" }}
 
-<div class="container col-md-6 posts">
-  <div class="col-md-12">
-    {{ range .Pages.ByPublishDate.Reverse }}
-      <h1><a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-      <div class="float-left">
-        <span class="text-muted">{{ .PublishDate.Format "02/01/2006" }}</span>
-        {{ with .Params.tags }}
-          {{ range . }}
-            {{ $href := print (absURL "tags/") (urlize .) }}
-              <a href="{{ $href }}" class="badge badge-primary">#{{ . }}</a>
-          {{ end }}
-        {{ end }}
-      </div>
-      {{.Summary | safeHTML | truncate 200}} 
-      <br>
-      <hr>
-    {{ end }}
-    
+<div class="row center-xs">
+  <div class="col-xs-10 center-xs start-md">
+
+{{ range (where .Site.RegularPages "Type" "in" (slice "weekly")).GroupByDate "2006" }}
+  <h2>{{ .Key }}</h2>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "02-01-2006" ) }}</span>
+      <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end -}}
+  </ul>
+  {{ end }}
   </div>
 </div>
 

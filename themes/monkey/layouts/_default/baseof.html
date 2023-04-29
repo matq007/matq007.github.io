@@ -2,14 +2,16 @@
 <html lang="en">
 {{ partial "head.html" . }}
 
-<body class="site">
-  <!-- Navbar -->
+<body>
+  
   {{ partial "navbar.html" . }}
-  <!--  Main content -->
-  <main role="main">
+  
+  <main>
+    <div class="container">
     {{ block "main" . }} {{ end }}
-  </main> 
-  <!-- Footer -->
+  </div>
+  </main>
+
   {{ partial "footer.html" . }}
 </body>
 

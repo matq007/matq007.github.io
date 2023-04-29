@@ -1,12 +1,11 @@
 {{ define "main" }}
 
-<div class="container col-md-6 weekly">
-    <div class="row flex-column-reverse flex-md-row">
-        <div class="col-md-12">
-            <h1>{{ .Title }}</h1>
-            {{ partial "post-header.html" . }}
-            {{ .Content }}
-        </div>
-    </div>
+<div class="row center-xs">
+    <div class="col-xs-10 center-xs start-md">
+        <h1>{{ .Title }}</h1>
+        {{ partial "post-header.html" . }}
+        {{ .Content }}
+    <div>
 </div>
+
 {{ end }}

@@ -13,23 +13,23 @@ disqusShortname = "http-matq007-github-io"
 
 [menu]
     [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
+    name = "Posts"
+    url = "/posts/"
     weight = 2
-
-    [[menu.main]]
-    name = "Weekly"
-    url = "/weekly/"
-    weight = 3
 
     [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 3
 
     [[menu.main]]
     name = "Projects"
     url = "/projects/"
+    weight = 4
+
+    [[menu.main]]
+    name = "Weekly"
+    url = "/weekly/"
     weight = 5
 
 [taxonomies]
@@ -41,3 +41,6 @@ disqusShortname = "http-matq007-github-io"
 
 [markup.goldmark.renderer]
   unsafe= true
+
+[params]
+  dateform = "02-01-2006"

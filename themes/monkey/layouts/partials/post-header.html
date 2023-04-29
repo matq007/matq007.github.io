@@ -1,6 +1,6 @@
 <p class="published-and-tags">
   <p class="text-muted">
-    <span class="text-muted">published at {{ .PublishDate.Format "02/01/2006" }}</span>
+    <span class="text-muted">published at {{ .PublishDate | time.Format .Site.Params.dateform }}</span>
     {{ with .Params.tags }}
     <br>
     {{ range . }}
@@ -9,5 +9,5 @@
     {{ end }}
   </p>
   {{ end }}
-  {{ .TableOfContents }}
+  {{/*  {{ .TableOfContents }}  */}}
   <hr>
