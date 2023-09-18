@@ -1,0 +1,29 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+title = "Martin PROKS"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params]
+  isoCode = "en"
+  displayName = "EN"
+  rtl = false
+
+  dateFormat = "2 January 2006"
+
+  mainSections = ["posts"]
+  # description = "My awesome website"
+
+[author]
+  name = "Martin Proks"
+  image = "img/me.png"
+  headline = "I make comptuters go wild!"
+  bio = "I am a Bioinformatics PhD student @reNEW, University of Copenhagen in Denmark. My primary focus is Computational stem cell research."
+  links = [
+    { twitter = "https://twitter.com/mproksik" },
+    { linkedin = "https://linkedin.com/in/martinproks" },
+    { github = "https://github.com/matq007" },
+    { orcid = "https://orcid.org/0000-0002-8178-3128" },
+    { researchgate = "https://www.researchgate.net/profile/Martin-Proks" },
+  ]

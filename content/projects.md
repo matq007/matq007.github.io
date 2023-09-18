@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+layout: "simple"
 ---
 
 This is a short list of projects I've been working on over the past few years.
