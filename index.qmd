@@ -6,8 +6,11 @@ about:
   template: jolla
   links:
     - icon: github
-      text: Github
+      text: Github (personal)
       href: https://github.com/matq007/
+    - icon: github
+      text: Github (work)
+      href: https://github.com/brickmanlab/
     - icon: twitter
       text: Twitter
       href: https://x.com/mproksik
