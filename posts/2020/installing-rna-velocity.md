@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Installing RNA velocity on macOS"
 date: 2019-10-09
 tags: [bioinformatics, R, rna-velocity]
-layout: "post"
 ---
 
 Package repo: https://github.com/velocyto-team/velocyto.R

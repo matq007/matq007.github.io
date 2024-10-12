@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "matq007.github.io"
+  description: Personal website about stuff I have been working on
+  repo-url: https://github.com/matq007/matq007.github.io
+  repo-branch: feature/quarto
+  site-url: https://matq007.github.io
+  search: true
+  navbar:
+    title: Martin PROKS
+    background: dark
+    right:
+      - text: Blog
+        href: blog.qmd
+      - text: Projects
+        href: projects.qmd
+      - icon: github
+        href: https://github.com/matq007/
+      - icon: twitter
+        href: https://x.com/mproksik
+      - icon: rss
+        href: index.xml
+
+# margin-header: |
+#   ![Logo image](profile.jpg)
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    max-width: 800px
+
+execute:
+  freeze: auto

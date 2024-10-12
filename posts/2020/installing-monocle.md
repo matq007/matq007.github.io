@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Installing monocle3"
 date: 2019-09-22
 tags: [bioinformatics, R, monocle3]
-layout: "post"
 ---
 
 In this short post I will demonstrate how to install package `monocle3` in R on

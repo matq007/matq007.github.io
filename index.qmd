@@ -1,0 +1,23 @@
+---
+title: Martin PROKS
+subtitle: Computational Biologist
+image: me.png
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/matq007/
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/mproksik
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/martinproks
+    - icon: researchgate
+      text: Research Gate
+      href: https://www.researchgate.net/profile/Martin-Proks
+---
+
+I am interested in developmental biology and precision medicine. I like to build and
+contribute to tools in the field of bioinformatics.

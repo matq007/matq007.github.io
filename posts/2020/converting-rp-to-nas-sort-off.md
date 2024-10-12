@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Converting RP to NAS, sort off"
 date: 2017-08-17
 tags: [raspberry-pi, samba, ufw, ssh]
-layout: "post"
 ---
 
 Approximately two years ago I've been playing around with an idea of purchasing a NAS (Network attached storage). As a student looking at the prices, I've decided to make my own budget one. How hard can it  right?

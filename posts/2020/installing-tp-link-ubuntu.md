@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Driver for tp-link AC1300 on Ubuntu 20.04"
 date: 2020-05-01
 tags: [tp-link, configuration, ubuntu]
-layout: "post"
 ---
 
 Credit goes to [madscintist](https://ubuntuforums.org/archive/index.php/t-2426469.html).

@@ -1,0 +1,37 @@
+---
+title: Git notes
+date: "2024-07-18"
+categories: [git, notes]
+---
+
+If you have ever written any code or small software, chances are you have used
+some form of version control such as Git or Mercurial. Below I summarize random
+article, snippets or tools I find usefull when working with Git.
+
+## Articles
+
+- Interesting [piece] describing the the beginnings of git <span class="badge bg-primary">recommended</span>
+- [Conventional commits] <span class="badge bg-warning">must-read</span>
+- Nice [89 tricks] <span class="badge bg-primary">recommended</span>
+
+## Snippets
+
+### Avoid merging with rebase
+
+Typical scenario, you are working on some code, you decide you are ready to commit
+push your changes to common branch (`main`, `master`, `dev`) and surprise. Someone
+else already pushed new changes to the branch and you don't have the latest working
+state.
+
+In case you and the other developer worked on different parts of the code, instead
+of standard `git pull`, try `git pull --rebase`. By doing so, you will avoid 
+creating an extra merge commit, which can make the git tree cleaner. For visual
+example, see this [Youtube video](https://www.youtube.com/watch?v=DloR0BOGNU0).
+
+## Tools
+
+- [git-cliff](https://git-cliff.org): Customizable changelog generator
+
+[piece]: https://blog.brachiosoft.com/en/posts/git/
+[Conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[89 tricks]: https://www.jvt.me/posts/2024/07/12/things-know-commits/
