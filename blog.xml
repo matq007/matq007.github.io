@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>matq007.github.io</title>
+<link>https://matq007.github.io/blog.html</link>
+<atom:link href="https://matq007.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Personal website about stuff I have been working on</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Git notes</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2024/git.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>If you have ever written any code or small software, chances are you have used some form of version control such as Git or Mercurial. Below I summarize random article, snippets or tools I find usefull when working with Git.</p>
+<section id="articles" class="level2">
+<h2 class="anchored" data-anchor-id="articles">Articles</h2>
+<ul>
+<li>Interesting <a href="https://blog.brachiosoft.com/en/posts/git/">piece</a> describing the the beginnings of git <span class="badge bg-primary">recommended</span></li>
+<li><a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional commits</a> <span class="badge bg-warning">must-read</span></li>
+<li>Nice <a href="https://www.jvt.me/posts/2024/07/12/things-know-commits/">89 tricks</a> <span class="badge bg-primary">recommended</span></li>
+</ul>
+</section>
+<section id="snippets" class="level2">
+<h2 class="anchored" data-anchor-id="snippets">Snippets</h2>
+<section id="avoid-merging-with-rebase" class="level3">
+<h3 class="anchored" data-anchor-id="avoid-merging-with-rebase">Avoid merging with rebase</h3>
+<p>Typical scenario, you are working on some code, you decide you are ready to commit push your changes to common branch (<code>main</code>, <code>master</code>, <code>dev</code>) and surprise. Someone else already pushed new changes to the branch and you don’t have the latest working state.</p>
+<p>In case you and the other developer worked on different parts of the code, instead of standard <code>git pull</code>, try <code>git pull --rebase</code>. By doing so, you will avoid creating an extra merge commit, which can make the git tree cleaner. For visual example, see this <a href="https://www.youtube.com/watch?v=DloR0BOGNU0">Youtube video</a>.</p>
+</section>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<ul>
+<li><a href="https://git-cliff.org">git-cliff</a>: Customizable changelog generator</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>git</category>
+  <category>notes</category>
+  <guid>https://matq007.github.io/posts/2024/git.html</guid>
+  <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Slow autocomplete in fish-shell on macOS Big Sur</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2021/fix-big-sir-fish-shell.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>UPDATE</strong>: Upgrading to fish &gt;3 solves the issues now.</p>
+<p>If you have decided to upgrade to the latest macOS Big Sur <code>10.14.6</code>, you might have experienced an issue with slow autocomplete in <code>fish-shell</code>.</p>
+<p>Due to change to read-only permissions for <code>whatis</code> <sup>1</sup> the man pages can’t be updated for <code>/usr/share/man</code>. Therefore, the fish is switching to using <code>apropos</code> <sup>2</sup>.</p>
+<section id="how-to-fix-without-updating" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-fix-without-updating">How to fix without updating?</h2>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># create backup</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">cp</span> /usr/local/share/fish/functions/__fish_describe_command.fish <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-3">   /usr/local/share/fish/functions/__fish_describe_command.fish.old</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Taken from: https://github.com/fish-shell/fish-shell/issues/6270#issuecomment-548515306</span></span>
+<span id="cb1-6"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">echo</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"function __fish_describe_command; end"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> /usr/local/share/fish/functions/__fish_describe_command.fish</span></code></pre></div>
+<p>Thank you <code>fish</code> community for such a quick solution <sup>3</sup>.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://github.com/fish-shell/fish-shell/issues/6270↩︎</p></li>
+<li id="fn2"><p>https://apple.stackexchange.com/questions/374025/errors-from-whatis-command-unable-to-rebuild-database-with-makewhatis↩︎</p></li>
+<li id="fn3"><p>https://github.com/fish-shell/fish-shell/pull/7365↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>devops</category>
+  <guid>https://matq007.github.io/posts/2021/fix-big-sir-fish-shell.html</guid>
+  <pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Miscellaneous</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2020/miscellaneous.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="reference-manager-zotero" class="level2">
+
+<ul>
+<li>Install Zotero + Zotero Connector</li>
+<li>Plugins
+<ul>
+<li>Zotfile (moving and renaming, sync with Dropbox/MEGA/GDrive …)</li>
+<li>Better BibTex</li>
+<li>Zotero Storage Scanner</li>
+</ul></li>
+<li><a href="https://www.nrel.colostate.edu/set-up-best-reference-manager/">source</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://matq007.github.io/posts/2020/miscellaneous.html</guid>
+  <pubDate>Wed, 04 Nov 2020 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Driver for tp-link AC1300 on Ubuntu 20.04</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2020/installing-tp-link-ubuntu.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Credit goes to <a href="https://ubuntuforums.org/archive/index.php/t-2426469.html">madscintist</a>.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> su</span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># install required packages</span></span>
+<span id="cb1-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">apt</span> install build-essentials dkms</span>
+<span id="cb1-4"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> /usr/local/share/ <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">wget</span> https://github.com/EntropicEffect/rtl8822bu/archive/9438d453ec5b4878b7d4a2b4bcf87b37df09c3fb.zip <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O</span> rtl8822bu.zip <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">unzip</span> rtl8822bu.zip <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-7">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> rtl8822bu.zip <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">&amp;&amp;</span> <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-8">  <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> rtl8822bu-9438d453ec5b4878b7d4a2b4bcf87b37df09c3fb</span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># add and install kernel module</span></span>
+<span id="cb1-10"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">dkms</span> add .</span>
+<span id="cb1-11"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">dkms</span> install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> 88x2bu <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-v</span> 1.1</span>
+<span id="cb1-12"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">reboot</span></span></code></pre></div>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<ul>
+<li><a href="https://ubuntuforums.org/archive/index.php/t-2426469.html">Forum thread</a></li>
+<li><a href="https://github.com/EntropicEffect/rtl8822bu">GitHub: EntropicEffect/rtl8822bu</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://matq007.github.io/posts/2020/installing-tp-link-ubuntu.html</guid>
+  <pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Installing RNA velocity on macOS</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2020/installing-rna-velocity.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Package repo: https://github.com/velocyto-team/velocyto.R</p>
+<p>At first install necessary library dependencies.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> install gcc libomp boost</span></code></pre></div>
+<p>Update your <code>~/.R/Makevars</code>. It should look similar to the one below.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">VER</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-9</span>
+<span id="cb2-2"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>gcc<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">VER</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb2-3"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CXX</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>g++<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">VER</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb2-4"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-mtune=native <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-g</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O2</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wall</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-pedantic</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wconversion</span></span>
+<span id="cb2-5"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CXXFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-mtune=native <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-g</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O2</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wall</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-pedantic</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wconversion</span></span>
+<span id="cb2-6"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">FLIBS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/</span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># This is for open mp</span></span>
+<span id="cb2-9"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">SHLIB_OPENMP_CFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-Xpreprocessor <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-fopenmp</span></span>
+<span id="cb2-10"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">SHLIB_OPENMP_CXXFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-Xpreprocessor <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-fopenmp</span></span></code></pre></div>
+<p>Additional required R packages.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">BiocManager<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pcaMethods"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"igraph"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"h5"</span>))</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"devtools"</span>)</span>
+<span id="cb3-3">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"velocyto-team/velocyto.R"</span>)</span></code></pre></div>
+
+
+
+ ]]></description>
+  <guid>https://matq007.github.io/posts/2020/installing-rna-velocity.html</guid>
+  <pubDate>Wed, 09 Oct 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Installing monocle3</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2020/installing-monocle.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In this short post I will demonstrate how to install package <code>monocle3</code> in R on your macOS. If you are using default compilers provided by Apple, you might have encounter some errors like</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">clang<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> error<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> linker command failed with exit code <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> (use <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>v to see invocation)</span>
+<span id="cb1-2">make<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">***</span> [leidenbase.so] Error <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> ERROR<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> compilation failed <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> package ‘leidenbase’</span></code></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">ERROR<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> compilation failed <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> package ‘leidenbase’ ...</span></code></pre></div>
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
+<p>To solve this issue you first have to update your current <code>gcc</code> compiler as well as installing <code>llvm</code>. The problem is that macOS does not come with <code>gFortran</code> package which is required by sub-package <code>leidenbase</code>. In this case I recommend installing/upgrading the packages using <a href="http://brew.sh">brew</a> illustrated below.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">brew</span> install gcc llvm</span>
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># copy and paste the code in your shell to enable llvm</span></span></code></pre></div>
+<p>Secondly, now we have to tell <code>R</code> to use these packages by updating <code>~/.R/Makevars</code> path. If you do not have <code>.R</code> folder in your home directory, you can create it by running <code>mkdir ~\.R</code>.</p>
+<p>Before changing the variables you have to verify which <code>gcc</code> version have you installed. You can do so by running <code>gcc-&lt;TAB&gt;</code>. The example below shows how to setup the variables for <code>gcc-9</code>.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">vim</span> ~/.R/Makevars</span>
+<span id="cb4-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Copy and paste the code below.</span></span>
+<span id="cb4-3"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">VER</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-9</span>
+<span id="cb4-4"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CC</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>gcc<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">VER</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb4-5"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CXX</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>g++<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">VER</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb4-6"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-mtune=native <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-g</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O2</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wall</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-pedantic</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wconversion</span></span>
+<span id="cb4-7"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CXXFLAGS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-mtune=native <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-g</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-O2</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wall</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-pedantic</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-Wconversion</span></span>
+<span id="cb4-8"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">FLIBS</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/</span>
+<span id="cb4-9"></span>
+<span id="cb4-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Restart R</span></span></code></pre></div>
+<p>Good job, now restart <code>R</code> and run the <code>monocle3</code> installation again.</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">BiocManager<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'BiocGenerics'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'DelayedArray'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'DelayedMatrixStats'</span>,</span>
+<span id="cb5-2">                       <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'limma'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'S4Vectors'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SingleCellExperiment'</span>,</span>
+<span id="cb5-3">                       <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'SummarizedExperiment'</span>))</span>
+<span id="cb5-4">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'cole-trapnell-lab/leidenbase'</span>)</span>
+<span id="cb5-5">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'cole-trapnell-lab/monocle3'</span>)</span></code></pre></div>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/43597632/understanding-the-contents-of-the-makevars-file-in-r-macros-variables-r-ma">Stackoverflow</a></li>
+<li><a href="https://cole-trapnell-lab.github.io/monocle3/docs/installation/">Monocle3 documentation</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://matq007.github.io/posts/2020/installing-monocle.html</guid>
+  <pubDate>Sun, 22 Sep 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Converting RP to NAS, sort off</title>
+  <dc:creator>Martin Proks</dc:creator>
+  <link>https://matq007.github.io/posts/2020/converting-rp-to-nas-sort-off.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Approximately two years ago I’ve been playing around with an idea of purchasing a NAS (Network attached storage). As a student looking at the prices, I’ve decided to make my own budget one. How hard can it right? I saw some Youtube videos where people were building NAS using Raspberry Pi (RP). So I’ve started digging for some Pi machine. I ended up choosing between Banana Pi (BP) and RP 2. The advantage of BP was that it had SATA connector right on the board, which would give me better read/write throughput. Ok, let’s try it out.</p>
+<section id="round-1" class="level2">
+<h2 class="anchored" data-anchor-id="round-1">Round 1</h2>
+<p>I found a BP Pro on site alza.cz and later on found out that it was actually a BP M1+. Never mind, the hardware configuration was the same. I’ve downloaded and installed Raspbian OS. The installation is pretty straight forward and can be found on the page or youtube. Ok, the installation was successful. Now let’s try to connect my external drive. For storage, I’ve used a 2.5” disk from my old notebook. Normally, if you want to connect a drive like this, you have to have an external adapter to power it up. With BP you don’t need any power adapter, the power is provided by the board when you connect the drive (Cha ching!). After connecting the disk, it’s time to mount it. Unfortunately, no new device was detected. I guess I really need an external power adapter. Tried the adapter, still nothing. Ok, now this is getting frustrating. Maybe the disk is not working properly, let’s connect it to my work station. The disk was detected immediately. I’ve spent the whole day trying to connect the drive to the BP, but with no luck. No worries, I can still buy RP 2 and try that instead. I’ve returned the BP and ordered RP 2. After one week it arrived and I could continue with my experiment.</p>
+</section>
+<section id="round-2" class="level2">
+<h2 class="anchored" data-anchor-id="round-2">Round 2</h2>
+<p>The process was the same as before. Connect all the cables to RP and install the latest Rasbian OS. However this time, there was no SATA connector. That’s why I ordered a case for 2.5” hard drive with USB 3.0. Yes, I know RP 2 has only USB 2.0 but I can reuse this case later in future for something else. But wait, you said that external drives have to have an external power supply. How are you going to power the drive if it’s already in a case? The cool part about RP is that you can play with the configuration. In order to connect an external drive, you have to modify config.txt file and add this line max_usb=1. With this setting, RP will use more voltage for USB, thus making it possible connecting an external drive. Ready for a test run? Yes, it worked! Mission successful! Configuration Finally, we can move on to the next step. Installing Samba for sharing and ufw for creating firewall rules. Let’s not forget to also setup SSH (I would like to disconnect the keyboard and monitor that are now connected to the RP).</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Update your /etc/fstab to mount the drive on boot</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Installation and update</span></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt-get update <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-y</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">&amp;&amp;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt-get upgrade</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt-get install samba ufw</span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Setting up Samba</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create user on raspberry:</span></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> useradd <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>USERNAME<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> - shell /bin/false</span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Set permissions:</span></span>
+<span id="cb1-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> chown <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>USERNAME<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>PATH_TO_DRIVE<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create password for samba:</span></span>
+<span id="cb1-11"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> smbpasswd <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-a</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>USERNAME<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb1-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Update configuration</span></span>
+<span id="cb1-13"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vi</span> /etc/samba/smb.conf</span>
+<span id="cb1-14"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[SHARE]</span></span>
+<span id="cb1-15"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">path</span> = /mnt/share/</span>
+<span id="cb1-16"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">valid</span> users = <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>USERNAME<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb1-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">read</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">only</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">No</span></span>
+<span id="cb1-18"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">create</span> mask = 0777</span>
+<span id="cb1-19"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">directory</span> mask = 0777</span>
+<span id="cb1-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Save and exit vim (!x or !wq)</span></span>
+<span id="cb1-21"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Verify the correctness of configuration</span></span>
+<span id="cb1-22"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">testparm</span></span>
+<span id="cb1-23"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Start samba</span></span>
+<span id="cb1-24"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> systemctl start samba</span>
+<span id="cb1-25"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Check that status, you should see green Active</span></span>
+<span id="cb1-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> systemctl status samba</span>
+<span id="cb1-27"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Auto start samba</span></span>
+<span id="cb1-28"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> systemctl enable samba</span>
+<span id="cb1-29"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Setting up firewall rules</span></span>
+<span id="cb1-30"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># I didn't have Samba listed in apps so I created my own </span></span>
+<span id="cb1-31"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vi</span> /etc/ufw/applications.d/ufw-fileserver</span>
+<span id="cb1-32"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[samba]</span></span>
+<span id="cb1-33"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">title</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>Samba</span>
+<span id="cb1-34"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">description</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>Samba</span>
+<span id="cb1-35"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">ports</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>137,138,139,445/tcp</span>
+<span id="cb1-36"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># After saving it's time to setup some firewall rules</span></span>
+<span id="cb1-37"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 1. I want to access ssh but I wan't to limit it</span></span>
+<span id="cb1-38"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 2. I want to access Samba only on my local network</span></span>
+<span id="cb1-39"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> ufw limit ssh</span>
+<span id="cb1-40"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> ufw allow from XXX.XXX.X.0/16 to any app Samba</span>
+<span id="cb1-41"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> ufw enable</span>
+<span id="cb1-42"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Check the status that it works</span></span>
+<span id="cb1-43"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> ufw status</span></code></pre></div>
+<p>Backup the most important data on USB stick I know, I know, this is insane and bold. You should definitely not do this at home! I didn’t have another drive available, so I found some 4GB USB stick, which I used as my secondary drive, where I’ve backed up only the most important documents that my parents use.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Update /etc/fstab to mount the USB stick</span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create a backup script</span></span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vi</span> ~/backup</span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#!/bin/bash</span></span>
+<span id="cb2-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rsync</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-av</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--delete</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>DRIVE_PATH<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>/Important/ <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>BACKUP_PATH<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span>/Important</span>
+<span id="cb2-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Make the file executable and run it as a cron job </span></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># every day at 1.00am</span></span>
+<span id="cb2-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">chmod</span> +x backup</span>
+<span id="cb2-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">crontab</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-e</span></span>
+<span id="cb2-10"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">0</span> 1 <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">*</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">*</span> <span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">*</span> ~/backup</span></code></pre></div>
+<p>I’ve setup one more backup on my desktop station. I am using Free FileSync application for backing up data. I’m using a real-time backup with mirroring option. I’ve setup one more rule to check my share folder and copy again only the most important files to the backup drive to my desktop station. This way if everything fails, I should still have some backup. How about some small scripts? I’ve played around with the first setup and created some small scripts like a welcome page, sending notifications to slack on login, etc. You can find some of them here and here.</p>
+</section>
+<section id="conclusion-summary" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-summary">Conclusion &amp; Summary</h2>
+<p>The project started with an idea of using SATA connector for connecting the drive and sharing it locally. That quite didn’t happen, so I ended up switching to USB 2.0 on RP which has lower read/write speeds. Nevertheless, the end result was fine and the system actually worked. Now hold on a minute, why would you go through so much trouble when you could have just connected the drive to your router and share it? I could have done it right after I discovered problems with the BP. But I was curious how it would work with RP. Of course, this is not really a NAS (well sort off is), but the fun and learning outcome was worth it. To be honest, I’ve been running this setup at home for over a year without any problem what so ever. This was a very interesting project with many ups and downs. I don’t encourage you to build the same setup. I’ve just wanted to demonstrate what can be done by reusing an old hard drive and some free time. If you have any questions or found some errors, let me know in the comments below.</p>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<ul>
+<li><a href="https://debian-administration.org/article/530/SSH_with_authentication_key_instead_of_password">SSH</a></li>
+<li><a href="https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21">samba</a></li>
+<li><a href="https://help.ubuntu.com/community/UFW">ufw</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://matq007.github.io/posts/2020/converting-rp-to-nas-sort-off.html</guid>
+  <pubDate>Thu, 17 Aug 2017 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
