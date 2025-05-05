@@ -2,7 +2,7 @@ name: Deploy Personal website
 on:
   push:
     branches:
-      - dev
+      - feat/hugo-daily
 
 jobs:
   build-deploy:
