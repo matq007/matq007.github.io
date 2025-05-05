@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 05 May 2025 20:57:55 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>2025-04-24</title><link>https://matq007.github.io/posts/2025-04-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Easy to follow granular explanation of how DeepSeek was trained by Anita from vellum (&lt;a href="https://www.vellum.ai/blog/the-training-of-deepseek-r1-and-ways-to-use-it">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Another reminder to keep thinking about #privacy (&lt;a href="https://nordictimes.com/tech/what-i-wish-i-knew-about-privacy-sooner/">link&lt;/a>)&lt;/li>
+&lt;li>Looks like gladiators really fought wild animal based on some interesting discoveries in York (&lt;a href="https://www.nytimes.com/2025/04/23/science/lion-gladiator-romans-bones.html">link&lt;/a>)&lt;/li>
+&lt;li>Interesting #history lesson on post-war effect of Agent Orange during Vietnam war. The side effects of the agent are associated to developmental disabilities still today (&lt;a href="http://apnews.com/article/vietnam-war-anniversary-agent-orange-0829caefe48cc11fb88ab27982da922b">link&lt;/a>)&lt;/li>
+&lt;li>tim shows how he used &lt;code>mitmproxy&lt;/code> to track the trackers (&lt;a href="https://timsh.org/everyone-knows-your-location-part-2-try-it-yourself/">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-24/</guid><pubDate>Thu, 24 Apr 2025 19:14:36 +0000</pubDate></item><item><title>2025-04-23</title><link>https://matq007.github.io/posts/2025-04-23/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Interesting take on Model Context Protocol (MCP); it&amp;rsquo;s not about the data, it&amp;rsquo;s about how the chatbot will integrate with it (&lt;a href="https://iamcharliegraham.substack.com/p/mcps-gatekeepers-and-the-future-of">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>#history &lt;strong>Margaret Dayhoff&lt;/strong> who laid foundations for the field of bioinformatics. (&lt;a href="https://www.nature.com/articles/s43588-025-00784-y">link&lt;/a>)&lt;/li>
+&lt;li>CT scans can increase a risk of cancer and therefore should be justified before applying them on patients, but beware of limitations of the study. (&lt;a href="https://www.icr.ac.uk/about-us/icr-news/detail/overuse-of-ct-scans-could-cause-100-000-extra-cancers-in-us">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>SeaCURE tries to remove CO2 from the water to reduce climate change. They do so by converting the sea water more acidic which releases CO2 which is further stored. (&lt;a href="https://www.bbc.com/news/articles/cr788kljlklo">link&lt;/a>)&lt;/li>
+&lt;li>Latest measurements of toothpaste content reveal high levels of toxic metals way above FDA standard limits. (&lt;a href="https://futurism.com/neoscope/toothpaste-heavy-metals">link&lt;/a>)&lt;/li>
+&lt;li>By donating (transplanting) a womb to her younger sister Grace, Grace was able to give birth to a child through in-vitro fertilization (IVF). The womb transplantation was first performed in Sweden in 2014. (&lt;a href="https://www.bbc.com/news/articles/c78jd517z87o">link&lt;/a>)&lt;/li>
+&lt;li>Personalized humanoids under review (&lt;a href="https://readmultiplex.com/2025/04/19/a-review-of-the-personal-humanoid-robots">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-23/</guid><pubDate>Wed, 23 Apr 2025 19:11:40 +0000</pubDate></item><item><title>2025-04-21</title><link>https://matq007.github.io/posts/2025-04-21/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Work from Martin Karsten where he focuses on optimizing network processing in Linux which can reduce up to 30% CPU consumption, making this interesting use case for data centers. However best results are only possible for high-traffic scenarios (&lt;a href="https://spectrum.ieee.org/data-center-energy-consumption">link&lt;/a>).&lt;/li>
+&lt;li>Philip Laine writes about his experience with Microsoft forking his Spegel project as Peerd (&lt;a href="https://philiplaine.com/posts/getting-forked-by-microsoft/">link&lt;/a>)&lt;/li>
+&lt;li>#python &lt;a href="https://peps.python.org/pep-0750/">PEP 750&lt;/a> accepts &lt;code>t-string&lt;/code> (&lt;a href="link">https://davepeck.org/2025/04/11/pythons-new-t-strings/&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Scientists show in mice that IL-17 cytokine plays two divergent roles - in amygdala it triggers anxiety but in cortex it promotes social behaviour. The study highlights possible link between immune system and nervous system suggesting possibilities new therapies for neural disorders by affecting modulating immune system (&lt;a href="https://news.mit.edu/2025/molecules-fighting-infection-act-in-brain-inducing-anxiety-or-sociability-0407">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.brainstorm.gg">brainstorm.gg&lt;/a> is a website for brainstorming some fun ideas&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nari-labs/dia">nari-labs/dia&lt;/a> is a 1.6B model capable of generating ultra-realistic dialogue with open-weights published on Hugging Face&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-21/</guid><pubDate>Mon, 21 Apr 2025 20:41:23 +0000</pubDate></item></channel></rss>
