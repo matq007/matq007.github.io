@@ -1,4 +1,26 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 05 May 2025 20:57:55 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>2025-04-24</title><link>https://matq007.github.io/posts/2025-04-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 05 May 2025 20:57:55 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>2025-05-01</title><link>https://matq007.github.io/posts/2025-05-01/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>It&amp;rsquo;s happening, &lt;code>pylock.toml&lt;/code> is supported by &lt;code>pip&lt;/code> and &lt;code>uv&lt;/code> and are we experiencing a fight for type checkers? (&lt;a href="https://www.bitecode.dev/p/whats-up-python-python-in-hardware">link&lt;/a>)&lt;/li>
+&lt;li>Alex showcases how efficiently export and import sqlite #database - awesome hack! (&lt;a href="https://alexwlchan.net/2025/copying-sqlite-databases">link&lt;/a>)
+&lt;ul>
+&lt;li>&lt;code>$ sqlite3 explorer.db .dump | gzip -c &amp;gt; explorer.db.txt.gz&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ibrahim has enough of bots and fights them with a clever zip bomb (&lt;a href="https://idiallo.com/blog/zipbomb-protection">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Satirical life journey of a PhD student (&lt;a href="https://mihaiolteanu.me/knowledge-based-society-my-ass">link&lt;/a>). I wonder how many PhDs can relate to this story 🤔&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Thanks to metagenomics, doctors cured Bristol&amp;rsquo;s eyesight infection by targeted antibiotics treatment. This showcases we need access to precision medicine (&lt;a href="https://www.bbc.com/news/articles/czx45vze0vyo">link&lt;/a>)&lt;/li>
+&lt;li>FDA approves genetically modified pigs using CRISPR which can be safely eaten. The genetic modification boosts immune system of pigs agains 99% of known PRRS viruses. Would you still eat them knowing this? (&lt;a href="https://www.technologyreview.com/2025/05/02/1116059/the-us-approves-crispr-pigs-for-food">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>With &lt;code>dataframely&lt;/code> you can specify a validation schema for your polars (&lt;a href="https://tech.quantco.com/blog/dataframely">link&lt;/a>)&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-01/</guid><pubDate>Mon, 05 May 2025 20:38:11 +0000</pubDate></item><item><title>2025-04-24</title><link>https://matq007.github.io/posts/2025-04-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Easy to follow granular explanation of how DeepSeek was trained by Anita from vellum (&lt;a href="https://www.vellum.ai/blog/the-training-of-deepseek-r1-and-ways-to-use-it">link&lt;/a>)&lt;/li>
 &lt;/ul>
