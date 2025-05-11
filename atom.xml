@@ -1,4 +1,27 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 05 May 2025 20:57:55 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>2025-05-01</title><link>https://matq007.github.io/posts/2025-05-01/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 05 May 2025 20:57:55 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>2025-05-05</title><link>https://matq007.github.io/posts/2025-05-05/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>MCP for agents to &amp;ldquo;talk&amp;rdquo; with your resume? Is this where the job market will move one day? (&lt;a href="https://news.ycombinator.com/item?id=43891245">link&lt;/a>)&lt;/li>
+&lt;li>Imagine coding without a screen using AR glasses and peripherals. Although portable, still quite pricey for my taste (&lt;a href="https://www.tomsguide.com/computing/i-ditched-my-laptop-for-a-pocketable-mini-pc-and-a-pair-of-ar-glasses-heres-what-happened">link&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Nice and clean default settings for macOS (&lt;a href="https://catalins.tech/how-i-setup-new-macbooks/">link&lt;/a>). Thank you Catalin&amp;rsquo;s Tech!
+&lt;pre tabindex="0">&lt;code># Enable tap-to-click for the trackpad
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
+# Disable the .DS file creation
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-05/</guid><pubDate>Mon, 05 May 2025 20:57:55 +0000</pubDate></item><item><title>2025-05-01</title><link>https://matq007.github.io/posts/2025-05-01/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>It&amp;rsquo;s happening, &lt;code>pylock.toml&lt;/code> is supported by &lt;code>pip&lt;/code> and &lt;code>uv&lt;/code> and are we experiencing a fight for type checkers? (&lt;a href="https://www.bitecode.dev/p/whats-up-python-python-in-hardware">link&lt;/a>)&lt;/li>
 &lt;li>Alex showcases how efficiently export and import sqlite #database - awesome hack! (&lt;a href="https://alexwlchan.net/2025/copying-sqlite-databases">link&lt;/a>)
