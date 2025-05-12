@@ -22,5 +22,3 @@ on [Research Gate], labe projects on [brickmanlab]. -->
 [ZS]: http://zs.com
 [Brickman]: https://renew.ku.dk/research/brickman_group/
 [Sedzinski]: https://renew.ku.dk/research/sedzinski_group/
-[Research Gate]: https://www.researchgate.net/profile/Martin-Proks
-[brickmanlab]: https://github.com/brickmanlab
