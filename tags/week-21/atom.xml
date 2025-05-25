@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Week-21 on Martin PROKS</title><link>https://matq007.github.io/tags/week-21/</link><description>Recent content in Week-21 on Martin PROKS</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://matq007.github.io/tags/week-21/atom.xml" rel="self" type="application/rss+xml"/><item><title>Week 21 [19/05-24/05 2025]</title><link>https://matq007.github.io/posts/2025-05-24/</link><pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate><guid>https://matq007.github.io/posts/2025-05-24/</guid><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Well, Google just dropped Veo 3 at I/o Keynote which generates quite realistic
+shorts videos (&lt;a href="https://gizmodo.com/googles-veo-3-is-already-deepfaking-all-of-youtubes-most-smooth-brained-content-2000606144">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Long read on about mitochondria, their fascinating history (originally bacteria
+which was consumed by an ancestral cell long time ago); fascinating functioning
+thought &amp;ldquo;social&amp;rdquo; queues and link to numerous diseases (&lt;a href="https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/">link&lt;/a>).&lt;/li>
+&lt;li>&lt;em>Gharibi et al., 2025&lt;/em> introduces 3D model culturing hESCs towards post-gastrulation
+amnion. A big milestone as it allows researchers to study and perturb this developmental
+process in vitro. These models could be provided as an alternative amniotic membranes
+in future clinical settings (&lt;a href="https://www.crick.ac.uk/news/2025-05-15_new-stem-cell-model-sheds-light-on-human-amniotic-sac-development">link&lt;/a>).&lt;/li>
+&lt;li>&lt;em>Abukar et al., 2025&lt;/em> uses light-sheet microscopy to track hearth development in mouse
+providing new insights into the intricacies of cell movement and coordination
+(&lt;a href="https://www.embopress.org/doi/full/10.1038/s44318-025-00441-0">link&lt;/a>).&lt;/li>
+&lt;li>Great podcast episode from Quanta Magazine discussing latest research on how
+LLM are not as great as initially thought when it comes to learning &amp;ldquo;new&amp;rdquo;
+languages (&lt;a href="https://play.prx.org/listen?ge=prx_11709_03933b19-007e-4e69-82da-26d8e303f3c">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Using specialized process to treatment steel with stainless steel, a young startup
+Allium Engineering can extend the lifetime of steel by making it resistant against
+corrosion (&lt;a href="https://news.mit.edu/2025/allium-engineering-enables-100-year-bridges-corrosion-resistant-steel-0520">link&lt;/a>).&lt;/li>
+&lt;li>Have I Been Pwned 2.0 is out packing some new features (&lt;a href="https://www.troyhunt.com/have-i-been-pwned-2-0-is-now-live/">link&lt;/a>).&lt;/li>
+&lt;li>The Semantic Search Engine for ArXiv (&lt;a href="https://arxivxplorer.com/">link&lt;/a>).&lt;/li>
+&lt;li>When you live around Bay Area and you want to save some money on electricity with solar,
+have a look at this deep dive by Joe (&lt;a href="https://medium.com/@joe_5312/pg-e-sucks-or-how-i-learned-to-stop-worrying-and-love-building-my-own-solar-system-acf0c9f03f3b">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/langgenius/dify">langgenius/dify&lt;/a>: interface for building LLM apps&lt;/li>
+&lt;li>&lt;a href="https://github.com/kortix-ai/suna">kortix-ai/suna&lt;/a>: open-source generalist #ai-agent&lt;/li>
+&lt;li>&lt;a href="https://github.com/jlowin/fastmcp">jlowin/fastmcp&lt;/a>: build MPC fast with Python&lt;/li>
+&lt;li>&lt;a href="https://github.com/kamranahmedse/developer-roadmap">kamranahmedse/developer-roadmap&lt;/a>: yet another developer roadmap&lt;/li>
+&lt;li>&lt;a href="https://github.com/mlabonne/llm-course">mlabonne/llm-course&lt;/a>: LLM #course with code&lt;/li>
+&lt;li>&lt;a href="https://github.com/deepspeedai/DeepSpeed">deepspeedai/DeepSpeed&lt;/a>: library for optimized training&lt;/li>
+&lt;li>&lt;a href="https://github.com/apple/ml-fastvlm">apple/ml-fastvlm&lt;/a>: run visual encoding on iPhones from #apple&lt;/li>
+&lt;li>&lt;a href="https://github.com/bytedance/deer-flow">bytedance/deer-flow&lt;/a>: deep-research framework packed with extra integrations&lt;/li>
+&lt;li>&lt;a href="https://github.com/Lightricks/LTX-Video">Lightricks/LTX-Video&lt;/a>: impressive video generator&lt;/li>
+&lt;/ul></description></item></channel></rss>
