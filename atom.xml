@@ -1,4 +1,52 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 21 (19-24/05/2025)</title><link>https://matq007.github.io/posts/2025-05-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 22 (25-30/05/2025)</title><link>https://matq007.github.io/posts/weekly/2025-05-30/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Simon&amp;rsquo;s initial impression of Devstal from Mistral (&lt;a href="https://simonwillison.net/2025/May/21/devstral">link&lt;/a>).&lt;/li>
+&lt;li>Namanyay provides very simple yet convincing argument about how to leverage the AI
+landscape in your day-to-day dev life. It&amp;rsquo;s not perfect, but it can be simplify
+some tasks, you just need to figure out which ones (&lt;a href="https://nmn.gl/blog/ai-scam">link&lt;/a>).&lt;/li>
+&lt;li>Cloudflare proposes HTTP message signature to simplify how to deal with ai bots/crawlers (&lt;a href="https://blog.cloudflare.com/web-bot-auth/">link&lt;/a>).&lt;/li>
+&lt;li>Oddysey introduced model which generates AI video with real-time interaction
+from user (&lt;a href="https://techcrunch.com/2025/05/28/odysseys-new-ai-model-streams-3d-interactive-worlds/">link&lt;/a>).&lt;/li>
+&lt;li>MinIO moves many features behind paywall &lt;a href="https://github.com/minio/object-browser/pull/3509">minio/object-browser&lt;/a>.
+&lt;ul>
+&lt;li>Alternative switch: &lt;a href="https://garagehq.deuxfleurs.fr">Garage&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Nice tips &amp;amp; tricks on running LLM locally by Kiran (&lt;a href="https://blog.nilenso.com/blog/2025/05/06/local-llm-setup/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>FDA pushes initiative to replace animal models for pre-clinical studies by
+embracing organ-on-a chip or in silico modeling if it offers to be a viable
+alternative(&lt;a href="https://www.nature.com/articles/s41587-025-02690-0">link&lt;/a>).&lt;/li>
+&lt;li>More bones found in the &amp;ldquo;River of Death&amp;rdquo; in Alberta, Canada provides great
+resource to study Pachyrhinosaurus and other dinosaurs (&lt;a href="https://www.bbc.com/news/articles/c0k3x8lmje1o">link&lt;/a>).&lt;/li>
+&lt;li>New #podcast series A Coffee with CompBio (&lt;a href="https://podcast.ausha.co/a-coffee-with-compbio">link&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://www.nature.com/articles/s41467-025-59926-5">Zeng et al., 2025&lt;/a> develops
+CellFM model using ERetNet paired with LoRA.&lt;/li>
+&lt;li>Tackling how to extract number of sequenced cells from papers using LLM by Svensson (&lt;a href="https://www.nxn.se/p/evaluating-automatic-cell-number">link&lt;/a>).&lt;/li>
+&lt;li>&lt;a href="https://www.biorxiv.org/content/10.1101/2025.05.23.655749v1.full">Sikkema et al., 2025 BiorXiv&lt;/a> developed MapQC
+to estimate fitness of mapping between reference and query
+&lt;ul>
+&lt;li>&lt;em>Energy distance metric (E-distance)&lt;/em> measures shift between two distributions (signal-to-noise ratio)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Internet Archive launches Youtube channel where they stream how they scan material
+using high-resolution camera, use automated software for cropping and OCR conversion
+and archive it afterward on microfiche cards (&lt;a href="https://www.theverge.com/news/672682/internet-archive-microfiche-lo-fi-beats-channel">link&lt;/a>).&lt;/li>
+&lt;li>Faster Github Actiosn from Blacksmith company with their transparency on security layers (&lt;a href="https://www.blacksmith.sh/blog/security">link&lt;/a>).&lt;/li>
+&lt;li>Once provide a phone number it will find its way to the interwebs &lt;a href="https://danq.me/2025/05/21/google-shared-my-phone-number/">(link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/simonw/llm">simonw/llm&lt;/a>: LLM from terminal simply.&lt;/li>
+&lt;li>&lt;a href="https://github.com/awslabs/mountpoint-s3">awslabs/mountpoint-s3&lt;/a>: Mount s3 bucket which is POSIX compliant.&lt;/li>
+&lt;li>&lt;a href="https://github.com/antinomyhq/forge">antinomyhq/forge&lt;/a>: AI assistant directly in terminal.&lt;/li>
+&lt;li>&lt;a href="https://github.com/facebookincubator/cinder">facebookincubator/cinder&lt;/a>: Meta&amp;rsquo;s version of CPython focused on speed performance.&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-05-30/</guid><pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate></item><item><title>Week 21 (19-24/05/2025)</title><link>https://matq007.github.io/posts/weekly/2025-05-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Well, Google just dropped Veo 3 at I/o Keynote which generates quite realistic
 shorts videos (&lt;a href="https://gizmodo.com/googles-veo-3-is-already-deepfaking-all-of-youtubes-most-smooth-brained-content-2000606144">link&lt;/a>).&lt;/li>
@@ -40,7 +88,7 @@ have a look at this deep dive by Joe (&lt;a href="https://medium.com/@joe_5312/p
 &lt;li>&lt;a href="https://github.com/apple/ml-fastvlm">apple/ml-fastvlm&lt;/a>: run visual encoding on iPhones from #apple&lt;/li>
 &lt;li>&lt;a href="https://github.com/bytedance/deer-flow">bytedance/deer-flow&lt;/a>: deep-research framework packed with extra integrations&lt;/li>
 &lt;li>&lt;a href="https://github.com/Lightricks/LTX-Video">Lightricks/LTX-Video&lt;/a>: impressive video generator&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-24/</guid><pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-12</title><link>https://matq007.github.io/posts/2025-05-12/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-05-24/</guid><pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-12</title><link>https://matq007.github.io/posts/weekly/2025-05-12/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Awesome 14 Advanced Python Features summarized by Edward (&lt;a href="https://blog.edward-li.com/tech/advanced-python-features">link&lt;/a>)&lt;/li>
 &lt;/ul>
@@ -59,7 +107,7 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;h2 id="-tools">🔧 Tools&lt;/h2>
 &lt;ul>
 &lt;li>Have you listened yet to your GitHub contribution graph? (&lt;a href="https://ayitey.me/git-tunes">link&lt;/a>)&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-12/</guid><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-05</title><link>https://matq007.github.io/posts/2025-05-05/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-05-12/</guid><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-05</title><link>https://matq007.github.io/posts/weekly/2025-05-05/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>MCP for agents to &amp;ldquo;talk&amp;rdquo; with your resume? Is this where the job market will move one day? (&lt;a href="https://news.ycombinator.com/item?id=43891245">link&lt;/a>)&lt;/li>
 &lt;li>Imagine coding without a screen using AR glasses and peripherals. Although portable, still quite pricey for my taste (&lt;a href="https://www.tomsguide.com/computing/i-ditched-my-laptop-for-a-pocketable-mini-pc-and-a-pair-of-ar-glasses-heres-what-happened">link&lt;/a>)&lt;/li>
@@ -74,7 +122,7 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Disable the .DS file creation&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool &lt;span style="color:#111">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>defaults write com.apple.desktopservices DSDontWriteUSBStores -bool &lt;span style="color:#111">true&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-05/</guid><pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-01</title><link>https://matq007.github.io/posts/2025-05-01/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-05-05/</guid><pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-05-01</title><link>https://matq007.github.io/posts/weekly/2025-05-01/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>It&amp;rsquo;s happening, &lt;code>pylock.toml&lt;/code> is supported by &lt;code>pip&lt;/code> and &lt;code>uv&lt;/code> and are we experiencing a fight for type checkers? (&lt;a href="https://www.bitecode.dev/p/whats-up-python-python-in-hardware">link&lt;/a>)&lt;/li>
 &lt;li>Alex showcases how efficiently export and import sqlite #database - awesome hack! (&lt;a href="https://alexwlchan.net/2025/copying-sqlite-databases">link&lt;/a>)
@@ -96,7 +144,7 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;h2 id="-tools">🔧 Tools&lt;/h2>
 &lt;ul>
 &lt;li>With &lt;code>dataframely&lt;/code> you can specify a validation schema for your polars (&lt;a href="https://tech.quantco.com/blog/dataframely">link&lt;/a>)&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-05-01/</guid><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-24</title><link>https://matq007.github.io/posts/2025-04-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-05-01/</guid><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-24</title><link>https://matq007.github.io/posts/weekly/2025-04-24/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Easy to follow granular explanation of how DeepSeek was trained by Anita from vellum (&lt;a href="https://www.vellum.ai/blog/the-training-of-deepseek-r1-and-ways-to-use-it">link&lt;/a>)&lt;/li>
 &lt;/ul>
@@ -106,7 +154,7 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;li>Looks like gladiators really fought wild animal based on some interesting discoveries in York (&lt;a href="https://www.nytimes.com/2025/04/23/science/lion-gladiator-romans-bones.html">link&lt;/a>)&lt;/li>
 &lt;li>Interesting #history lesson on post-war effect of Agent Orange during Vietnam war. The side effects of the agent are associated to developmental disabilities still today (&lt;a href="http://apnews.com/article/vietnam-war-anniversary-agent-orange-0829caefe48cc11fb88ab27982da922b">link&lt;/a>)&lt;/li>
 &lt;li>tim shows how he used &lt;code>mitmproxy&lt;/code> to track the trackers (&lt;a href="https://timsh.org/everyone-knows-your-location-part-2-try-it-yourself/">link&lt;/a>)&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-24/</guid><pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-23</title><link>https://matq007.github.io/posts/2025-04-23/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-04-24/</guid><pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-23</title><link>https://matq007.github.io/posts/weekly/2025-04-23/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Interesting take on Model Context Protocol (MCP); it&amp;rsquo;s not about the data, it&amp;rsquo;s about how the chatbot will integrate with it (&lt;a href="https://iamcharliegraham.substack.com/p/mcps-gatekeepers-and-the-future-of">link&lt;/a>)&lt;/li>
 &lt;/ul>
@@ -121,7 +169,7 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;li>Latest measurements of toothpaste content reveal high levels of toxic metals way above FDA standard limits. (&lt;a href="https://futurism.com/neoscope/toothpaste-heavy-metals">link&lt;/a>)&lt;/li>
 &lt;li>By donating (transplanting) a womb to her younger sister Grace, Grace was able to give birth to a child through in-vitro fertilization (IVF). The womb transplantation was first performed in Sweden in 2014. (&lt;a href="https://www.bbc.com/news/articles/c78jd517z87o">link&lt;/a>)&lt;/li>
 &lt;li>Personalized humanoids under review (&lt;a href="https://readmultiplex.com/2025/04/19/a-review-of-the-personal-humanoid-robots">link&lt;/a>)&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-23/</guid><pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-21</title><link>https://matq007.github.io/posts/2025-04-21/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-04-23/</guid><pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate></item><item><title>Daily from 2025-04-21</title><link>https://matq007.github.io/posts/weekly/2025-04-21/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Work from Martin Karsten where he focuses on optimizing network processing in Linux which can reduce up to 30% CPU consumption, making this interesting use case for data centers. However best results are only possible for high-traffic scenarios (&lt;a href="https://spectrum.ieee.org/data-center-energy-consumption">link&lt;/a>).&lt;/li>
 &lt;li>Philip Laine writes about his experience with Microsoft forking his Spegel project as Peerd (&lt;a href="https://philiplaine.com/posts/getting-forked-by-microsoft/">link&lt;/a>)&lt;/li>
@@ -138,4 +186,4 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
 &lt;h2 id="-tools">🔧 Tools&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/nari-labs/dia">nari-labs/dia&lt;/a> is a 1.6B model capable of generating ultra-realistic dialogue with open-weights published on Hugging Face&lt;/li>
-&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/2025-04-21/</guid><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate></item></channel></rss>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-04-21/</guid><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate></item></channel></rss>
