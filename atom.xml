@@ -1,4 +1,73 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 22 (25-30/05/2025)</title><link>https://matq007.github.io/posts/weekly/2025-05-30/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 24 (09-15/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-09/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Commentary from Garry Marcus on the latest criticism of LLMs &amp;ldquo;reasoning&amp;rdquo; from Apple (&lt;a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms">link&lt;/a>).
+&lt;ul>
+&lt;li>Interesting notes:
+&lt;ul>
+&lt;li>LLM might fail from inference outside of training distribution (out-of-distribution), same problem as perceptron&lt;/li>
+&lt;li>The main take home is that LLMs are not thinking, at least based on puzzle examples in the paper&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OS for public sector by EU, currently POC (&lt;a href="https://eu-os.eu/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Focused ultrasound stimulation could be the alternative treatment in future (&lt;a href="https://spectrum.ieee.org/focused-ultrasound-stimulation-inflammation-diabetes">link&lt;/a>).
+&lt;ul>
+&lt;li>Idea started with chronic inflammation; possible other candidates are diabetes (already tested on mice, pigs and was published)&lt;/li>
+&lt;li>Could be converted into wearable device in future, allowing easy access for anyone&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Marco writes about his own experience with Severely Deficient Autobiographical Memory / Aphantasia (&lt;a href="https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine">link&lt;/a>)
+&lt;ul>
+&lt;li>TL;DR: Difficulty to recall information through visualization&lt;/li>
+&lt;li>Youtube: &lt;a href="https://www.youtube.com/watch?v=3I4KxfXrCPw">Missing Mind&amp;rsquo;s Eye: Solving the Mystery of Aphantasia&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DIY budget server for AI/ML (&lt;a href="https://www.informationga.in/blog/building-an-ai-server-on-a-budget">link&lt;/a>)&lt;/li>
+&lt;li>Emerging Startup AheadComputing focuses on building the next new CPU (&lt;a href="https://www.oregonlive.com/silicon-forest/2025/06/top-researchers-leave-intel-to-build-startup-with-the-biggest-baddest-cpu.html">link&lt;/a>)&lt;/li>
+&lt;li>Apple really likes to make those API calls (&lt;a href="https://appaddict.app/post/my-mac-contacted-63-different-apple-owned-domains-in-one-hour-while-not-is-use">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/resemble-ai/chatterbox?tab=readme-ov-file">resemble-ai/chatterbox&lt;/a>: Resemble AI&amp;rsquo;s first production-grade open source TTS model.&lt;/li>
+&lt;li>&lt;a href="https://github.com/AasishPokhrel/shit/issues/1">AasishPokhrel/shit&lt;/a>: This is kinda funny 😅.&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-06-09/</guid><pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Week 23 (02-08/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-02/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>This is why data structure matters, hashmap to reduce tracking of duplicates decreased backup runtime. Fix was submitted to upsteram git repo (&lt;a href="https://about.gitlab.com/blog/2025/06/05/how-we-decreased-gitlab-repo-backup-times-from-48-hours-to-41-minutes/">link&lt;/a>).&lt;/li>
+&lt;li>Analysis of Cloudflare&amp;rsquo;s Claude-Generated code documented by the team via commit history (&lt;a href="https://www.maxemitchell.com/writings/i-read-all-of-cloudflares-claude-generated-commits/">link&lt;/a>).&lt;/li>
+&lt;li>Machine Learning Mastery back with some useful 10 one-liners in python (&lt;a href="https://machinelearningmastery.com/10-python-one-liners-that-will-simplify-feature-engineering/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Likely not surprising but race and ethnicity do align so well with genetic background (&lt;a href="https://www.science.org/content/article/race-ethnicity-don-t-match-genetic-ancestry-according-large-u-s-study">link&lt;/a>).&lt;/li>
+&lt;li>Bell Labs was all about science and innovation (&lt;a href="https://links.fabiomanganiello.com/share/683ee70d0409e6.66273547">link&lt;/a>).
+&lt;ul>
+&lt;li>&amp;ldquo;How do you manage genius? You don&amp;rsquo;t.&amp;rdquo; And it worked. - Mervin Kelly&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fibers on the surface of cotton seeds dissolved in lithium bromide-water and heat up to high temperature creates transparent material similartly strong to a polycarbonate. It&amp;rsquo;s biodegradable and can reduce half of CO2 emissions compared to plastic (&lt;a href="https://japannews.yomiuri.co.jp/science-nature/technology/20250605-259501/">link&lt;/a>).&lt;/li>
+&lt;li>Titanium dioxide which is in food, was shown to dysregulate endocrine system in mice. Although banned in Europe, America still watis for government&amp;rsquo;s response to the current research (&lt;a href="https://www.theguardian.com/us-news/2025/jun/06/titanium-dioxide-food-additive-toxic">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Great to Simon&amp;rsquo;s journey to self-hosting (&lt;a href="https://www.ssp.sh/blog/self-host-self-independence/">link&lt;/a>).&lt;/li>
+&lt;li>Let&amp;rsquo;s Encrypt tackles zombie clients with pausing/unpausing approach (&lt;a href="https://letsencrypt.org/2025/06/04/how-we-reduced-the-impact-of-zombie-clients/">link&lt;/a>).&lt;/li>
+&lt;li>Did you know you can store your data on paper with the right conversion (&lt;a href="https://www.monperrus.net/martin/store-data-paper">link&lt;/a>)?&lt;/li>
+&lt;li>MonsterUI packs FastHTML with Tailwind to generate quickly web-apps with Python (&lt;a href="https://www.answer.ai/posts/2025-01-15-monsterui.html">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/iamgio/quarkdown">iamgio/quarkdown&lt;/a>: another markdown with superpowers&lt;/li>
+&lt;li>&lt;a href="https://github.com/onlook-dev/onlook">onlook-dev/onlook&lt;/a>: the Cursor but for designers in mind&lt;/li>
+&lt;li>&lt;a href="https://github.com/elebumm/RedditVideoMakerBot">elebumm/RedditVideoMakerBot&lt;/a>: automated reddit videos&lt;/li>
+&lt;li>&lt;a href="https://github.com/wandb/wandb">wandb/wandb&lt;/a>: AI developer platform&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-06-02/</guid><pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Week 22 (25-30/05/2025)</title><link>https://matq007.github.io/posts/weekly/2025-05-30/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Simon&amp;rsquo;s initial impression of Devstal from Mistral (&lt;a href="https://simonwillison.net/2025/May/21/devstral">link&lt;/a>).&lt;/li>
 &lt;li>Namanyay provides very simple yet convincing argument about how to leverage the AI

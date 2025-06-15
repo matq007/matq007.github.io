@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Week-23 on Martin PROKS</title><link>https://matq007.github.io/tags/week-23/</link><description>Recent content in Week-23 on Martin PROKS</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://matq007.github.io/tags/week-23/atom.xml" rel="self" type="application/rss+xml"/><item><title>Week 23 (02-08/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-02/</link><pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate><guid>https://matq007.github.io/posts/weekly/2025-06-02/</guid><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>This is why data structure matters, hashmap to reduce tracking of duplicates decreased backup runtime. Fix was submitted to upsteram git repo (&lt;a href="https://about.gitlab.com/blog/2025/06/05/how-we-decreased-gitlab-repo-backup-times-from-48-hours-to-41-minutes/">link&lt;/a>).&lt;/li>
+&lt;li>Analysis of Cloudflare&amp;rsquo;s Claude-Generated code documented by the team via commit history (&lt;a href="https://www.maxemitchell.com/writings/i-read-all-of-cloudflares-claude-generated-commits/">link&lt;/a>).&lt;/li>
+&lt;li>Machine Learning Mastery back with some useful 10 one-liners in python (&lt;a href="https://machinelearningmastery.com/10-python-one-liners-that-will-simplify-feature-engineering/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Likely not surprising but race and ethnicity do align so well with genetic background (&lt;a href="https://www.science.org/content/article/race-ethnicity-don-t-match-genetic-ancestry-according-large-u-s-study">link&lt;/a>).&lt;/li>
+&lt;li>Bell Labs was all about science and innovation (&lt;a href="https://links.fabiomanganiello.com/share/683ee70d0409e6.66273547">link&lt;/a>).
+&lt;ul>
+&lt;li>&amp;ldquo;How do you manage genius? You don&amp;rsquo;t.&amp;rdquo; And it worked. - Mervin Kelly&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fibers on the surface of cotton seeds dissolved in lithium bromide-water and heat up to high temperature creates transparent material similartly strong to a polycarbonate. It&amp;rsquo;s biodegradable and can reduce half of CO2 emissions compared to plastic (&lt;a href="https://japannews.yomiuri.co.jp/science-nature/technology/20250605-259501/">link&lt;/a>).&lt;/li>
+&lt;li>Titanium dioxide which is in food, was shown to dysregulate endocrine system in mice. Although banned in Europe, America still watis for government&amp;rsquo;s response to the current research (&lt;a href="https://www.theguardian.com/us-news/2025/jun/06/titanium-dioxide-food-additive-toxic">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Great to Simon&amp;rsquo;s journey to self-hosting (&lt;a href="https://www.ssp.sh/blog/self-host-self-independence/">link&lt;/a>).&lt;/li>
+&lt;li>Let&amp;rsquo;s Encrypt tackles zombie clients with pausing/unpausing approach (&lt;a href="https://letsencrypt.org/2025/06/04/how-we-reduced-the-impact-of-zombie-clients/">link&lt;/a>).&lt;/li>
+&lt;li>Did you know you can store your data on paper with the right conversion (&lt;a href="https://www.monperrus.net/martin/store-data-paper">link&lt;/a>)?&lt;/li>
+&lt;li>MonsterUI packs FastHTML with Tailwind to generate quickly web-apps with Python (&lt;a href="https://www.answer.ai/posts/2025-01-15-monsterui.html">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/iamgio/quarkdown">iamgio/quarkdown&lt;/a>: another markdown with superpowers&lt;/li>
+&lt;li>&lt;a href="https://github.com/onlook-dev/onlook">onlook-dev/onlook&lt;/a>: the Cursor but for designers in mind&lt;/li>
+&lt;li>&lt;a href="https://github.com/elebumm/RedditVideoMakerBot">elebumm/RedditVideoMakerBot&lt;/a>: automated reddit videos&lt;/li>
+&lt;li>&lt;a href="https://github.com/wandb/wandb">wandb/wandb&lt;/a>: AI developer platform&lt;/li>
+&lt;/ul></description></item></channel></rss>
