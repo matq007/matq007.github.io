@@ -1,4 +1,42 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 24 (09-15/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-09/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin PROKS</title><description>A minimal hugo theme focus on content</description><link>https://matq007.github.io/</link><language>en</language><copyright>Copyright 2025, Calvin Tran</copyright><lastBuildDate>Sun, 29 Jun 2025 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://matq007.github.io//atom.xml" rel="self" type="application/atom+xml"/><item><title>Week 26 (23-29/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-29/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>AI talk by Andrej Karpathy which took internet by storm &lt;a href="https://www.youtube.com/watch?v=LCEmiRjPEtQ">link&lt;/a>.&lt;/li>
+&lt;li>Although not the most secure solution for DNS (i.e. TLS), but still nicely visualized &lt;a href="https://howdnssec.works/why-do-we-need-dnssec/">link&lt;/a>.&lt;/li>
+&lt;li>Youtube&amp;rsquo;s fake buffering and its breakdown &lt;a href="https://iter.ca/post/yt-adblock/">link&lt;/a>.&lt;/li>
+&lt;li>Another massive #password leak &lt;a href="https://apnews.com/article/large-login-leak-cybernews-google-apple-meta-2a758a40c398b0a68fb2371a522f70ed">link&lt;/a>.
+&lt;ul>
+&lt;li>As always 2FA + password manager can help reducing the risk&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Another great write-up by Cloudflare about blocking large DDoS attack &lt;a href="https://blog.cloudflare.com/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/">link&lt;/a>.&lt;/li>
+&lt;li>If you MacBook gives you buzzing sensation, you are not alone &lt;a href="https://old.reddit.com/r/apple/comments/1lgaw7m/psa_if_when_charging_your_macbook_you_get_a/">link&lt;/a>!
+&lt;ul>
+&lt;li>Apple time to fix this issue &amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Scientists identity all kinds of information by collecting just environment DNA in Dublin.&lt;a href="https://www.sciencedaily.com/releases/2025/06/250603114822.htm">link&lt;/a>.
+&lt;ul>
+&lt;li>Could this be done on a large scale to track uprising diseases?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Promising tooth implants tested in rats &lt;a href="https://futurism.com/neoscope/living-tooth-implant-animals">link&lt;/a>.&lt;/li>
+&lt;li>Liu&amp;rsquo;s lab created specialized electrodes from fluorinated elastomers which can be attached and &amp;ldquo;expand&amp;rdquo; with
+developing brain in order to measure neuron activity &lt;a href="https://spectrum.ieee.org/vera-rubin-observatory-first-images">link&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Finland introduces sand battery to store heat as a cost-efficient and sustainable
+alternative &lt;a href="https://techcrunch.com/2025/06/16/finland-warms-up-the-worlds-largest-sand-battery-and-the-economics-look-appealing/">link&lt;/a>.&lt;/li>
+&lt;li>Timeline of Virtual Cells concept &lt;a href="https://udara.io/science/virtual-cells">link&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/EbodShojaei/bake">EbodShojaei/bake&lt;/a>: Make formatter and linter&lt;/li>
+&lt;li>&lt;a href="https://github.com/axboe/fio">axboe/fio&lt;/a>: Benchmarking tool for I/O&lt;/li>
+&lt;/ul></description><author>Calvin Tran</author><guid>https://matq007.github.io/posts/weekly/2025-06-29/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate></item><item><title>Week 24 (09-15/06/2025)</title><link>https://matq007.github.io/posts/weekly/2025-06-09/</link><description>&lt;h2 id="-it">👾 IT&lt;/h2>
 &lt;ul>
 &lt;li>Commentary from Garry Marcus on the latest criticism of LLMs &amp;ldquo;reasoning&amp;rdquo; from Apple (&lt;a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms">link&lt;/a>).
 &lt;ul>
