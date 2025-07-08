@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Week-27 on Martin PROKS</title><link>https://matq007.github.io/tags/week-27/</link><description>Recent content in Week-27 on Martin PROKS</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://matq007.github.io/tags/week-27/atom.xml" rel="self" type="application/rss+xml"/><item><title>Week 27 (30/06-04/07/2025)</title><link>https://matq007.github.io/posts/weekly/2025-07-04/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://matq007.github.io/posts/weekly/2025-07-04/</guid><description>&lt;h2 id="-it">👾 IT&lt;/h2>
+&lt;ul>
+&lt;li>Uv vuild backend hits the production (&lt;a href="https://docs.astral.sh/uv/concepts/build-backend/">link&lt;/a>).&lt;/li>
+&lt;li>Beautiful write-up on how to speed-up character occurrence in Python (&lt;a href="https://pythonspeed.com/articles/different-ways-speed/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="science">🔬Science&lt;/h2>
+&lt;ul>
+&lt;li>Short write up on 2024 nobel price winners professors Hopfield and Hinton for their contribution in AI (&lt;a href="https://www.nobelprize.org/prizes/physics/2024/popular-information/">link&lt;/a>).
+&lt;ul>
+&lt;li>Interesting how Waddington landscape is portrayed in the article&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Another milestone for personalized medicine, baby receives personalized CRISPR treatment to correct CPS1 mutation inherited from both parents (&lt;a href="https://www.linkedin.com/posts/eric-topol-md-b83a7317_today-a-milestone-in-the-evolution-of-personalized-activity-7328855672152883200-0oR3">link&lt;/a>) (&lt;a href="https://archive.ph/wBxpD">link&lt;/a>).
+&lt;ul>
+&lt;li>The mutation is fatal, inability to remove ammonia (side product when protein is broken down) from blood&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Specific sound frequency can influence gene activity and modulate cell fate (&lt;a href="https://www.scientificamerican.com/article/cells-can-hear-sounds-and-respond-genetically/">link&lt;/a>).&lt;/li>
+&lt;li>Unfortunate statistical mistakes in Sun et al., clearly explained by Lior Pachter (&lt;a href="https://liorpachter.wordpress.com/2025/06/16/reply-to-reply-to-false-positives-in-the-study-of-memory-related-gene-expression/">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-links">🔗 Links&lt;/h2>
+&lt;ul>
+&lt;li>Thoughts on writing PhD suing Typist (&lt;a href="https://fransskarman.com/phd_thesis_in_typst.html">link&lt;/a>).
+&lt;ul>
+&lt;li>spoiler alter: probably not yet as the product is not mature yet&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Commentary of John Marioni on drug discovery with AI @ Roche(&lt;a href="https://www.mckinsey.com/industries/life-sciences/our-insights/genentechs-john-marioni-on-enhancing-drug-discovery-with-data-and-ai">link&lt;/a>).&lt;/li>
+&lt;/ul>
+&lt;h2 id="-tools">🔧 Tools&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/shshemi/tabiew">shshemi/tabiew&lt;/a>: TUI for the table formats&lt;/li>
+&lt;li>&lt;a href="https://github.com/bluewave-labs/checkmate">bluewave-labs/checkmate&lt;/a>: self-hosted monitoring platform&lt;/li>
+&lt;li>&lt;a href="https://github.com/keplergl/kepler.gl">keplergl/kepler.gl&lt;/a>: Geospatial analysis tools&lt;/li>
+&lt;li>&lt;a href="https://github.com/pyutils/line_profiler">pyutils/line_profiler&lt;/a>: Line by line profiling for Python&lt;/li>
+&lt;/ul></description></item></channel></rss>
