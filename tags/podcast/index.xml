@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Podcast on Martin Proks</title><link>/tags/podcast/</link><description>Recent content in Podcast on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/podcast/index.xml" rel="self" type="application/rss+xml"/><item><title>Week 22 (25-30/05/2025)</title><link>/blog/2025/2025-05-30/</link><pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-30/</guid><description>&lt;h2 id="-it"&gt;
+ 👾 IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Simon&amp;rsquo;s initial impression of Devstal from Mistral (&lt;a href="https://simonwillison.net/2025/May/21/devstral"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Namanyay provides very simple yet convincing argument about how to leverage the AI
+landscape in your day-to-day dev life. It&amp;rsquo;s not perfect, but it can be simplify
+some tasks, you just need to figure out which ones (&lt;a href="https://nmn.gl/blog/ai-scam"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Cloudflare proposes HTTP message signature to simplify how to deal with ai bots/crawlers (&lt;a href="https://blog.cloudflare.com/web-bot-auth/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Oddysey introduced model which generates AI video with real-time interaction
+from user (&lt;a href="https://techcrunch.com/2025/05/28/odysseys-new-ai-model-streams-3d-interactive-worlds/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;MinIO moves many features behind paywall &lt;a href="https://github.com/minio/object-browser/pull/3509"&gt;minio/object-browser&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Alternative switch: &lt;a href="https://garagehq.deuxfleurs.fr"&gt;Garage&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nice tips &amp;amp; tricks on running LLM locally by Kiran (&lt;a href="https://blog.nilenso.com/blog/2025/05/06/local-llm-setup/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ 🔬Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FDA pushes initiative to replace animal models for pre-clinical studies by
+embracing organ-on-a chip or in silico modeling if it offers to be a viable
+alternative(&lt;a href="https://www.nature.com/articles/s41587-025-02690-0"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;More bones found in the &amp;ldquo;River of Death&amp;rdquo; in Alberta, Canada provides great
+resource to study Pachyrhinosaurus and other dinosaurs (&lt;a href="https://www.bbc.com/news/articles/c0k3x8lmje1o"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;New #podcast series A Coffee with CompBio (&lt;a href="https://podcast.ausha.co/a-coffee-with-compbio"&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41467-025-59926-5"&gt;Zeng et al., 2025&lt;/a&gt; develops
+CellFM model using ERetNet paired with LoRA.&lt;/li&gt;
+&lt;li&gt;Tackling how to extract number of sequenced cells from papers using LLM by Svensson (&lt;a href="https://www.nxn.se/p/evaluating-automatic-cell-number"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.1101/2025.05.23.655749v1.full"&gt;Sikkema et al., 2025 BiorXiv&lt;/a&gt; developed MapQC
+to estimate fitness of mapping between reference and query
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Energy distance metric (E-distance)&lt;/em&gt; measures shift between two distributions (signal-to-noise ratio)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-links"&gt;
+ 🔗 Links
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Internet Archive launches Youtube channel where they stream how they scan material
+using high-resolution camera, use automated software for cropping and OCR conversion
+and archive it afterward on microfiche cards (&lt;a href="https://www.theverge.com/news/672682/internet-archive-microfiche-lo-fi-beats-channel"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Faster Github Actiosn from Blacksmith company with their transparency on security layers (&lt;a href="https://www.blacksmith.sh/blog/security"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Once provide a phone number it will find its way to the interwebs &lt;a href="https://danq.me/2025/05/21/google-shared-my-phone-number/"&gt;(link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-tools"&gt;
+ 🔧 Tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/simonw/llm"&gt;simonw/llm&lt;/a&gt;: LLM from terminal simply.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/awslabs/mountpoint-s3"&gt;awslabs/mountpoint-s3&lt;/a&gt;: Mount s3 bucket which is POSIX compliant.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/antinomyhq/forge"&gt;antinomyhq/forge&lt;/a&gt;: AI assistant directly in terminal.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/facebookincubator/cinder"&gt;facebookincubator/cinder&lt;/a&gt;: Meta&amp;rsquo;s version of CPython focused on speed performance.&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

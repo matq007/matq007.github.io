@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apple on Martin Proks</title><link>/tags/apple/</link><description>Recent content in Apple on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 29 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/apple/index.xml" rel="self" type="application/rss+xml"/><item><title>Week 26 (23-29/06/2025)</title><link>/blog/2025/2025-06-29/</link><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-29/</guid><description>&lt;h2 id="-it"&gt;
+ 👾 IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AI talk by Andrej Karpathy which took internet by storm &lt;a href="https://www.youtube.com/watch?v=LCEmiRjPEtQ"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Although not the most secure solution for DNS (i.e. TLS), but still nicely visualized &lt;a href="https://howdnssec.works/why-do-we-need-dnssec/"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Youtube&amp;rsquo;s fake buffering and its breakdown &lt;a href="https://iter.ca/post/yt-adblock/"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Another massive #password leak &lt;a href="https://apnews.com/article/large-login-leak-cybernews-google-apple-meta-2a758a40c398b0a68fb2371a522f70ed"&gt;link&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;As always 2FA + password manager can help reducing the risk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Another great write-up by Cloudflare about blocking large DDoS attack &lt;a href="https://blog.cloudflare.com/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you MacBook gives you buzzing sensation, you are not alone &lt;a href="https://old.reddit.com/r/apple/comments/1lgaw7m/psa_if_when_charging_your_macbook_you_get_a/"&gt;link&lt;/a&gt;!
+&lt;ul&gt;
+&lt;li&gt;Apple time to fix this issue &amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ 🔬Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Scientists identity all kinds of information by collecting just environment DNA in Dublin.&lt;a href="https://www.sciencedaily.com/releases/2025/06/250603114822.htm"&gt;link&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Could this be done on a large scale to track uprising diseases?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Promising tooth implants tested in rats &lt;a href="https://futurism.com/neoscope/living-tooth-implant-animals"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Liu&amp;rsquo;s lab created specialized electrodes from fluorinated elastomers which can be attached and &amp;ldquo;expand&amp;rdquo; with
+developing brain in order to measure neuron activity &lt;a href="https://spectrum.ieee.org/vera-rubin-observatory-first-images"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-links"&gt;
+ 🔗 Links
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finland introduces sand battery to store heat as a cost-efficient and sustainable
+alternative &lt;a href="https://techcrunch.com/2025/06/16/finland-warms-up-the-worlds-largest-sand-battery-and-the-economics-look-appealing/"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Timeline of Virtual Cells concept &lt;a href="https://udara.io/science/virtual-cells"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;DuckLake: Mix of metadata and files &lt;a href="https://www.youtube.com/watch?v=hrTjvvwhHEQ"&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-tools"&gt;
+ 🔧 Tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/EbodShojaei/bake"&gt;EbodShojaei/bake&lt;/a&gt;: Make formatter and linter&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/axboe/fio"&gt;axboe/fio&lt;/a&gt;: Benchmarking tool for I/O&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Week 24 (09-15/06/2025)</title><link>/blog/2025/2025-06-09/</link><pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-09/</guid><description>&lt;h2 id="-it"&gt;
+ 👾 IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Commentary from Garry Marcus on the latest criticism of LLMs &amp;ldquo;reasoning&amp;rdquo; from Apple (&lt;a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms"&gt;link&lt;/a&gt;).
+&lt;ul&gt;
+&lt;li&gt;Interesting notes:
+&lt;ul&gt;
+&lt;li&gt;LLM might fail from inference outside of training distribution (out-of-distribution), same problem as perceptron&lt;/li&gt;
+&lt;li&gt;The main take home is that LLMs are not thinking, at least based on puzzle examples in the paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS for public sector by EU, currently POC (&lt;a href="https://eu-os.eu/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ 🔬Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Focused ultrasound stimulation could be the alternative treatment in future (&lt;a href="https://spectrum.ieee.org/focused-ultrasound-stimulation-inflammation-diabetes"&gt;link&lt;/a&gt;).
+&lt;ul&gt;
+&lt;li&gt;Idea started with chronic inflammation; possible other candidates are diabetes (already tested on mice, pigs and was published)&lt;/li&gt;
+&lt;li&gt;Could be converted into wearable device in future, allowing easy access for anyone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-links"&gt;
+ 🔗 Links
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Marco writes about his own experience with Severely Deficient Autobiographical Memory / Aphantasia (&lt;a href="https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine"&gt;link&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;TL;DR: Difficulty to recall information through visualization&lt;/li&gt;
+&lt;li&gt;Youtube: &lt;a href="https://www.youtube.com/watch?v=3I4KxfXrCPw"&gt;Missing Mind&amp;rsquo;s Eye: Solving the Mystery of Aphantasia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DIY budget server for AI/ML (&lt;a href="https://www.informationga.in/blog/building-an-ai-server-on-a-budget"&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Emerging Startup AheadComputing focuses on building the next new CPU (&lt;a href="https://www.oregonlive.com/silicon-forest/2025/06/top-researchers-leave-intel-to-build-startup-with-the-biggest-baddest-cpu.html"&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Apple really likes to make those API calls (&lt;a href="https://appaddict.app/post/my-mac-contacted-63-different-apple-owned-domains-in-one-hour-while-not-is-use"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-tools"&gt;
+ 🔧 Tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/resemble-ai/chatterbox?tab=readme-ov-file"&gt;resemble-ai/chatterbox&lt;/a&gt;: Resemble AI&amp;rsquo;s first production-grade open source TTS model.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AasishPokhrel/shit/issues/1"&gt;AasishPokhrel/shit&lt;/a&gt;: This is kinda funny 😅.&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

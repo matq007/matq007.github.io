@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Week-24 on Martin Proks</title><link>/tags/week-24/</link><description>Recent content in Week-24 on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/week-24/index.xml" rel="self" type="application/rss+xml"/><item><title>Week 24 (09-15/06/2025)</title><link>/blog/2025/2025-06-09/</link><pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-09/</guid><description>&lt;h2 id="-it"&gt;
+ 👾 IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Commentary from Garry Marcus on the latest criticism of LLMs &amp;ldquo;reasoning&amp;rdquo; from Apple (&lt;a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms"&gt;link&lt;/a&gt;).
+&lt;ul&gt;
+&lt;li&gt;Interesting notes:
+&lt;ul&gt;
+&lt;li&gt;LLM might fail from inference outside of training distribution (out-of-distribution), same problem as perceptron&lt;/li&gt;
+&lt;li&gt;The main take home is that LLMs are not thinking, at least based on puzzle examples in the paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OS for public sector by EU, currently POC (&lt;a href="https://eu-os.eu/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ 🔬Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Focused ultrasound stimulation could be the alternative treatment in future (&lt;a href="https://spectrum.ieee.org/focused-ultrasound-stimulation-inflammation-diabetes"&gt;link&lt;/a&gt;).
+&lt;ul&gt;
+&lt;li&gt;Idea started with chronic inflammation; possible other candidates are diabetes (already tested on mice, pigs and was published)&lt;/li&gt;
+&lt;li&gt;Could be converted into wearable device in future, allowing easy access for anyone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-links"&gt;
+ 🔗 Links
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Marco writes about his own experience with Severely Deficient Autobiographical Memory / Aphantasia (&lt;a href="https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine"&gt;link&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;TL;DR: Difficulty to recall information through visualization&lt;/li&gt;
+&lt;li&gt;Youtube: &lt;a href="https://www.youtube.com/watch?v=3I4KxfXrCPw"&gt;Missing Mind&amp;rsquo;s Eye: Solving the Mystery of Aphantasia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DIY budget server for AI/ML (&lt;a href="https://www.informationga.in/blog/building-an-ai-server-on-a-budget"&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Emerging Startup AheadComputing focuses on building the next new CPU (&lt;a href="https://www.oregonlive.com/silicon-forest/2025/06/top-researchers-leave-intel-to-build-startup-with-the-biggest-baddest-cpu.html"&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Apple really likes to make those API calls (&lt;a href="https://appaddict.app/post/my-mac-contacted-63-different-apple-owned-domains-in-one-hour-while-not-is-use"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-tools"&gt;
+ 🔧 Tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/resemble-ai/chatterbox?tab=readme-ov-file"&gt;resemble-ai/chatterbox&lt;/a&gt;: Resemble AI&amp;rsquo;s first production-grade open source TTS model.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AasishPokhrel/shit/issues/1"&gt;AasishPokhrel/shit&lt;/a&gt;: This is kinda funny 😅.&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

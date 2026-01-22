@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog/Notes on Martin Proks</title><link>/tags/blog/notes/</link><description>Recent content in Blog/Notes on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 18 Jan 2026 12:00:00 +0000</lastBuildDate><atom:link href="/tags/blog/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Time to play with LG TV</title><link>/blog/2026/time-to-play-with-lg-tv/</link><pubDate>Sun, 18 Jan 2026 12:00:00 +0000</pubDate><guid>/blog/2026/time-to-play-with-lg-tv/</guid><description>&lt;p&gt;If you own a LG TV and are completely fed up with the random endless impossible to skip Youtube Ads, you have two options. Either buy the subscription, or install &lt;a href="https://repo.webosbrew.org/apps/youtube.leanback.v4/"&gt;Youtube AdFree&lt;/a&gt; via &lt;a href="https://www.webosbrew.org"&gt;WebOSBrew&lt;/a&gt;. To do that you have to decide between rooting your TV (voids the warranty) or enable development mode which has it&amp;rsquo;s limitations but can be a good starting point. If interested, follow the &lt;a href="https://www.webosbrew.org/#get-started"&gt;guide here&lt;/a&gt;. Kudos to the developers and the amazing work which allows developing and installing apps outside of LG&amp;rsquo;s operating system ecosystem.&lt;/p&gt;</description></item><item><title>Video transcoding</title><link>/blog/2026/video-transcoding/</link><pubDate>Sun, 18 Jan 2026 12:00:00 +0000</pubDate><guid>/blog/2026/video-transcoding/</guid><description>&lt;p&gt;Thought out my new year cleanup, I discovered that some of my movies in (&lt;code&gt;mkv&lt;/code&gt;) are not discovered by &lt;a href="https://jellyfin.org"&gt;Jellyfin&lt;/a&gt;. I&amp;rsquo;m still not quite sure what might be the cause, but it was perfect timing because I wanted to look more into ripping some movies with &lt;a href="https://www.ffmpeg.org"&gt;ffmpeg&lt;/a&gt;. There are plethora settings, codecs, encoders to choose from, just have a look at reddit &lt;code&gt;r/ffmpeg&lt;/code&gt;. Below is my good enough info for now&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;H.265&lt;/code&gt; encoder, it&amp;rsquo;s newer, generates smaller size than &lt;code&gt;H.264&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For sounds use it&amp;rsquo;s recommended to use &lt;code&gt;AV1&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or if you don&amp;rsquo;t want to deal with this, just use &lt;a href="https://handbrake.fr"&gt;HandBrake&lt;/a&gt; which already has well predefined settings. Note for Mac users, use hardware acceleration settings in &lt;code&gt;Presents&lt;/code&gt; -&amp;gt; &lt;code&gt;Hardware&lt;/code&gt; -&amp;gt; &lt;code&gt;H.265&lt;/code&gt; (either 4k or 1080p).&lt;/p&gt;</description></item><item><title>Migrating Google Photos to Immich</title><link>/blog/2026/migrating-google-photos-to-immich/</link><pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate><guid>/blog/2026/migrating-google-photos-to-immich/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR: This is a summary post of my experience migrating Google Photos to immich. Did you setup your reverse-proxy correctly? Spoiler alert, I didn&amp;rsquo;t 🤦‍♂️&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to &lt;a href="https://takeout.google.com"&gt;Google Takeout&lt;/a&gt; and request all your Google Photos images. I suggest to use &lt;code&gt;tar&lt;/code&gt; compression.&lt;/li&gt;
+&lt;li&gt;Download fantastic tool &lt;a href="https://github.com/simulot/immich-go"&gt;immich-go&lt;/a&gt;, which will import all photos including metadata, albums etc.&lt;/li&gt;
+&lt;li&gt;Generate an API KEY with specified permissions. For simplicity I&amp;rsquo;ve generated a key with all permissions which I&amp;rsquo;ve immediately deleted after import was finished.
+&lt;div class="codeblock"&gt;
+ &lt;div class="codeblock-actions"&gt;
+ &lt;button type="button"
+ class="codeblock-action codeblock-action--wrap"
+ data-wrap-toggle
+ data-icon-button
+ aria-pressed="false"
+ title="Enable soft wrap"
+ data-wrap-title="Enable soft wrap"
+ data-nowrap-title="Disable soft wrap"&gt;
+ &lt;svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;path d="M4 6h16M4 10h12a4 4 0 0 1 0 8h-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/&gt;
+ &lt;path d="M14 18l-2-2m2 2l-2 2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/&gt;
+ &lt;/svg&gt;
+ &lt;/button&gt;
+
+ &lt;button type="button"
+ class="codeblock-action codeblock-action--copy"
+ data-copy-code
+ data-icon-button
+ title="Copy code"
+ data-copied-title="COPIED"&gt;
+ &lt;svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"&gt;&lt;/rect&gt;
+ &lt;path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Import command from documentation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./immich-go upload from-google-photos &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	--server&lt;span class="o"&gt;=&lt;/span&gt;http://10.0.0.103:2283 &lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="c1"&gt;# only use hostname if you&amp;#39;ve correctly configured reverse-proxy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	--api-key&lt;span class="o"&gt;=&lt;/span&gt;&amp;lt;API_KEY&amp;gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	~/Downloads/Takeout/Google&lt;span class="se"&gt;\ &lt;/span&gt;Photos/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;After successful import I&amp;rsquo;ve used &lt;a href="https://github.com/shtse8/Google-Photos-Delete-Tool"&gt;shtse8/Google-Photos-Delete-Tool&lt;/a&gt; to delete all Google Photos, because the UI doesn&amp;rsquo;t support selecting all photos in one go. I&amp;rsquo;ve simply pasted the JS code in console and waited until all images were automatically selected and then clicked delete button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="troubleshooting-random-import-crashes"&gt;
+ Troubleshooting random import crashes
+&lt;/h2&gt;
+&lt;p&gt;If like me (&lt;a href="https://www.reddit.com/r/immich/comments/1ppzkr2/how_to_deal_with_large_files/"&gt;and many others&lt;/a&gt;), you haven&amp;rsquo;t properly configured your reverse-proxy, you probably experienced a random crash during importing. My initial thoughts were performance issue as described &lt;a href="https://tsmith.com/blog/2025/immich-migration/"&gt;here&lt;/a&gt;, however the error message was hinting on something else&lt;/p&gt;</description></item></channel></rss>

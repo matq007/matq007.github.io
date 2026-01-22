@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Self-Hosting on Martin Proks</title><link>/tags/self-hosting/</link><description>Recent content in Self-Hosting on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/self-hosting/index.xml" rel="self" type="application/rss+xml"/><item><title>Week 23 (02-08/06/2025)</title><link>/blog/2025/2025-06-02/</link><pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-02/</guid><description>&lt;h2 id="-it"&gt;
+ 👾 IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This is why data structure matters, hashmap to reduce tracking of duplicates decreased backup runtime. Fix was submitted to upsteram git repo (&lt;a href="https://about.gitlab.com/blog/2025/06/05/how-we-decreased-gitlab-repo-backup-times-from-48-hours-to-41-minutes/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Analysis of Cloudflare&amp;rsquo;s Claude-Generated code documented by the team via commit history (&lt;a href="https://www.maxemitchell.com/writings/i-read-all-of-cloudflares-claude-generated-commits/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Machine Learning Mastery back with some useful 10 one-liners in python (&lt;a href="https://machinelearningmastery.com/10-python-one-liners-that-will-simplify-feature-engineering/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ 🔬Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Likely not surprising but race and ethnicity do align so well with genetic background (&lt;a href="https://www.science.org/content/article/race-ethnicity-don-t-match-genetic-ancestry-according-large-u-s-study"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Bell Labs was all about science and innovation (&lt;a href="https://links.fabiomanganiello.com/share/683ee70d0409e6.66273547"&gt;link&lt;/a&gt;).
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;How do you manage genius? You don&amp;rsquo;t.&amp;rdquo; And it worked. - Mervin Kelly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fibers on the surface of cotton seeds dissolved in lithium bromide-water and heat up to high temperature creates transparent material similartly strong to a polycarbonate. It&amp;rsquo;s biodegradable and can reduce half of CO2 emissions compared to plastic (&lt;a href="https://japannews.yomiuri.co.jp/science-nature/technology/20250605-259501/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Titanium dioxide which is in food, was shown to dysregulate endocrine system in mice. Although banned in Europe, America still watis for government&amp;rsquo;s response to the current research (&lt;a href="https://www.theguardian.com/us-news/2025/jun/06/titanium-dioxide-food-additive-toxic"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-links"&gt;
+ 🔗 Links
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Great to Simon&amp;rsquo;s journey to self-hosting (&lt;a href="https://www.ssp.sh/blog/self-host-self-independence/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s Encrypt tackles zombie clients with pausing/unpausing approach (&lt;a href="https://letsencrypt.org/2025/06/04/how-we-reduced-the-impact-of-zombie-clients/"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Did you know you can store your data on paper with the right conversion (&lt;a href="https://www.monperrus.net/martin/store-data-paper"&gt;link&lt;/a&gt;)?&lt;/li&gt;
+&lt;li&gt;MonsterUI packs FastHTML with Tailwind to generate quickly web-apps with Python (&lt;a href="https://www.answer.ai/posts/2025-01-15-monsterui.html"&gt;link&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-tools"&gt;
+ 🔧 Tools
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/iamgio/quarkdown"&gt;iamgio/quarkdown&lt;/a&gt;: another markdown with superpowers&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/onlook-dev/onlook"&gt;onlook-dev/onlook&lt;/a&gt;: the Cursor but for designers in mind&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/elebumm/RedditVideoMakerBot"&gt;elebumm/RedditVideoMakerBot&lt;/a&gt;: automated reddit videos&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wandb/wandb"&gt;wandb/wandb&lt;/a&gt;: AI developer platform&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
