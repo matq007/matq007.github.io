@@ -1,0 +1,28 @@
+# baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Martin Proks'
+
+theme = "hugo-trainsh"
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[params]
+nav = "[Home](/) [Blog](/blog/) [Projects](/projects) [About](/about) [Tags](/tags/)"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']]
+          inline = [['$', '$'], ['\\(', '\\)']]
+
+[params.social]
+github = "https://github.com/matq007"
+x = "https://x.com/mproksik"
+linkedin = "https://www.linkedin.com/in/martinproks"
