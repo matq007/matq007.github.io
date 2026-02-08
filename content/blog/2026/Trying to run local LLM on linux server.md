@@ -1,6 +1,6 @@
 ---
 title: Trying to run local LLM on linux server
-date: 2026-02-08T12:00:00
+date: 2026-02-08T08:00:00
 tags:
   - blog/notes
   - llm
@@ -34,11 +34,11 @@ What the *** is happening here. I've spend few more hours on this and then decid
 After this experience I wasn't sure I would be successful with llama.cpp, but after I was determined to make this work. Surprisingly the only issue I encountered was that I was using old version of gcc (v9.x) when compiling from source. With simple upgrade to gcc v11, I've successfully managed to compile the package for CUDA with
 
 ```bash
-$ module load cuda/12.8 cudnn/9.18.0.77_cuda12 cmake/4.0.3 gcc/11.2.0
-$ git clone https://github.com/ggml-org/llama.cpp
-$ cd llama.cpp
-$ cmake -B build -DGGML_CUDA=ON
-$ cmake --build build --config Release -- -j 30
+module load cuda/12.8 cudnn/9.18.0.77_cuda12 cmake/4.0.3 gcc/11.2.0
+git clone https://github.com/ggml-org/llama.cpp
+cd llama.cpp
+cmake -B build -DGGML_CUDA=ON
+cmake --build build --config Release -- -j 30
 ```
 
 I've tested it using the [new WebUI](https://github.com/ggml-org/llama.cpp/discussions/16938) and it worked without any issues
