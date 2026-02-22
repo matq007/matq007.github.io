@@ -1,5 +1,5 @@
 ---
-title: "[Weblink]: microsoft/BitNet"
+title: microsoft/BitNet
 date: 2026-01-24T12:00:00
 tags:
   - blog/weblink

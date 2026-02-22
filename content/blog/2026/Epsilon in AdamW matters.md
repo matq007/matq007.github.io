@@ -1,5 +1,5 @@
 ---
-title: "[Weblink]: Epsilon in AdamW matters"
+title: Epsilon in AdamW matters
 date: 2026-01-24T12:00:00
 tags:
   - blog/weblink

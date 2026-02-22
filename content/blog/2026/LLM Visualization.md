@@ -1,5 +1,5 @@
 ---
-title: "[Weblink]: LLM Visualization"
+title: LLM Visualization
 date: 2026-02-08T08:00:00
 tags:
   - blog/weblink

@@ -1,5 +1,5 @@
 ---
-title: "[Weblink]: Osteoarthritis could be treated in future with drug inhibitor"
+title: Osteoarthritis could be treated in future with drug inhibitor
 date: 2026-01-24T12:00:00
 tags:
   - blog/weblink

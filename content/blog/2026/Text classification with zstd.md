@@ -1,5 +1,5 @@
 ---
-title: "[Weblink]: Text classification with zstd"
+title: Text classification with zstd
 date: 2026-02-15T08:00:00
 tags:
   - blog/weblink
