@@ -4,6 +4,7 @@ date: 2026-02-23T08:00:00
 tags:
   - blog/weblink
   - science
+  - "#paper"
 ---
 The work of _Pachter et al._, focuses on porting well established [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html) package to Python (edgePython) using Claude Opus 4.5, 4.6 and Codex. As described in the paper, the edgeR is a non trivial package supporting various functions used for differential expression analysis in genomics research. Due to Python's popularity in data science, having edgeR natively available in Python ecosystem, would be highly beneficial for the scientific community. Although, there exists alternative solutions of combining/converting R and Python objects interchangeably,[^1] they can be cumbersome.
 
