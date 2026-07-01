@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin Proks</title><link>/</link><description>Recent content on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 23 Feb 2026 08:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Pachter et al., 2026 bioRxiv</title><link>/blog/2026/pachter-et-al.-2026-biorxiv/</link><pubDate>Mon, 23 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/pachter-et-al.-2026-biorxiv/</guid><description>&lt;p&gt;The work of &lt;em&gt;Pachter et al.&lt;/em&gt;, focuses on porting well established &lt;a href="https://bioconductor.org/packages/release/bioc/html/edgeR.html"&gt;edgeR&lt;/a&gt; package to Python (edgePython) using Claude Opus 4.5, 4.6 and Codex. As described in the paper, the edgeR is a non trivial package supporting various functions used for differential expression analysis in genomics research. Due to Python&amp;rsquo;s popularity in data science, having edgeR natively available in Python ecosystem, would be highly beneficial for the scientific community. Although, there exists alternative solutions of combining/converting R and Python objects interchangeably,&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; they can be cumbersome.&lt;/p&gt;</description></item><item><title>The missing semester from MIT 2026</title><link>/blog/2026/the-missing-semester-from-mit-2026/</link><pubDate>Mon, 23 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/the-missing-semester-from-mit-2026/</guid><description>&lt;p&gt;The famous &lt;a href="https://missing.csail.mit.edu"&gt;IAP 2026&lt;/a&gt; course which teaches the fundamentals not covered in classic CS classes has been finally updated and released. I always like these types of courses as they are nice refresher for some fundamentals, but manage to always surprise me with some new tricks.&lt;/p&gt;</description></item><item><title>AlexsJones/llmfit</title><link>/blog/2026/llmfit/</link><pubDate>Sun, 22 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/llmfit/</guid><description>&lt;p&gt;&lt;a href="https://github.com/AlexsJones/llmfit"&gt;llmfit&lt;/a&gt; written by Alex Jones can help you figure out which LLM model best fits your gear setup. Versatile tools with many settings.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Martin Proks</title><link>/</link><description>Recent content on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 13 Jun 2026 08:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
+&lt;h2 id="it"&gt;
+ IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google introduced &lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"&gt;DiffusionGemma&lt;/a&gt; as name suggest uses diffusion architecture instead of standard transformer approach. The advantage is faster token generation for the sake of model hallucinations&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;I finally watched &lt;a href="https://www.youtube.com/watch?v=d95J8yzvjbQ&amp;amp;pp=ygURdGhlIHRoaW5raW5nIGdhbWU%3D"&gt;The Thinking Game&lt;/a&gt;, a short movie about how Google DeepMind tackled the protein folding problem. It&amp;rsquo;s definitely worth a watch.
+&lt;ul&gt;
+&lt;li&gt;Watching it reminded me how my colleagues from the lab got excited and wanted to run it out on our GPU server. It took me few days to set it up correctly&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bloomberg discusses AI and safety with &lt;em&gt;Dario&lt;/em&gt; and &lt;em&gt;Daniela Amodei&lt;/em&gt; in &lt;a href="https://www.youtube.com/watch?v=v1wZwxY3CMg"&gt;Inside Anthropic, the $965 Billion AI Juggernaut&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos"&gt;How to Setup a Local Coding Agent on macOS&lt;/a&gt; by Kyle Howells compares token generation using &lt;code&gt;gemma-4-26B-A4B&lt;/code&gt; (58.2 tokens/sec) vs adding MTP Draft mode (72.2 tokens/second). Interestingly, &lt;code&gt;llama.cpp&lt;/code&gt; was clearly faster in all the tests compared to &lt;code&gt;mlx&lt;/code&gt; which was a surprise.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paperswithcode.co"&gt;Papers With Code&lt;/a&gt; is back and offers curated papers from arXiv and Hugging Face.&lt;/li&gt;
+&lt;li&gt;WWDC26 presented &lt;a href="https://github.com/apple/container/tree/main"&gt;apple/container&lt;/a&gt; used to run linux containers. I am curious to see benchmarks comparing &lt;code&gt;docker&lt;/code&gt; and &lt;code&gt;podman&lt;/code&gt; runtime&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bitecode.dev/p/scripting-good-practices-in-python"&gt;Scripting good practices in Python&lt;/a&gt; by Bite code! provides some nice examples. Here are some of my favorites
+&lt;ul&gt;
+&lt;li&gt;Storing secrets using &lt;code&gt;keyring&lt;/code&gt; library instead of relying on environment variables&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;argparse.RawDescriptionHelpFormatter&lt;/code&gt; for cli with no arguments&lt;/li&gt;
+&lt;li&gt;Custom exit function applied to &lt;code&gt;sys.excepthook&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ultralytics/yolov5"&gt;Yolov5&lt;/a&gt; is out and it&amp;rsquo;s impressive as usual, I suggest you try the &lt;a href="https://github.com/ultralytics/yolo-ios-app"&gt;iOS app&lt;/a&gt; and walk around your area.
+&lt;ul&gt;
+&lt;li&gt;I am also including a &lt;a href="https://x.com/mfranz_on/status/2060836382432497679?s=20"&gt;nice example by Marco Franzon&lt;/a&gt; where YOLO was finetuned to track immune cell chasing bacteria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fernando Irarrázaval was curious if people could break his openclaw instance (assistant Fiu) using prompt injection to leak the secrets thought an email summarized in &lt;a href="https://www.fernandoi.cl/posts/hackmyclaw/"&gt;What happened after 2,000 people tried to hack my AI assistant&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;He chose Claude Opus 4.6 which already comes with strong guard rails. Interestingly, Fiu recognized over time that this was not an organic traffic and stored this info in its memory.&lt;/li&gt;
+&lt;li&gt;Although Fiu didn&amp;rsquo;t leak the secrets, was it worth the 500$ cost?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A gene-therapy trial focusing on partial rejuvenation of older cells in eyes has been administered to first patient executed by Life Bioscience&lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt; (co-founded by &lt;a href="https://en.wikipedia.org/wiki/David_A._Sinclair"&gt;Prof. David A. Sinclair&lt;/a&gt;). Using inducible adenovirus the goal is to activate 3 reprogramming genes (OCT4, SOX2, KLF4 aka OSK genes from &lt;a href="https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell"&gt;Yamanaka factors&lt;/a&gt;). The system only activates if antibiotics called doxycycline is administered&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id="fnref:6"&gt;&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref"&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;China deployed artificial human embryos (on batch cultured on uterine cells and second placed inside a microfluid chip) to Tiangong space station, while keeping control cells on Earth. The objective is to study the impact of space environment on the embryo development. The objective is to see if in future life can be started on other planets&lt;sup id="fnref:7"&gt;&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref"&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Daraxonrasib&lt;/code&gt;&lt;sup id="fnref:8"&gt;&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref"&gt;8&lt;/a&gt;&lt;/sup&gt; a newly proposed drug prolongs the lifespan of patients suffering from advanced pancreatic cancer which suffer from RAS-mutations.
+&lt;ul&gt;
+&lt;li&gt;The study shows that the treatment was able to double the life expectation (however no patient survived to my understanding). It is still a promising new treatment with positive feedback from the community&lt;sup id="fnref:9"&gt;&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref"&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A nice write-up by Eaton about &lt;a href="https://eaton-works.com/2026/06/24/jnj-webapp-hacks/"&gt;Exploiting vulnerabilities in Johnson &amp;amp; Johnson web apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s43588-025-00945-z"&gt;Cultrera di Montesano et al., 2026&lt;/a&gt; focuses on improving cell type prediction by leveraging hierarchical ontologies. As cell type annotation is primarily manual, sometimes different granularity level are assigned to the cells (lv 0: lymphocytes, lv 1: B cells). This could be tackled by ontologies, where cell state would be assigned based on cumulative score of hierarchical representation of ontology rather than just a single-predicted probability score. In nutshell you use parent/children relationship when determine cell type, giving you higher confidence score #paper.
+&lt;ul&gt;
+&lt;li&gt;It is intuitive and elegant implementation termed &lt;em&gt;hierarchical cross-entropy loss&lt;/em&gt; by the authors. The approach showcases moderate improvements in cell type prediction on quite a large datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41592-026-03120-y"&gt;DenAdel et al., 2026&lt;/a&gt; showcased that large number of cells ≠ better performance. The authors conclude that ~20,000 cells might be the sweet spot for training dataset. What does this mean for the future? Maybe we don&amp;rsquo;t need &lt;a href="https://chanzuckerberg.com/newsroom/billion-cells-project-launches-advance-ai-biology/"&gt;Billion cell project&lt;/a&gt;, but rather better understanding on how to sample enough cell diversity and choosing the right model architecture with optimized parameters #paper.&lt;/li&gt;
+&lt;li&gt;A short interview &lt;a href="https://www.youtube.com/watch?v=n-hWHV2ZKOA"&gt;Why AI Hasn&amp;rsquo;t Cured Anything&amp;hellip;Yet, According to Jennifer Doudna&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733870v1"&gt;Merchant, Guo and Viggiano et al., 2026&lt;/a&gt; introduce a generative programming language Proto for synthetic biology. The main objective is to provide infrastructure for designing DNA, RNA and protein sequences with defined generative and optimizer modules. Basically a constrained generative system for quick assembly. As the authors point out in the discussion, the main challenge was to standardize multiple tools required for this project. Overall, I can imagine Proto being utilized by both wet and dry-labs combined with AI to facilitate faster discovery, removing the installation/infrastructure barrier shifting the focus and energy to research instead of figuring out why tools are not working on HPC. Lastly, I appreciate the disclosure transparency of AI usage for developing and writing the manuscript.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qedscience.com"&gt;QED Science&lt;/a&gt;, which estimates quality score for scientific papers took X/Twitter &lt;a href="https://x.com/qedScience/status/2070161203746201721"&gt;by storm&lt;/a&gt; with interesting debates and commentaries&lt;sup id="fnref:10"&gt;&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref"&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Dxn3BcSgsMY"&gt;https://www.youtube.com/watch?v=Dxn3BcSgsMY&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Precision medicine</title><link>/blog/2026/precision-medicine/</link><pubDate>Sun, 07 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/precision-medicine/</guid><description>&lt;p&gt;Some articles/website on applied precision medicine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sid Sijbrandij&amp;rsquo;s treatment of osteosarcoma in the T5 vertebrae of the upper spine&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;From flue signs all the way to encephalitis, an autoimmune disease&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Baby BBC chromosome&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://sytse.com/cancer/"&gt;https://sytse.com/cancer/&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://burntsushi.net/encephalitis/"&gt;https://burntsushi.net/encephalitis/&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>Just Fucking Use Go</title><link>/blog/2026/just-fucking-use-go/</link><pubDate>Wed, 27 May 2026 08:00:00 +0000</pubDate><guid>/blog/2026/just-fucking-use-go/</guid><description>&lt;p&gt;An &lt;a href="https://blainsmith.com/articles/just-fucking-use-go/"&gt;appealing article&lt;/a&gt; by Blain Smith on about why using &lt;a href="https://go.dev"&gt;Go&lt;/a&gt;. I don&amp;rsquo;t particularly care for the grotesque language, but I like some of the arguments. Having a language which is designed for performance, comes with dev tool sets and can be compiled? Of course there are other languages which can do the same and don&amp;rsquo;t suffer from the endless &lt;code&gt;nil&lt;/code&gt; validation, but this was a design choice on purpose.&lt;/p&gt;</description></item><item><title>Untitled</title><link>/blog/2026/defuddle/</link><pubDate>Wed, 22 Apr 2026 08:00:00 +0000</pubDate><guid>/blog/2026/defuddle/</guid><description>&lt;p&gt;From the creator of &lt;a href="https://obsidian.md/"&gt;Obsidian (Steph Ango)&lt;/a&gt;, convert any webpage to markdown using &lt;a href="https://defuddle.md"&gt;Defuddle&lt;/a&gt;. At the moment, 1,000 pages per month are free using API. Works quite well even on research publications and is open-sourced at &lt;a href="https://github.com/kepano/defuddle"&gt;kepano/defuddle&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Untitled</title><link>/blog/2026/git-trickary/</link><pubDate>Wed, 22 Apr 2026 08:00:00 +0000</pubDate><guid>/blog/2026/git-trickary/</guid><description>&lt;p&gt;This is a list of git tricks I&amp;rsquo;ve found randomly on the Internet that could be helpful.&lt;/p&gt;
+&lt;h2 id="amend-any-commit-hash-with"&gt;
+ Amend any commit hash with
+&lt;/h2&gt;
+&lt;div class="codeblock"&gt;
+ &lt;div class="codeblock-actions"&gt;
+ &lt;button type="button"
+ class="codeblock-action codeblock-action--wrap"
+ data-wrap-toggle
+ data-icon-button
+ aria-pressed="false"
+ title="Enable soft wrap"
+ data-wrap-title="Enable soft wrap"
+ data-nowrap-title="Disable soft wrap"&gt;
+ &lt;svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;path d="M4 6h16M4 10h12a4 4 0 0 1 0 8h-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/&gt;
+ &lt;path d="M14 18l-2-2m2 2l-2 2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/&gt;
+ &lt;/svg&gt;
+ &lt;/button&gt;
+
+ &lt;button type="button"
+ class="codeblock-action codeblock-action--copy"
+ data-copy-code
+ data-icon-button
+ title="Copy code"
+ data-copied-title="COPIED"&gt;
+ &lt;svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"&gt;&lt;/rect&gt;
+ &lt;path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;
+ &lt;path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# .gitignore&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;[&lt;/span&gt;alias&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;fixup&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;!f() { TARGET=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;git rev-parse &lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;; git commit --fixup=&lt;/span&gt;&lt;span class="nv"&gt;$TARGET&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="p"&gt;@:&lt;/span&gt;&lt;span class="nv"&gt;2&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &amp;amp;&amp;amp; GIT_SEQUENCE_EDITOR=true git rebase -i --autostash --autosquash &lt;/span&gt;&lt;span class="nv"&gt;$TARGET&lt;/span&gt;&lt;span class="s2"&gt;^; }; f&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;running &lt;code&gt;git fixup &amp;lt;SHA-1&amp;gt;&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Untitled</title><link>/blog/2026/hardwood/</link><pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate><guid>/blog/2026/hardwood/</guid><description>&lt;p&gt;There is a new Parque parser codenamed Hardwood which has been build from scratch and allows faster parsing with less dependencies. At the moment it&amp;rsquo;s available for Java only, but there is a &lt;a href="https://hardwood.dev/latest/cli/"&gt;cli tool&lt;/a&gt; which can be utilized right away.&lt;/p&gt;
+&lt;p&gt;Link to article &lt;a href="https://www.morling.dev/blog/hardwood-new-parser-for-apache-parquet"&gt;here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>ImGajeed76/pgit</title><link>/blog/2026/pgit/</link><pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate><guid>/blog/2026/pgit/</guid><description>&lt;p&gt;The tool written by Oliver Seifert &lt;a href="https://oseifert.ch/blog/building-pgit"&gt;pgit&lt;/a&gt; can load git history to a Postgres database in order to perform further analysis. Pgit was build as a demo which uses a compression library &lt;a href="https://github.com/ImGajeed76/xpatch"&gt;xpatch&lt;/a&gt; under the hood.&lt;/p&gt;</description></item><item><title>RustFS</title><link>/blog/2026/rustfs/</link><pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate><guid>/blog/2026/rustfs/</guid><description>&lt;p&gt;MinIO a popular s3 compatible storage made some headlines past few month where they removed UI interface from the community license and then later switched repository to maintenance mode. This move forced FOOS community to create a fork &lt;a href="https://github.com/pgsty/minio"&gt;pgsty/minio&lt;/a&gt; while others are now switching to &lt;a href="https://rustfs.dev/binary-replacement-a-simple-way-to-migrate-from-minio-to-rustfs/"&gt;RustFS&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Pachter et al., 2026 bioRxiv</title><link>/blog/2026/pachter-et-al.-2026-biorxiv/</link><pubDate>Mon, 23 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/pachter-et-al.-2026-biorxiv/</guid><description>&lt;p&gt;The work of &lt;em&gt;Pachter et al.&lt;/em&gt;, focuses on porting well established &lt;a href="https://bioconductor.org/packages/release/bioc/html/edgeR.html"&gt;edgeR&lt;/a&gt; package to Python (edgePython) using Claude Opus 4.5, 4.6 and Codex. As described in the paper, the edgeR is a non trivial package supporting various functions used for differential expression analysis in genomics research. Due to Python&amp;rsquo;s popularity in data science, having edgeR natively available in Python ecosystem, would be highly beneficial for the scientific community. Although, there exists alternative solutions of combining/converting R and Python objects interchangeably,&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; they can be cumbersome.&lt;/p&gt;</description></item><item><title>The missing semester from MIT 2026</title><link>/blog/2026/the-missing-semester-from-mit-2026/</link><pubDate>Mon, 23 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/the-missing-semester-from-mit-2026/</guid><description>&lt;p&gt;The famous &lt;a href="https://missing.csail.mit.edu"&gt;IAP 2026&lt;/a&gt; course which teaches the fundamentals not covered in classic CS classes has been finally updated and released. I always like these types of courses as they are nice refresher for some fundamentals, but manage to always surprise me with some new tricks.&lt;/p&gt;</description></item><item><title>AlexsJones/llmfit</title><link>/blog/2026/llmfit/</link><pubDate>Sun, 22 Feb 2026 08:00:00 +0000</pubDate><guid>/blog/2026/llmfit/</guid><description>&lt;p&gt;&lt;a href="https://github.com/AlexsJones/llmfit"&gt;llmfit&lt;/a&gt; written by Alex Jones can help you figure out which LLM model best fits your gear setup. Versatile tools with many settings.&lt;/p&gt;
 &lt;p&gt;Written in Rut, can be installed with &lt;code&gt;cargo&lt;/code&gt; or &lt;code&gt;brew&lt;/code&gt;&lt;/p&gt;
 &lt;div class="codeblock"&gt;
  &lt;div class="codeblock-actions"&gt;

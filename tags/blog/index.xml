@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Martin Proks</title><link>/blog/</link><description>Recent content in Blogs on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 13 Jun 2026 08:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Martin Proks</title><link>/tags/blog/</link><description>Recent content in Blog on Martin Proks</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 13 Jun 2026 08:00:00 +0000</lastBuildDate><atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
+&lt;h2 id="it"&gt;
+ IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google introduced &lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"&gt;DiffusionGemma&lt;/a&gt; as name suggest uses diffusion architecture instead of standard transformer approach. The advantage is faster token generation for the sake of model hallucinations&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;I finally watched &lt;a href="https://www.youtube.com/watch?v=d95J8yzvjbQ&amp;amp;pp=ygURdGhlIHRoaW5raW5nIGdhbWU%3D"&gt;The Thinking Game&lt;/a&gt;, a short movie about how Google DeepMind tackled the protein folding problem. It&amp;rsquo;s definitely worth a watch.
+&lt;ul&gt;
+&lt;li&gt;Watching it reminded me how my colleagues from the lab got excited and wanted to run it out on our GPU server. It took me few days to set it up correctly&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bloomberg discusses AI and safety with &lt;em&gt;Dario&lt;/em&gt; and &lt;em&gt;Daniela Amodei&lt;/em&gt; in &lt;a href="https://www.youtube.com/watch?v=v1wZwxY3CMg"&gt;Inside Anthropic, the $965 Billion AI Juggernaut&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos"&gt;How to Setup a Local Coding Agent on macOS&lt;/a&gt; by Kyle Howells compares token generation using &lt;code&gt;gemma-4-26B-A4B&lt;/code&gt; (58.2 tokens/sec) vs adding MTP Draft mode (72.2 tokens/second). Interestingly, &lt;code&gt;llama.cpp&lt;/code&gt; was clearly faster in all the tests compared to &lt;code&gt;mlx&lt;/code&gt; which was a surprise.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paperswithcode.co"&gt;Papers With Code&lt;/a&gt; is back and offers curated papers from arXiv and Hugging Face.&lt;/li&gt;
+&lt;li&gt;WWDC26 presented &lt;a href="https://github.com/apple/container/tree/main"&gt;apple/container&lt;/a&gt; used to run linux containers. I am curious to see benchmarks comparing &lt;code&gt;docker&lt;/code&gt; and &lt;code&gt;podman&lt;/code&gt; runtime&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bitecode.dev/p/scripting-good-practices-in-python"&gt;Scripting good practices in Python&lt;/a&gt; by Bite code! provides some nice examples. Here are some of my favorites
+&lt;ul&gt;
+&lt;li&gt;Storing secrets using &lt;code&gt;keyring&lt;/code&gt; library instead of relying on environment variables&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;argparse.RawDescriptionHelpFormatter&lt;/code&gt; for cli with no arguments&lt;/li&gt;
+&lt;li&gt;Custom exit function applied to &lt;code&gt;sys.excepthook&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ultralytics/yolov5"&gt;Yolov5&lt;/a&gt; is out and it&amp;rsquo;s impressive as usual, I suggest you try the &lt;a href="https://github.com/ultralytics/yolo-ios-app"&gt;iOS app&lt;/a&gt; and walk around your area.
+&lt;ul&gt;
+&lt;li&gt;I am also including a &lt;a href="https://x.com/mfranz_on/status/2060836382432497679?s=20"&gt;nice example by Marco Franzon&lt;/a&gt; where YOLO was finetuned to track immune cell chasing bacteria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fernando Irarrázaval was curious if people could break his openclaw instance (assistant Fiu) using prompt injection to leak the secrets thought an email summarized in &lt;a href="https://www.fernandoi.cl/posts/hackmyclaw/"&gt;What happened after 2,000 people tried to hack my AI assistant&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;He chose Claude Opus 4.6 which already comes with strong guard rails. Interestingly, Fiu recognized over time that this was not an organic traffic and stored this info in its memory.&lt;/li&gt;
+&lt;li&gt;Although Fiu didn&amp;rsquo;t leak the secrets, was it worth the 500$ cost?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A gene-therapy trial focusing on partial rejuvenation of older cells in eyes has been administered to first patient executed by Life Bioscience&lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt; (co-founded by &lt;a href="https://en.wikipedia.org/wiki/David_A._Sinclair"&gt;Prof. David A. Sinclair&lt;/a&gt;). Using inducible adenovirus the goal is to activate 3 reprogramming genes (OCT4, SOX2, KLF4 aka OSK genes from &lt;a href="https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell"&gt;Yamanaka factors&lt;/a&gt;). The system only activates if antibiotics called doxycycline is administered&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id="fnref:6"&gt;&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref"&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;China deployed artificial human embryos (on batch cultured on uterine cells and second placed inside a microfluid chip) to Tiangong space station, while keeping control cells on Earth. The objective is to study the impact of space environment on the embryo development. The objective is to see if in future life can be started on other planets&lt;sup id="fnref:7"&gt;&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref"&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Daraxonrasib&lt;/code&gt;&lt;sup id="fnref:8"&gt;&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref"&gt;8&lt;/a&gt;&lt;/sup&gt; a newly proposed drug prolongs the lifespan of patients suffering from advanced pancreatic cancer which suffer from RAS-mutations.
+&lt;ul&gt;
+&lt;li&gt;The study shows that the treatment was able to double the life expectation (however no patient survived to my understanding). It is still a promising new treatment with positive feedback from the community&lt;sup id="fnref:9"&gt;&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref"&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A nice write-up by Eaton about &lt;a href="https://eaton-works.com/2026/06/24/jnj-webapp-hacks/"&gt;Exploiting vulnerabilities in Johnson &amp;amp; Johnson web apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s43588-025-00945-z"&gt;Cultrera di Montesano et al., 2026&lt;/a&gt; focuses on improving cell type prediction by leveraging hierarchical ontologies. As cell type annotation is primarily manual, sometimes different granularity level are assigned to the cells (lv 0: lymphocytes, lv 1: B cells). This could be tackled by ontologies, where cell state would be assigned based on cumulative score of hierarchical representation of ontology rather than just a single-predicted probability score. In nutshell you use parent/children relationship when determine cell type, giving you higher confidence score #paper.
+&lt;ul&gt;
+&lt;li&gt;It is intuitive and elegant implementation termed &lt;em&gt;hierarchical cross-entropy loss&lt;/em&gt; by the authors. The approach showcases moderate improvements in cell type prediction on quite a large datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41592-026-03120-y"&gt;DenAdel et al., 2026&lt;/a&gt; showcased that large number of cells ≠ better performance. The authors conclude that ~20,000 cells might be the sweet spot for training dataset. What does this mean for the future? Maybe we don&amp;rsquo;t need &lt;a href="https://chanzuckerberg.com/newsroom/billion-cells-project-launches-advance-ai-biology/"&gt;Billion cell project&lt;/a&gt;, but rather better understanding on how to sample enough cell diversity and choosing the right model architecture with optimized parameters #paper.&lt;/li&gt;
+&lt;li&gt;A short interview &lt;a href="https://www.youtube.com/watch?v=n-hWHV2ZKOA"&gt;Why AI Hasn&amp;rsquo;t Cured Anything&amp;hellip;Yet, According to Jennifer Doudna&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733870v1"&gt;Merchant, Guo and Viggiano et al., 2026&lt;/a&gt; introduce a generative programming language Proto for synthetic biology. The main objective is to provide infrastructure for designing DNA, RNA and protein sequences with defined generative and optimizer modules. Basically a constrained generative system for quick assembly. As the authors point out in the discussion, the main challenge was to standardize multiple tools required for this project. Overall, I can imagine Proto being utilized by both wet and dry-labs combined with AI to facilitate faster discovery, removing the installation/infrastructure barrier shifting the focus and energy to research instead of figuring out why tools are not working on HPC. Lastly, I appreciate the disclosure transparency of AI usage for developing and writing the manuscript.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qedscience.com"&gt;QED Science&lt;/a&gt;, which estimates quality score for scientific papers took X/Twitter &lt;a href="https://x.com/qedScience/status/2070161203746201721"&gt;by storm&lt;/a&gt; with interesting debates and commentaries&lt;sup id="fnref:10"&gt;&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref"&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Dxn3BcSgsMY"&gt;https://www.youtube.com/watch?v=Dxn3BcSgsMY&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
+&lt;h2 id="it"&gt;
+ IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google introduced &lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"&gt;DiffusionGemma&lt;/a&gt; as name suggest uses diffusion architecture instead of standard transformer approach. The advantage is faster token generation for the sake of model hallucinations&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;I finally watched &lt;a href="https://www.youtube.com/watch?v=d95J8yzvjbQ&amp;amp;pp=ygURdGhlIHRoaW5raW5nIGdhbWU%3D"&gt;The Thinking Game&lt;/a&gt;, a short movie about how Google DeepMind tackled the protein folding problem. It&amp;rsquo;s definitely worth a watch.
+&lt;ul&gt;
+&lt;li&gt;Watching it reminded me how my colleagues from the lab got excited and wanted to run it out on our GPU server. It took me few days to set it up correctly&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bloomberg discusses AI and safety with &lt;em&gt;Dario&lt;/em&gt; and &lt;em&gt;Daniela Amodei&lt;/em&gt; in &lt;a href="https://www.youtube.com/watch?v=v1wZwxY3CMg"&gt;Inside Anthropic, the $965 Billion AI Juggernaut&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos"&gt;How to Setup a Local Coding Agent on macOS&lt;/a&gt; by Kyle Howells compares token generation using &lt;code&gt;gemma-4-26B-A4B&lt;/code&gt; (58.2 tokens/sec) vs adding MTP Draft mode (72.2 tokens/second). Interestingly, &lt;code&gt;llama.cpp&lt;/code&gt; was clearly faster in all the tests compared to &lt;code&gt;mlx&lt;/code&gt; which was a surprise.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paperswithcode.co"&gt;Papers With Code&lt;/a&gt; is back and offers curated papers from arXiv and Hugging Face.&lt;/li&gt;
+&lt;li&gt;WWDC26 presented &lt;a href="https://github.com/apple/container/tree/main"&gt;apple/container&lt;/a&gt; used to run linux containers. I am curious to see benchmarks comparing &lt;code&gt;docker&lt;/code&gt; and &lt;code&gt;podman&lt;/code&gt; runtime&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bitecode.dev/p/scripting-good-practices-in-python"&gt;Scripting good practices in Python&lt;/a&gt; by Bite code! provides some nice examples. Here are some of my favorites
+&lt;ul&gt;
+&lt;li&gt;Storing secrets using &lt;code&gt;keyring&lt;/code&gt; library instead of relying on environment variables&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;argparse.RawDescriptionHelpFormatter&lt;/code&gt; for cli with no arguments&lt;/li&gt;
+&lt;li&gt;Custom exit function applied to &lt;code&gt;sys.excepthook&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ultralytics/yolov5"&gt;Yolov5&lt;/a&gt; is out and it&amp;rsquo;s impressive as usual, I suggest you try the &lt;a href="https://github.com/ultralytics/yolo-ios-app"&gt;iOS app&lt;/a&gt; and walk around your area.
+&lt;ul&gt;
+&lt;li&gt;I am also including a &lt;a href="https://x.com/mfranz_on/status/2060836382432497679?s=20"&gt;nice example by Marco Franzon&lt;/a&gt; where YOLO was finetuned to track immune cell chasing bacteria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fernando Irarrázaval was curious if people could break his openclaw instance (assistant Fiu) using prompt injection to leak the secrets thought an email summarized in &lt;a href="https://www.fernandoi.cl/posts/hackmyclaw/"&gt;What happened after 2,000 people tried to hack my AI assistant&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;He chose Claude Opus 4.6 which already comes with strong guard rails. Interestingly, Fiu recognized over time that this was not an organic traffic and stored this info in its memory.&lt;/li&gt;
+&lt;li&gt;Although Fiu didn&amp;rsquo;t leak the secrets, was it worth the 500$ cost?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A gene-therapy trial focusing on partial rejuvenation of older cells in eyes has been administered to first patient executed by Life Bioscience&lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt; (co-founded by &lt;a href="https://en.wikipedia.org/wiki/David_A._Sinclair"&gt;Prof. David A. Sinclair&lt;/a&gt;). Using inducible adenovirus the goal is to activate 3 reprogramming genes (OCT4, SOX2, KLF4 aka OSK genes from &lt;a href="https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell"&gt;Yamanaka factors&lt;/a&gt;). The system only activates if antibiotics called doxycycline is administered&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id="fnref:6"&gt;&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref"&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;China deployed artificial human embryos (on batch cultured on uterine cells and second placed inside a microfluid chip) to Tiangong space station, while keeping control cells on Earth. The objective is to study the impact of space environment on the embryo development. The objective is to see if in future life can be started on other planets&lt;sup id="fnref:7"&gt;&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref"&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Daraxonrasib&lt;/code&gt;&lt;sup id="fnref:8"&gt;&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref"&gt;8&lt;/a&gt;&lt;/sup&gt; a newly proposed drug prolongs the lifespan of patients suffering from advanced pancreatic cancer which suffer from RAS-mutations.
+&lt;ul&gt;
+&lt;li&gt;The study shows that the treatment was able to double the life expectation (however no patient survived to my understanding). It is still a promising new treatment with positive feedback from the community&lt;sup id="fnref:9"&gt;&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref"&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A nice write-up by Eaton about &lt;a href="https://eaton-works.com/2026/06/24/jnj-webapp-hacks/"&gt;Exploiting vulnerabilities in Johnson &amp;amp; Johnson web apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s43588-025-00945-z"&gt;Cultrera di Montesano et al., 2026&lt;/a&gt; focuses on improving cell type prediction by leveraging hierarchical ontologies. As cell type annotation is primarily manual, sometimes different granularity level are assigned to the cells (lv 0: lymphocytes, lv 1: B cells). This could be tackled by ontologies, where cell state would be assigned based on cumulative score of hierarchical representation of ontology rather than just a single-predicted probability score. In nutshell you use parent/children relationship when determine cell type, giving you higher confidence score #paper.
+&lt;ul&gt;
+&lt;li&gt;It is intuitive and elegant implementation termed &lt;em&gt;hierarchical cross-entropy loss&lt;/em&gt; by the authors. The approach showcases moderate improvements in cell type prediction on quite a large datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41592-026-03120-y"&gt;DenAdel et al., 2026&lt;/a&gt; showcased that large number of cells ≠ better performance. The authors conclude that ~20,000 cells might be the sweet spot for training dataset. What does this mean for the future? Maybe we don&amp;rsquo;t need &lt;a href="https://chanzuckerberg.com/newsroom/billion-cells-project-launches-advance-ai-biology/"&gt;Billion cell project&lt;/a&gt;, but rather better understanding on how to sample enough cell diversity and choosing the right model architecture with optimized parameters #paper.&lt;/li&gt;
+&lt;li&gt;A short interview &lt;a href="https://www.youtube.com/watch?v=n-hWHV2ZKOA"&gt;Why AI Hasn&amp;rsquo;t Cured Anything&amp;hellip;Yet, According to Jennifer Doudna&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733870v1"&gt;Merchant, Guo and Viggiano et al., 2026&lt;/a&gt; introduce a generative programming language Proto for synthetic biology. The main objective is to provide infrastructure for designing DNA, RNA and protein sequences with defined generative and optimizer modules. Basically a constrained generative system for quick assembly. As the authors point out in the discussion, the main challenge was to standardize multiple tools required for this project. Overall, I can imagine Proto being utilized by both wet and dry-labs combined with AI to facilitate faster discovery, removing the installation/infrastructure barrier shifting the focus and energy to research instead of figuring out why tools are not working on HPC. Lastly, I appreciate the disclosure transparency of AI usage for developing and writing the manuscript.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qedscience.com"&gt;QED Science&lt;/a&gt;, which estimates quality score for scientific papers took X/Twitter &lt;a href="https://x.com/qedScience/status/2070161203746201721"&gt;by storm&lt;/a&gt; with interesting debates and commentaries&lt;sup id="fnref:10"&gt;&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref"&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Dxn3BcSgsMY"&gt;https://www.youtube.com/watch?v=Dxn3BcSgsMY&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
+&lt;h2 id="it"&gt;
+ IT
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google introduced &lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"&gt;DiffusionGemma&lt;/a&gt; as name suggest uses diffusion architecture instead of standard transformer approach. The advantage is faster token generation for the sake of model hallucinations&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;I finally watched &lt;a href="https://www.youtube.com/watch?v=d95J8yzvjbQ&amp;amp;pp=ygURdGhlIHRoaW5raW5nIGdhbWU%3D"&gt;The Thinking Game&lt;/a&gt;, a short movie about how Google DeepMind tackled the protein folding problem. It&amp;rsquo;s definitely worth a watch.
+&lt;ul&gt;
+&lt;li&gt;Watching it reminded me how my colleagues from the lab got excited and wanted to run it out on our GPU server. It took me few days to set it up correctly&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bloomberg discusses AI and safety with &lt;em&gt;Dario&lt;/em&gt; and &lt;em&gt;Daniela Amodei&lt;/em&gt; in &lt;a href="https://www.youtube.com/watch?v=v1wZwxY3CMg"&gt;Inside Anthropic, the $965 Billion AI Juggernaut&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos"&gt;How to Setup a Local Coding Agent on macOS&lt;/a&gt; by Kyle Howells compares token generation using &lt;code&gt;gemma-4-26B-A4B&lt;/code&gt; (58.2 tokens/sec) vs adding MTP Draft mode (72.2 tokens/second). Interestingly, &lt;code&gt;llama.cpp&lt;/code&gt; was clearly faster in all the tests compared to &lt;code&gt;mlx&lt;/code&gt; which was a surprise.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paperswithcode.co"&gt;Papers With Code&lt;/a&gt; is back and offers curated papers from arXiv and Hugging Face.&lt;/li&gt;
+&lt;li&gt;WWDC26 presented &lt;a href="https://github.com/apple/container/tree/main"&gt;apple/container&lt;/a&gt; used to run linux containers. I am curious to see benchmarks comparing &lt;code&gt;docker&lt;/code&gt; and &lt;code&gt;podman&lt;/code&gt; runtime&lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bitecode.dev/p/scripting-good-practices-in-python"&gt;Scripting good practices in Python&lt;/a&gt; by Bite code! provides some nice examples. Here are some of my favorites
+&lt;ul&gt;
+&lt;li&gt;Storing secrets using &lt;code&gt;keyring&lt;/code&gt; library instead of relying on environment variables&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;argparse.RawDescriptionHelpFormatter&lt;/code&gt; for cli with no arguments&lt;/li&gt;
+&lt;li&gt;Custom exit function applied to &lt;code&gt;sys.excepthook&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ultralytics/yolov5"&gt;Yolov5&lt;/a&gt; is out and it&amp;rsquo;s impressive as usual, I suggest you try the &lt;a href="https://github.com/ultralytics/yolo-ios-app"&gt;iOS app&lt;/a&gt; and walk around your area.
+&lt;ul&gt;
+&lt;li&gt;I am also including a &lt;a href="https://x.com/mfranz_on/status/2060836382432497679?s=20"&gt;nice example by Marco Franzon&lt;/a&gt; where YOLO was finetuned to track immune cell chasing bacteria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fernando Irarrázaval was curious if people could break his openclaw instance (assistant Fiu) using prompt injection to leak the secrets thought an email summarized in &lt;a href="https://www.fernandoi.cl/posts/hackmyclaw/"&gt;What happened after 2,000 people tried to hack my AI assistant&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;He chose Claude Opus 4.6 which already comes with strong guard rails. Interestingly, Fiu recognized over time that this was not an organic traffic and stored this info in its memory.&lt;/li&gt;
+&lt;li&gt;Although Fiu didn&amp;rsquo;t leak the secrets, was it worth the 500$ cost?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="science"&gt;
+ Science
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A gene-therapy trial focusing on partial rejuvenation of older cells in eyes has been administered to first patient executed by Life Bioscience&lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt; (co-founded by &lt;a href="https://en.wikipedia.org/wiki/David_A._Sinclair"&gt;Prof. David A. Sinclair&lt;/a&gt;). Using inducible adenovirus the goal is to activate 3 reprogramming genes (OCT4, SOX2, KLF4 aka OSK genes from &lt;a href="https://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell"&gt;Yamanaka factors&lt;/a&gt;). The system only activates if antibiotics called doxycycline is administered&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id="fnref:6"&gt;&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref"&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;China deployed artificial human embryos (on batch cultured on uterine cells and second placed inside a microfluid chip) to Tiangong space station, while keeping control cells on Earth. The objective is to study the impact of space environment on the embryo development. The objective is to see if in future life can be started on other planets&lt;sup id="fnref:7"&gt;&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref"&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Daraxonrasib&lt;/code&gt;&lt;sup id="fnref:8"&gt;&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref"&gt;8&lt;/a&gt;&lt;/sup&gt; a newly proposed drug prolongs the lifespan of patients suffering from advanced pancreatic cancer which suffer from RAS-mutations.
+&lt;ul&gt;
+&lt;li&gt;The study shows that the treatment was able to double the life expectation (however no patient survived to my understanding). It is still a promising new treatment with positive feedback from the community&lt;sup id="fnref:9"&gt;&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref"&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A nice write-up by Eaton about &lt;a href="https://eaton-works.com/2026/06/24/jnj-webapp-hacks/"&gt;Exploiting vulnerabilities in Johnson &amp;amp; Johnson web apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s43588-025-00945-z"&gt;Cultrera di Montesano et al., 2026&lt;/a&gt; focuses on improving cell type prediction by leveraging hierarchical ontologies. As cell type annotation is primarily manual, sometimes different granularity level are assigned to the cells (lv 0: lymphocytes, lv 1: B cells). This could be tackled by ontologies, where cell state would be assigned based on cumulative score of hierarchical representation of ontology rather than just a single-predicted probability score. In nutshell you use parent/children relationship when determine cell type, giving you higher confidence score #paper.
+&lt;ul&gt;
+&lt;li&gt;It is intuitive and elegant implementation termed &lt;em&gt;hierarchical cross-entropy loss&lt;/em&gt; by the authors. The approach showcases moderate improvements in cell type prediction on quite a large datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41592-026-03120-y"&gt;DenAdel et al., 2026&lt;/a&gt; showcased that large number of cells ≠ better performance. The authors conclude that ~20,000 cells might be the sweet spot for training dataset. What does this mean for the future? Maybe we don&amp;rsquo;t need &lt;a href="https://chanzuckerberg.com/newsroom/billion-cells-project-launches-advance-ai-biology/"&gt;Billion cell project&lt;/a&gt;, but rather better understanding on how to sample enough cell diversity and choosing the right model architecture with optimized parameters #paper.&lt;/li&gt;
+&lt;li&gt;A short interview &lt;a href="https://www.youtube.com/watch?v=n-hWHV2ZKOA"&gt;Why AI Hasn&amp;rsquo;t Cured Anything&amp;hellip;Yet, According to Jennifer Doudna&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.64898/2026.06.22.733870v1"&gt;Merchant, Guo and Viggiano et al., 2026&lt;/a&gt; introduce a generative programming language Proto for synthetic biology. The main objective is to provide infrastructure for designing DNA, RNA and protein sequences with defined generative and optimizer modules. Basically a constrained generative system for quick assembly. As the authors point out in the discussion, the main challenge was to standardize multiple tools required for this project. Overall, I can imagine Proto being utilized by both wet and dry-labs combined with AI to facilitate faster discovery, removing the installation/infrastructure barrier shifting the focus and energy to research instead of figuring out why tools are not working on HPC. Lastly, I appreciate the disclosure transparency of AI usage for developing and writing the manuscript.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qedscience.com"&gt;QED Science&lt;/a&gt;, which estimates quality score for scientific papers took X/Twitter &lt;a href="https://x.com/qedScience/status/2070161203746201721"&gt;by storm&lt;/a&gt; with interesting debates and commentaries&lt;sup id="fnref:10"&gt;&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref"&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Dxn3BcSgsMY"&gt;https://www.youtube.com/watch?v=Dxn3BcSgsMY&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>2026-06 Summary</title><link>/blog/2026/2026_06/</link><pubDate>Sat, 13 Jun 2026 08:00:00 +0000</pubDate><guid>/blog/2026/2026_06/</guid><description>&lt;p&gt;Since I&amp;rsquo;ve been quite inconsistent, I will be switching to &lt;em&gt;monthly summaries&lt;/em&gt; covering anything interesting in that month in no particular order.&lt;/p&gt;
 &lt;h2 id="it"&gt;
  IT
 &lt;/h2&gt;
@@ -203,284 +383,13 @@
 &lt;h2 id="troubleshooting-random-import-crashes"&gt;
  Troubleshooting random import crashes
 &lt;/h2&gt;
-&lt;p&gt;If like me (&lt;a href="https://www.reddit.com/r/immich/comments/1ppzkr2/how_to_deal_with_large_files/"&gt;and many others&lt;/a&gt;), you haven&amp;rsquo;t properly configured your reverse-proxy, you probably experienced a random crash during importing. My initial thoughts were performance issue as described &lt;a href="https://tsmith.com/blog/2025/immich-migration/"&gt;here&lt;/a&gt;, however the error message was hinting on something else&lt;/p&gt;</description></item><item><title>Week 26 (23-29/06/2025)</title><link>/blog/2025/2025-06-29/</link><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-29/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AI talk by Andrej Karpathy which took internet by storm &lt;a href="https://www.youtube.com/watch?v=LCEmiRjPEtQ"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Although not the most secure solution for DNS (i.e. TLS), but still nicely visualized &lt;a href="https://howdnssec.works/why-do-we-need-dnssec/"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Youtube&amp;rsquo;s fake buffering and its breakdown &lt;a href="https://iter.ca/post/yt-adblock/"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Another massive #password leak &lt;a href="https://apnews.com/article/large-login-leak-cybernews-google-apple-meta-2a758a40c398b0a68fb2371a522f70ed"&gt;link&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;As always 2FA + password manager can help reducing the risk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Another great write-up by Cloudflare about blocking large DDoS attack &lt;a href="https://blog.cloudflare.com/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If you MacBook gives you buzzing sensation, you are not alone &lt;a href="https://old.reddit.com/r/apple/comments/1lgaw7m/psa_if_when_charging_your_macbook_you_get_a/"&gt;link&lt;/a&gt;!
-&lt;ul&gt;
-&lt;li&gt;Apple time to fix this issue &amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Scientists identity all kinds of information by collecting just environment DNA in Dublin.&lt;a href="https://www.sciencedaily.com/releases/2025/06/250603114822.htm"&gt;link&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Could this be done on a large scale to track uprising diseases?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Promising tooth implants tested in rats &lt;a href="https://futurism.com/neoscope/living-tooth-implant-animals"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Liu&amp;rsquo;s lab created specialized electrodes from fluorinated elastomers which can be attached and &amp;ldquo;expand&amp;rdquo; with
-developing brain in order to measure neuron activity &lt;a href="https://spectrum.ieee.org/vera-rubin-observatory-first-images"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Finland introduces sand battery to store heat as a cost-efficient and sustainable
-alternative &lt;a href="https://techcrunch.com/2025/06/16/finland-warms-up-the-worlds-largest-sand-battery-and-the-economics-look-appealing/"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Timeline of Virtual Cells concept &lt;a href="https://udara.io/science/virtual-cells"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;DuckLake: Mix of metadata and files &lt;a href="https://www.youtube.com/watch?v=hrTjvvwhHEQ"&gt;link&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/EbodShojaei/bake"&gt;EbodShojaei/bake&lt;/a&gt;: Make formatter and linter&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/axboe/fio"&gt;axboe/fio&lt;/a&gt;: Benchmarking tool for I/O&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Week 24 (09-15/06/2025)</title><link>/blog/2025/2025-06-09/</link><pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-09/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Commentary from Garry Marcus on the latest criticism of LLMs &amp;ldquo;reasoning&amp;rdquo; from Apple (&lt;a href="https://garymarcus.substack.com/p/a-knockout-blow-for-llms"&gt;link&lt;/a&gt;).
-&lt;ul&gt;
-&lt;li&gt;Interesting notes:
-&lt;ul&gt;
-&lt;li&gt;LLM might fail from inference outside of training distribution (out-of-distribution), same problem as perceptron&lt;/li&gt;
-&lt;li&gt;The main take home is that LLMs are not thinking, at least based on puzzle examples in the paper&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OS for public sector by EU, currently POC (&lt;a href="https://eu-os.eu/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Focused ultrasound stimulation could be the alternative treatment in future (&lt;a href="https://spectrum.ieee.org/focused-ultrasound-stimulation-inflammation-diabetes"&gt;link&lt;/a&gt;).
-&lt;ul&gt;
-&lt;li&gt;Idea started with chronic inflammation; possible other candidates are diabetes (already tested on mice, pigs and was published)&lt;/li&gt;
-&lt;li&gt;Could be converted into wearable device in future, allowing easy access for anyone&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Marco writes about his own experience with Severely Deficient Autobiographical Memory / Aphantasia (&lt;a href="https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine"&gt;link&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;TL;DR: Difficulty to recall information through visualization&lt;/li&gt;
-&lt;li&gt;Youtube: &lt;a href="https://www.youtube.com/watch?v=3I4KxfXrCPw"&gt;Missing Mind&amp;rsquo;s Eye: Solving the Mystery of Aphantasia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;DIY budget server for AI/ML (&lt;a href="https://www.informationga.in/blog/building-an-ai-server-on-a-budget"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Emerging Startup AheadComputing focuses on building the next new CPU (&lt;a href="https://www.oregonlive.com/silicon-forest/2025/06/top-researchers-leave-intel-to-build-startup-with-the-biggest-baddest-cpu.html"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Apple really likes to make those API calls (&lt;a href="https://appaddict.app/post/my-mac-contacted-63-different-apple-owned-domains-in-one-hour-while-not-is-use"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/resemble-ai/chatterbox?tab=readme-ov-file"&gt;resemble-ai/chatterbox&lt;/a&gt;: Resemble AI&amp;rsquo;s first production-grade open source TTS model.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/AasishPokhrel/shit/issues/1"&gt;AasishPokhrel/shit&lt;/a&gt;: This is kinda funny 😅.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Week 23 (02-08/06/2025)</title><link>/blog/2025/2025-06-02/</link><pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-06-02/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This is why data structure matters, hashmap to reduce tracking of duplicates decreased backup runtime. Fix was submitted to upsteram git repo (&lt;a href="https://about.gitlab.com/blog/2025/06/05/how-we-decreased-gitlab-repo-backup-times-from-48-hours-to-41-minutes/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Analysis of Cloudflare&amp;rsquo;s Claude-Generated code documented by the team via commit history (&lt;a href="https://www.maxemitchell.com/writings/i-read-all-of-cloudflares-claude-generated-commits/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Machine Learning Mastery back with some useful 10 one-liners in python (&lt;a href="https://machinelearningmastery.com/10-python-one-liners-that-will-simplify-feature-engineering/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Likely not surprising but race and ethnicity do align so well with genetic background (&lt;a href="https://www.science.org/content/article/race-ethnicity-don-t-match-genetic-ancestry-according-large-u-s-study"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Bell Labs was all about science and innovation (&lt;a href="https://links.fabiomanganiello.com/share/683ee70d0409e6.66273547"&gt;link&lt;/a&gt;).
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;How do you manage genius? You don&amp;rsquo;t.&amp;rdquo; And it worked. - Mervin Kelly&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Fibers on the surface of cotton seeds dissolved in lithium bromide-water and heat up to high temperature creates transparent material similartly strong to a polycarbonate. It&amp;rsquo;s biodegradable and can reduce half of CO2 emissions compared to plastic (&lt;a href="https://japannews.yomiuri.co.jp/science-nature/technology/20250605-259501/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Titanium dioxide which is in food, was shown to dysregulate endocrine system in mice. Although banned in Europe, America still watis for government&amp;rsquo;s response to the current research (&lt;a href="https://www.theguardian.com/us-news/2025/jun/06/titanium-dioxide-food-additive-toxic"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Great to Simon&amp;rsquo;s journey to self-hosting (&lt;a href="https://www.ssp.sh/blog/self-host-self-independence/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Let&amp;rsquo;s Encrypt tackles zombie clients with pausing/unpausing approach (&lt;a href="https://letsencrypt.org/2025/06/04/how-we-reduced-the-impact-of-zombie-clients/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Did you know you can store your data on paper with the right conversion (&lt;a href="https://www.monperrus.net/martin/store-data-paper"&gt;link&lt;/a&gt;)?&lt;/li&gt;
-&lt;li&gt;MonsterUI packs FastHTML with Tailwind to generate quickly web-apps with Python (&lt;a href="https://www.answer.ai/posts/2025-01-15-monsterui.html"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/iamgio/quarkdown"&gt;iamgio/quarkdown&lt;/a&gt;: another markdown with superpowers&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/onlook-dev/onlook"&gt;onlook-dev/onlook&lt;/a&gt;: the Cursor but for designers in mind&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/elebumm/RedditVideoMakerBot"&gt;elebumm/RedditVideoMakerBot&lt;/a&gt;: automated reddit videos&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/wandb/wandb"&gt;wandb/wandb&lt;/a&gt;: AI developer platform&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Week 22 (25-30/05/2025)</title><link>/blog/2025/2025-05-30/</link><pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-30/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Simon&amp;rsquo;s initial impression of Devstal from Mistral (&lt;a href="https://simonwillison.net/2025/May/21/devstral"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Namanyay provides very simple yet convincing argument about how to leverage the AI
-landscape in your day-to-day dev life. It&amp;rsquo;s not perfect, but it can be simplify
-some tasks, you just need to figure out which ones (&lt;a href="https://nmn.gl/blog/ai-scam"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Cloudflare proposes HTTP message signature to simplify how to deal with ai bots/crawlers (&lt;a href="https://blog.cloudflare.com/web-bot-auth/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Oddysey introduced model which generates AI video with real-time interaction
-from user (&lt;a href="https://techcrunch.com/2025/05/28/odysseys-new-ai-model-streams-3d-interactive-worlds/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;MinIO moves many features behind paywall &lt;a href="https://github.com/minio/object-browser/pull/3509"&gt;minio/object-browser&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Alternative switch: &lt;a href="https://garagehq.deuxfleurs.fr"&gt;Garage&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Nice tips &amp;amp; tricks on running LLM locally by Kiran (&lt;a href="https://blog.nilenso.com/blog/2025/05/06/local-llm-setup/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;FDA pushes initiative to replace animal models for pre-clinical studies by
-embracing organ-on-a chip or in silico modeling if it offers to be a viable
-alternative(&lt;a href="https://www.nature.com/articles/s41587-025-02690-0"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;More bones found in the &amp;ldquo;River of Death&amp;rdquo; in Alberta, Canada provides great
-resource to study Pachyrhinosaurus and other dinosaurs (&lt;a href="https://www.bbc.com/news/articles/c0k3x8lmje1o"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;New #podcast series A Coffee with CompBio (&lt;a href="https://podcast.ausha.co/a-coffee-with-compbio"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.nature.com/articles/s41467-025-59926-5"&gt;Zeng et al., 2025&lt;/a&gt; develops
-CellFM model using ERetNet paired with LoRA.&lt;/li&gt;
-&lt;li&gt;Tackling how to extract number of sequenced cells from papers using LLM by Svensson (&lt;a href="https://www.nxn.se/p/evaluating-automatic-cell-number"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.biorxiv.org/content/10.1101/2025.05.23.655749v1.full"&gt;Sikkema et al., 2025 BiorXiv&lt;/a&gt; developed MapQC
-to estimate fitness of mapping between reference and query
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Energy distance metric (E-distance)&lt;/em&gt; measures shift between two distributions (signal-to-noise ratio)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Internet Archive launches Youtube channel where they stream how they scan material
-using high-resolution camera, use automated software for cropping and OCR conversion
-and archive it afterward on microfiche cards (&lt;a href="https://www.theverge.com/news/672682/internet-archive-microfiche-lo-fi-beats-channel"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Faster Github Actiosn from Blacksmith company with their transparency on security layers (&lt;a href="https://www.blacksmith.sh/blog/security"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Once provide a phone number it will find its way to the interwebs &lt;a href="https://danq.me/2025/05/21/google-shared-my-phone-number/"&gt;(link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/simonw/llm"&gt;simonw/llm&lt;/a&gt;: LLM from terminal simply.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/awslabs/mountpoint-s3"&gt;awslabs/mountpoint-s3&lt;/a&gt;: Mount s3 bucket which is POSIX compliant.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/antinomyhq/forge"&gt;antinomyhq/forge&lt;/a&gt;: AI assistant directly in terminal.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/facebookincubator/cinder"&gt;facebookincubator/cinder&lt;/a&gt;: Meta&amp;rsquo;s version of CPython focused on speed performance.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Week 21 (19-24/05/2025)</title><link>/blog/2025/2025-05-24/</link><pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-24/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Well, Google just dropped Veo 3 at I/o Keynote which generates quite realistic
-shorts videos (&lt;a href="https://gizmodo.com/googles-veo-3-is-already-deepfaking-all-of-youtubes-most-smooth-brained-content-2000606144"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Long read on about mitochondria, their fascinating history (originally bacteria
-which was consumed by an ancestral cell long time ago); fascinating functioning
-thought &amp;ldquo;social&amp;rdquo; queues and link to numerous diseases (&lt;a href="https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Gharibi et al., 2025&lt;/em&gt; introduces 3D model culturing hESCs towards post-gastrulation
-amnion. A big milestone as it allows researchers to study and perturb this developmental
-process in vitro. These models could be provided as an alternative amniotic membranes
-in future clinical settings (&lt;a href="https://www.crick.ac.uk/news/2025-05-15_new-stem-cell-model-sheds-light-on-human-amniotic-sac-development"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Abukar et al., 2025&lt;/em&gt; uses light-sheet microscopy to track hearth development in mouse
-providing new insights into the intricacies of cell movement and coordination
-(&lt;a href="https://www.embopress.org/doi/full/10.1038/s44318-025-00441-0"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Great podcast episode from Quanta Magazine discussing latest research on how
-LLM are not as great as initially thought when it comes to learning &amp;ldquo;new&amp;rdquo;
-languages (&lt;a href="https://play.prx.org/listen?ge=prx_11709_03933b19-007e-4e69-82da-26d8e303f3c"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Using specialized process to treatment steel with stainless steel, a young startup
-Allium Engineering can extend the lifetime of steel by making it resistant against
-corrosion (&lt;a href="https://news.mit.edu/2025/allium-engineering-enables-100-year-bridges-corrosion-resistant-steel-0520"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Have I Been Pwned 2.0 is out packing some new features (&lt;a href="https://www.troyhunt.com/have-i-been-pwned-2-0-is-now-live/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;The Semantic Search Engine for ArXiv (&lt;a href="https://arxivxplorer.com/"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;When you live around Bay Area and you want to save some money on electricity with solar,
-have a look at this deep dive by Joe (&lt;a href="https://medium.com/@joe_5312/pg-e-sucks-or-how-i-learned-to-stop-worrying-and-love-building-my-own-solar-system-acf0c9f03f3b"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/langgenius/dify"&gt;langgenius/dify&lt;/a&gt;: interface for building LLM apps&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/kortix-ai/suna"&gt;kortix-ai/suna&lt;/a&gt;: open-source generalist #ai-agent&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/jlowin/fastmcp"&gt;jlowin/fastmcp&lt;/a&gt;: build MPC fast with Python&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/kamranahmedse/developer-roadmap"&gt;kamranahmedse/developer-roadmap&lt;/a&gt;: yet another developer roadmap&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mlabonne/llm-course"&gt;mlabonne/llm-course&lt;/a&gt;: LLM #course with code&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/deepspeedai/DeepSpeed"&gt;deepspeedai/DeepSpeed&lt;/a&gt;: library for optimized training&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/apple/ml-fastvlm"&gt;apple/ml-fastvlm&lt;/a&gt;: run visual encoding on iPhones from #apple&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/bytedance/deer-flow"&gt;bytedance/deer-flow&lt;/a&gt;: deep-research framework packed with extra integrations&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Lightricks/LTX-Video"&gt;Lightricks/LTX-Video&lt;/a&gt;: impressive video generator&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Daily from 2025-05-12</title><link>/blog/2025/2025-05-12/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-12/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Awesome 14 Advanced Python Features summarized by Edward (&lt;a href="https://blog.edward-li.com/tech/advanced-python-features"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Quite an old new but did you know that limpet teeth are apparently worlds
-strongest biological material (only 1mm in legth!)? (&lt;a href="https://www.cbc.ca/radio/asithappens/as-it-happens-thursday-edition-1.2963357/sea-snail-teeth-top-kevlar-titanium-as-world-s-strongest-material-1.2963549"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Nehal writes about how few books changed his view on biology and sparked a new
-exciting journey towards better understanding of life&amp;rsquo;s mystery (&lt;a href="https://nehalslearnings.substack.com/p/i-should-have-loved-biology-too"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;A long read about Jack Tramiel and history of Commodore, Atari and his resilience
-towards “Computers for the masses, not the classes”. (&lt;a href="https://every.to/the-crazy-ones/the-first-king-of-home-computing"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Have you listened yet to your GitHub contribution graph? (&lt;a href="https://ayitey.me/git-tunes"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Daily from 2025-05-05</title><link>/blog/2025/2025-05-05/</link><pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-05/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;MCP for agents to &amp;ldquo;talk&amp;rdquo; with your resume? Is this where the job market will move one day? (&lt;a href="https://news.ycombinator.com/item?id=43891245"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Imagine coding without a screen using AR glasses and peripherals. Although portable, still quite pricey for my taste (&lt;a href="https://www.tomsguide.com/computing/i-ditched-my-laptop-for-a-pocketable-mini-pc-and-a-pair-of-ar-glasses-heres-what-happened"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Nice and clean default settings for macOS (&lt;a href="https://catalins.tech/how-i-setup-new-macbooks/"&gt;link&lt;/a&gt;). Thank you Catalin&amp;rsquo;s Tech!&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;If like me (&lt;a href="https://www.reddit.com/r/immich/comments/1ppzkr2/how_to_deal_with_large_files/"&gt;and many others&lt;/a&gt;), you haven&amp;rsquo;t properly configured your reverse-proxy, you probably experienced a random crash during importing. My initial thoughts were performance issue as described &lt;a href="https://tsmith.com/blog/2025/immich-migration/"&gt;here&lt;/a&gt;, however the error message was hinting on something else&lt;/p&gt;</description></item><item><title>Migrating Google Photos to Immich</title><link>/blog/2026/migrating-google-photos-to-immich/</link><pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate><guid>/blog/2026/migrating-google-photos-to-immich/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR: This is a summary post of my experience migrating Google Photos to immich. Did you setup your reverse-proxy correctly? Spoiler alert, I didn&amp;rsquo;t 🤦‍♂️&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to &lt;a href="https://takeout.google.com"&gt;Google Takeout&lt;/a&gt; and request all your Google Photos images. I suggest to use &lt;code&gt;tar&lt;/code&gt; compression.&lt;/li&gt;
+&lt;li&gt;Download fantastic tool &lt;a href="https://github.com/simulot/immich-go"&gt;immich-go&lt;/a&gt;, which will import all photos including metadata, albums etc.&lt;/li&gt;
+&lt;li&gt;Generate an API KEY with specified permissions. For simplicity I&amp;rsquo;ve generated a key with all permissions which I&amp;rsquo;ve immediately deleted after import was finished.
 &lt;div class="codeblock"&gt;
  &lt;div class="codeblock-actions"&gt;
  &lt;button type="button"
@@ -511,99 +420,15 @@ towards “Computers for the masses, not the classes”. (&lt;a href="https://ev
  &lt;path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;/path&gt;
  &lt;/svg&gt;
  &lt;/button&gt;
- &lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Enable tap-to-click for the trackpad&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults write com.apple.AppleMultitouchTrackpad Clicking -bool &lt;span class="nb"&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults -currentHost write -g com.apple.mouse.tapBehavior -int &lt;span class="m"&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Disable the .DS file creation&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool &lt;span class="nb"&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Daily from 2025-05-01</title><link>/blog/2025/2025-05-01/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-05-01/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;It&amp;rsquo;s happening, &lt;code&gt;pylock.toml&lt;/code&gt; is supported by &lt;code&gt;pip&lt;/code&gt; and &lt;code&gt;uv&lt;/code&gt; and are we experiencing a fight for type checkers? (&lt;a href="https://www.bitecode.dev/p/whats-up-python-python-in-hardware"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Alex showcases how efficiently export and import sqlite #database - awesome hack! (&lt;a href="https://alexwlchan.net/2025/copying-sqlite-databases"&gt;link&lt;/a&gt;)
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$ sqlite3 explorer.db .dump | gzip -c &amp;gt; explorer.db.txt.gz&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+ &lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Import command from documentation&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;./immich-go upload from-google-photos &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	--server&lt;span class="o"&gt;=&lt;/span&gt;http://10.0.0.103:2283 &lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="c1"&gt;# only use hostname if you&amp;#39;ve correctly configured reverse-proxy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	--api-key&lt;span class="o"&gt;=&lt;/span&gt;&amp;lt;API_KEY&amp;gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	~/Downloads/Takeout/Google&lt;span class="se"&gt;\ &lt;/span&gt;Photos/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;Ibrahim has enough of bots and fights them with a clever zip bomb (&lt;a href="https://idiallo.com/blog/zipbomb-protection"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
+&lt;li&gt;After successful import I&amp;rsquo;ve used &lt;a href="https://github.com/shtse8/Google-Photos-Delete-Tool"&gt;shtse8/Google-Photos-Delete-Tool&lt;/a&gt; to delete all Google Photos, because the UI doesn&amp;rsquo;t support selecting all photos in one go. I&amp;rsquo;ve simply pasted the JS code in console and waited until all images were automatically selected and then clicked delete button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="troubleshooting-random-import-crashes"&gt;
+ Troubleshooting random import crashes
 &lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Satirical life journey of a PhD student (&lt;a href="https://mihaiolteanu.me/knowledge-based-society-my-ass"&gt;link&lt;/a&gt;). I wonder how many PhDs can relate to this story 🤔&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Thanks to metagenomics, doctors cured Bristol&amp;rsquo;s eyesight infection by targeted antibiotics treatment. This showcases we need access to precision medicine (&lt;a href="https://www.bbc.com/news/articles/czx45vze0vyo"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FDA approves genetically modified pigs using CRISPR which can be safely eaten. The genetic modification boosts immune system of pigs agains 99% of known PRRS viruses. Would you still eat them knowing this? (&lt;a href="https://www.technologyreview.com/2025/05/02/1116059/the-us-approves-crispr-pigs-for-food"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;With &lt;code&gt;dataframely&lt;/code&gt; you can specify a validation schema for your polars (&lt;a href="https://tech.quantco.com/blog/dataframely"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Daily from 2025-04-24</title><link>/blog/2025/2025-04-24/</link><pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-04-24/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Easy to follow granular explanation of how DeepSeek was trained by Anita from vellum (&lt;a href="https://www.vellum.ai/blog/the-training-of-deepseek-r1-and-ways-to-use-it"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Another reminder to keep thinking about #privacy (&lt;a href="https://nordictimes.com/tech/what-i-wish-i-knew-about-privacy-sooner/"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Looks like gladiators really fought wild animal based on some interesting discoveries in York (&lt;a href="https://www.nytimes.com/2025/04/23/science/lion-gladiator-romans-bones.html"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Interesting #history lesson on post-war effect of Agent Orange during Vietnam war. The side effects of the agent are associated to developmental disabilities still today (&lt;a href="http://apnews.com/article/vietnam-war-anniversary-agent-orange-0829caefe48cc11fb88ab27982da922b"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;tim shows how he used &lt;code&gt;mitmproxy&lt;/code&gt; to track the trackers (&lt;a href="https://timsh.org/everyone-knows-your-location-part-2-try-it-yourself/"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Daily from 2025-04-23</title><link>/blog/2025/2025-04-23/</link><pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-04-23/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Interesting take on Model Context Protocol (MCP); it&amp;rsquo;s not about the data, it&amp;rsquo;s about how the chatbot will integrate with it (&lt;a href="https://iamcharliegraham.substack.com/p/mcps-gatekeepers-and-the-future-of"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;#history &lt;strong&gt;Margaret Dayhoff&lt;/strong&gt; who laid foundations for the field of bioinformatics. (&lt;a href="https://www.nature.com/articles/s43588-025-00784-y"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;CT scans can increase a risk of cancer and therefore should be justified before applying them on patients, but beware of limitations of the study. (&lt;a href="https://www.icr.ac.uk/about-us/icr-news/detail/overuse-of-ct-scans-could-cause-100-000-extra-cancers-in-us"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SeaCURE tries to remove CO2 from the water to reduce climate change. They do so by converting the sea water more acidic which releases CO2 which is further stored. (&lt;a href="https://www.bbc.com/news/articles/cr788kljlklo"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Latest measurements of toothpaste content reveal high levels of toxic metals way above FDA standard limits. (&lt;a href="https://futurism.com/neoscope/toothpaste-heavy-metals"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;By donating (transplanting) a womb to her younger sister Grace, Grace was able to give birth to a child through in-vitro fertilization (IVF). The womb transplantation was first performed in Sweden in 2014. (&lt;a href="https://www.bbc.com/news/articles/c78jd517z87o"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Personalized humanoids under review (&lt;a href="https://readmultiplex.com/2025/04/19/a-review-of-the-personal-humanoid-robots"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Daily from 2025-04-21</title><link>/blog/2025/2025-04-21/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>/blog/2025/2025-04-21/</guid><description>&lt;h2 id="-it"&gt;
- 👾 IT
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Work from Martin Karsten where he focuses on optimizing network processing in Linux which can reduce up to 30% CPU consumption, making this interesting use case for data centers. However best results are only possible for high-traffic scenarios (&lt;a href="https://spectrum.ieee.org/data-center-energy-consumption"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Philip Laine writes about his experience with Microsoft forking his Spegel project as Peerd (&lt;a href="https://philiplaine.com/posts/getting-forked-by-microsoft/"&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;#python &lt;a href="https://peps.python.org/pep-0750/"&gt;PEP 750&lt;/a&gt; accepts &lt;code&gt;t-string&lt;/code&gt; (&lt;a href="link"&gt;https://davepeck.org/2025/04/11/pythons-new-t-strings/&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="science"&gt;
- 🔬Science
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Scientists show in mice that IL-17 cytokine plays two divergent roles - in amygdala it triggers anxiety but in cortex it promotes social behaviour. The study highlights possible link between immune system and nervous system suggesting possibilities new therapies for neural disorders by affecting modulating immune system (&lt;a href="https://news.mit.edu/2025/molecules-fighting-infection-act-in-brain-inducing-anxiety-or-sociability-0407"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-links"&gt;
- 🔗 Links
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.brainstorm.gg"&gt;brainstorm.gg&lt;/a&gt; is a website for brainstorming some fun ideas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="-tools"&gt;
- 🔧 Tools
-&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/nari-labs/dia"&gt;nari-labs/dia&lt;/a&gt; is a 1.6B model capable of generating ultra-realistic dialogue with open-weights published on Hugging Face&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;p&gt;If like me (&lt;a href="https://www.reddit.com/r/immich/comments/1ppzkr2/how_to_deal_with_large_files/"&gt;and many others&lt;/a&gt;), you haven&amp;rsquo;t properly configured your reverse-proxy, you probably experienced a random crash during importing. My initial thoughts were performance issue as described &lt;a href="https://tsmith.com/blog/2025/immich-migration/"&gt;here&lt;/a&gt;, however the error message was hinting on something else&lt;/p&gt;</description></item></channel></rss>
